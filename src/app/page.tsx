@@ -247,19 +247,49 @@ export default function Home() {
 				</div>
 			</section> */}
 
-			<section key="6" className="w-full py-12">
+			<section key="6" className="w-full py-20">
 				<div className="container grid border-t border-zinc-800 items-center justify-center gap-4 text-center md:px-6 lg:gap-10 w-full">
-					<div className="space-y-3 mt-10">
+					<div className="space-y-2 mt-10">
 						<h2 className="lg:text-5xl font-bold tracking-tight sm:text-4xl md:text-5xl">
 							let's get in touch
 						</h2>
 					</div>
-					<div className="flex justify-evenly text-xl flex-1 w-full ">
-						<div className="flex-1 mx-2">LinkedIn</div>
-						<div className="flex-1 mx-2">Email</div>
-						<div className="flex-1 mx-2">GitHub</div>
-						<div className="flex-1 mx-2">Twitter</div>
-						<div className="flex-1 mx-2">Instagram</div>
+					<div className="flex justify-evenly text-xl flex-1 w-full">
+						<Link
+							className="underline underline-offset-2"
+							href={'https://www.linkedin.com/in/thejoshi/'}
+							target="_blank"
+						>
+							<div className="flex-1 mx-2">LinkedIn</div>
+						</Link>
+						<Link
+							className="underline underline-offset-2"
+							href={'mailto://ajosh104@asu.edu'}
+							target="_blank"
+						>
+							<div className="flex-1 mx-2">Email</div>
+						</Link>
+						<Link
+							className="underline underline-offset-2"
+							href={'https://github.com/anujjoshi63'}
+							target="_blank"
+						>
+							<div className="flex-1 mx-2">GitHub</div>
+						</Link>
+						<Link
+							className="underline underline-offset-2"
+							href={'https://twitter.com/anujjosh'}
+							target="_blank"
+						>
+							<div className="flex-1 mx-2">Twitter</div>
+						</Link>
+						<Link
+							className="underline underline-offset-2"
+							href={'https://instagram.com/anuj._.joshi/'}
+							target="_blank"
+						>
+							<div className="flex-1 mx-2">Instagram</div>
+						</Link>
 					</div>
 				</div>
 			</section>
