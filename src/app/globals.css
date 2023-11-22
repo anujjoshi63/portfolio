@@ -3,25 +3,26 @@
 @tailwind utilities;
 
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 @font-face {
-	font-family: 'Satoshi';
-	src: local(''),
-		url('fonts/Satoshi-Variable.ttf') format('truetype-variations');
-	font-weight: normal;
-	font-style: normal;
-	font-display: swap;
-	font-weight: 100 1000;
+  font-family: "Satoshi";
+  src:
+    local(""),
+    url("fonts/Satoshi-Variable.ttf") format("truetype-variations");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 1000;
 }
 
 body {
-	font-family: 'Satoshi', sans-serif;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	background: hsl(274, 14%, 10%);
-	color: hsl(0, 0%, 90%);
+  font-family: "Satoshi", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: hsl(274, 14%, 10%);
+  color: hsl(0, 0%, 90%);
 }
