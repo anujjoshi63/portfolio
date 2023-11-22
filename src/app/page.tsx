@@ -1,10 +1,12 @@
 import Card from '@/components/ui/card';
+import Link from 'next/link';
+import { ArrowRight } from 'lucide-react';
 export default function Home() {
 	return (
 		<div className="min-h-screen">
 			<section key="1" className="w-full py-12 md:py-24 lg:py-32">
 				<div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6 lg:gap-10">
-					<div className="space-y-3">
+					<div className="space-y-2">
 						<h2 className="lg:text-6xl font-bold tracking-tight text-4xl md:text-5xl">
 							Anuj Joshi
 						</h2>
@@ -56,7 +58,12 @@ export default function Home() {
 							</div>
 						</Link>
 					</div> */}
-					<div className="flex w-full gap-8 flex-wrap ">
+					<div className="space-y-3">
+						<h2 className="lg:text-5xl font-bold tracking-tight sm:text-3xl md:text-4xl mt-20">
+							highlights
+						</h2>
+					</div>
+					<div className="flex w-full gap-8 flex-wrap">
 						<Card
 							title="Grad student, ASU"
 							subtitle="MS in Computer Science"
@@ -78,15 +85,15 @@ export default function Home() {
 					</div>
 				</div>
 			</section>
-			<section key="2" className="w-full py-12 ">
+			<section key="2" className="w-full py-12">
 				<div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6 lg:gap-10">
-					<div className="space-y-3">
+					<div className="space-y-2">
 						<h2 className="lg:text-6xl font-bold tracking-tight sm:text-4xl md:text-5xl">
 							skills
 						</h2>
 					</div>
 
-					<div className="flex w-full gap-4 flex-wrap ">
+					<div className="flex w-full gap-4 flex-wrap">
 						<div className="flex flex-col items-center shadow-xl rounded-xl p-6 gap-2 flex-1 bg-zinc-800 min-w-[15rem] w-fit">
 							<h1 className="text-2xl font-semibold">
 								programming
@@ -130,15 +137,15 @@ export default function Home() {
 					</div>
 				</div>
 			</section>
-			<section key="3" className="w-full py-12 ">
+			<section key="3" className="w-full py-12">
 				<div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6 lg:gap-10">
-					<div className="space-y-3">
+					<div className="space-y-2">
 						<h2 className="lg:text-6xl font-bold tracking-tight sm:text-4xl md:text-5xl">
 							projects
 						</h2>
 					</div>
 
-					<div className="flex w-full gap-4 flex-wrap ">
+					<div className="flex w-full gap-4 flex-wrap">
 						<div className="flex flex-col items-center shadow-xl rounded-xl p-6 gap-2 flex-1 bg-zinc-800 min-w-[15rem] w-fit">
 							<h1 className="text-2xl font-semibold">Teensy</h1>
 							<div className="flex flex-col items-start text-lg">
@@ -176,25 +183,25 @@ export default function Home() {
 							</div>
 						</div>
 					</div>
-					<div className="flex w-full  justify-end ">
-						<div className="px-3 py-1 bg-zinc-800 rounded-xl">
-							My work {'->'}
+					<div className="flex w-full  justify-end">
+						<div className="px-3 py-1 bg-zinc-800 rounded-xl flex gap-2 hover:-translate-y-1 transition-all shadow-lg hover:shadow-xl">
+							My work <ArrowRight fontSize={'1rem'} />
 						</div>
 					</div>
 				</div>
 			</section>
-			<section key="4" className="w-full py-12 ">
+			<section key="4" className="w-full py-12">
 				<div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6 lg:gap-10">
-					<div className="space-y-3">
+					<div className="space-y-2">
 						<h2 className="lg:text-6xl font-bold tracking-tight sm:text-4xl md:text-5xl">
 							work experience
 						</h2>
 					</div>
 
-					<div className="flex w-full gap-4 flex-wrap ">
-						<div className="flex flex-col items-center shadow-xl rounded-xl p-6 gap-2 flex-1 bg-zinc-800 min-w-[15rem] w-fit">
+					<div className="flex flex-col w-full gap-4 flex-wrap">
+						<div className="flex flex-col items-center shadow-xl rounded-xl p-6 gap-2 flex-1 bg-zinc-800 min-w-[15rem] w-full">
 							<h1 className="text-2xl font-semibold">KyloApps</h1>
-							<div className="flex flex-col items-start text-lg">
+							<div className="flex flex-col items-start text-lg mt-2">
 								<div>TypeScript</div>
 								<div>Python</div>
 								<div>JavaScript</div>
@@ -202,11 +209,11 @@ export default function Home() {
 								<div>HTML/CSS</div>
 							</div>
 						</div>
-						<div className="flex flex-col items-center shadow-xl rounded-xl p-6 gap-2 flex-1 bg-zinc-800 min-w-[15rem] w-fit">
+						<div className="flex flex-col items-center shadow-xl rounded-xl p-6 gap-2 flex-1 bg-zinc-800 min-w-[15rem] w-full">
 							<h1 className="text-2xl font-semibold">
 								TechFryDay
 							</h1>
-							<div className="flex flex-col items-start text-lg">
+							<div className="flex flex-col items-start text-lg mt-2">
 								<div>React</div>
 								<div>Next.js</div>
 								<div>Express</div>
@@ -216,11 +223,11 @@ export default function Home() {
 								<div>and more</div>
 							</div>
 						</div>
-						<div className="flex flex-col items-center shadow-xl rounded-xl p-6 gap-2 flex-1 bg-zinc-800 min-w-[15rem] w-fit">
+						<div className="flex flex-col items-center shadow-xl rounded-xl p-6 gap-2 flex-1 bg-zinc-800 min-w-[15rem] w-full">
 							<h1 className="text-2xl font-semibold">
 								Freelance
 							</h1>
-							<div className="flex flex-col items-start text-lg">
+							<div className="flex flex-col items-start text-lg mt-2">
 								<div>Git</div>
 								<div>GitHub</div>
 								<div>Figma</div>
