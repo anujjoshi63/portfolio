@@ -258,7 +258,7 @@ export default function Home() {
 				<div className="container grid border-t border-zinc-800 items-center justify-center gap-4 text-center md:px-6 lg:gap-10 w-full">
 					<div className="space-y-2 mt-10">
 						<h2 className="lg:text-5xl font-bold tracking-tight sm:text-4xl md:text-5xl">
-							let's get in touch
+							let&apos;s get in touch
 						</h2>
 					</div>
 					<div className="flex justify-evenly text-xl flex-1 w-full">
