@@ -72,8 +72,8 @@ export default function Home() {
             />
             <Card
               title="Freelance"
-              subtitle="Highlights"
-              otherData="Other"
+              subtitle="2 enterprise level projects"
+              otherData="numerous small gigs"
               imgPath="/favicon.ico"
             />
           </div>
