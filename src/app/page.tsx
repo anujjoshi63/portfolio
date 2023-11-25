@@ -141,6 +141,12 @@ export default function Home() {
                 <div>SQL</div>
                 <div>HTML/CSS</div>
               </div>
+              <Link
+                className="flex flex-1 items-center underline"
+                href={"https://github.com/shiroyasha9/teensy"}
+              >
+                Repository Link
+              </Link>
             </div>
             <div className="flex w-fit min-w-[15rem] flex-1 flex-col items-center gap-2 rounded-xl bg-zinc-800 p-6 shadow-xl">
               <h1 className="text-2xl font-semibold">Zeno Stack</h1>
@@ -153,6 +159,12 @@ export default function Home() {
                 <div>Node.js</div>
                 <div>and more</div>
               </div>
+              <Link
+                className="w-full items-center text-center underline"
+                href={"https://github.com/zeno-oss/zeno"}
+              >
+                Repository Link
+              </Link>
             </div>
             <div className="flex w-fit min-w-[15rem] flex-1 flex-col items-center gap-2 rounded-xl bg-zinc-800 p-6 shadow-xl">
               <h1 className="text-2xl font-semibold">AutoShopInsights</h1>
@@ -163,6 +175,12 @@ export default function Home() {
                 <div>AWS</div>
                 <div>Linux</div>
               </div>
+              <Link
+                className="w-full items-center text-center underline"
+                href={"https://autoshopinsights.com/"}
+              >
+                Deployment URL
+              </Link>
             </div>
           </div>
           <div className="flex w-full  justify-end">
