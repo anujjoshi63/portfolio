@@ -89,10 +89,7 @@ export default function Home() {
 
           <div className="flex w-full flex-wrap gap-4">
             <div className="flex w-fit min-w-[15rem] flex-1 flex-col items-center gap-2 rounded-xl bg-zinc-800 p-6 shadow-xl">
-              <h1 className="text-2xl font-semibold">
-                programming
-                <br /> languages
-              </h1>
+              <h1 className="text-2xl font-semibold">languages</h1>
               <div className="flex flex-col items-start text-lg">
                 <div>TypeScript</div>
                 <div>Python</div>
@@ -102,9 +99,7 @@ export default function Home() {
               </div>
             </div>
             <div className="flex w-fit min-w-[15rem] flex-1 flex-col items-center gap-2 rounded-xl bg-zinc-800 p-6 shadow-xl">
-              <h1 className="text-2xl font-semibold">
-                libraries &<br /> frameworks
-              </h1>
+              <h1 className="text-2xl font-semibold">frameworks</h1>
               <div className="flex flex-col items-start text-lg">
                 <div>React</div>
                 <div>Next.js</div>
@@ -116,10 +111,7 @@ export default function Home() {
               </div>
             </div>
             <div className="flex w-fit min-w-[15rem] flex-1 flex-col items-center gap-2 rounded-xl bg-zinc-800 p-6 shadow-xl">
-              <h1 className="text-2xl font-semibold">
-                tools &<br />
-                technologies
-              </h1>
+              <h1 className="text-2xl font-semibold">others</h1>
               <div className="flex flex-col items-start text-lg">
                 <div>Git</div>
                 <div>GitHub</div>
