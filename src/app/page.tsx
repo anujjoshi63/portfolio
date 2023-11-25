@@ -67,7 +67,7 @@ export default function Home() {
             <Card
               title="Zeno Stack"
               subtitle="Cross-Platform Monorepo"
-              otherData="95+ stars on GitHub"
+              otherData="100+ stars on GitHub"
               imgPath="/favicon.ico"
             />
             <Card
