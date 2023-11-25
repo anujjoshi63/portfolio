@@ -134,12 +134,10 @@ export default function Home() {
           <div className="flex w-full flex-wrap gap-4">
             <div className="flex w-fit min-w-[15rem] flex-1 flex-col items-center gap-2 rounded-xl bg-zinc-800 p-6 shadow-xl">
               <h1 className="text-2xl font-semibold">Teensy</h1>
-              <div className="flex flex-col items-start text-lg">
-                <div>TypeScript</div>
-                <div>Python</div>
-                <div>JavaScript</div>
-                <div>SQL</div>
-                <div>HTML/CSS</div>
+              <div className="flex flex-col items-center text-lg">
+                <div className="max-w-[18ch] flex-1">
+                  next level URL shortner with Analytics ✨
+                </div>
               </div>
               <Link
                 className="flex flex-1 items-center underline"
@@ -150,14 +148,10 @@ export default function Home() {
             </div>
             <div className="flex w-fit min-w-[15rem] flex-1 flex-col items-center gap-2 rounded-xl bg-zinc-800 p-6 shadow-xl">
               <h1 className="text-2xl font-semibold">Zeno Stack</h1>
-              <div className="flex flex-col items-start text-lg">
-                <div>React</div>
-                <div>Next.js</div>
-                <div>Express</div>
-                <div>Electron</div>
-                {/* <div>React Native</div> */}
-                <div>Node.js</div>
-                <div>and more</div>
+              <div className="flex flex-col items-center text-lg">
+                <div className="max-w-[18ch]">
+                  Cross-platform typesafe react boilerplate 💯
+                </div>
               </div>
               <Link
                 className="w-full items-center text-center underline"
@@ -168,12 +162,10 @@ export default function Home() {
             </div>
             <div className="flex w-fit min-w-[15rem] flex-1 flex-col items-center gap-2 rounded-xl bg-zinc-800 p-6 shadow-xl">
               <h1 className="text-2xl font-semibold">AutoShopInsights</h1>
-              <div className="flex flex-col items-start text-lg">
-                <div>Git</div>
-                <div>GitHub</div>
-                <div>Figma</div>
-                <div>AWS</div>
-                <div>Linux</div>
+              <div className="flex flex-col items-center text-lg">
+                <div className="max-w-[18ch]">
+                  One-stop solution for car shop finances 🚀
+                </div>
               </div>
               <Link
                 className="w-full items-center text-center underline"
@@ -240,7 +232,7 @@ export default function Home() {
               <div className="absolute inset-0 flex h-full w-6 items-center justify-center">
                 <div className="pointer-events-none h-full w-1 bg-gray-300"></div>
               </div>
-              <div className="title-font relative z-10 mt-10 inline-flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-zinc-500 text-sm text-white sm:mt-0 ">
+              <div className="relative z-10 mt-10 inline-flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-zinc-500 text-sm text-white sm:mt-0 ">
                 1
               </div>
               <div className="flex flex-grow flex-col items-start pl-6 sm:flex-row sm:items-center md:pl-8">
@@ -248,14 +240,22 @@ export default function Home() {
                   Dev
                 </div>
                 <div className="mt-6 flex-grow sm:mt-0 sm:pl-6">
-                  <h2 className="title-font mb-1 text-3xl font-medium tracking-tight text-zinc-300">
+                  <h2 className="text-3xl font-medium tracking-tight text-zinc-300">
                     Auto Shop Insights - Freelance
                   </h2>
-                  <p className="leading-relaxed">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Voluptate, repellendus ratione vel ipsam ab cumque in, optio
-                    minus, nostrum quo similique voluptatem non odit nisi? Illum
-                    unde veritatis obcaecati praesentium!
+                  <p className="text-lg leading-relaxed">
+                    simplifies all finances and decision making for car shop
+                    owners
+                  </p>
+                  <p className="mt-4 text-lg leading-relaxed">
+                    designed and developed a modern web app using T3 Stack
+                    (Next.js, TypeScript, Tailwind, and tRPC), seamlessly
+                    managing deployment, database integration, and robust CI/CD
+                    pipelines.
+                  </p>
+                  <p className="mt-4 text-lg leading-relaxed">
+                    Impact: automated complex financial processes, reducing time
+                    spent by 80%
                   </p>
                 </div>
               </div>
@@ -264,7 +264,7 @@ export default function Home() {
               <div className="absolute inset-0 flex h-full w-6 items-center justify-center">
                 <div className="pointer-events-none h-full w-1 bg-gray-300"></div>
               </div>
-              <div className="title-font relative z-10 mt-10 inline-flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-zinc-500 text-sm text-white sm:mt-0 ">
+              <div className="relative z-10 mt-10 inline-flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-zinc-500 text-sm text-white sm:mt-0 ">
                 2
               </div>
               <div className="flex flex-grow flex-col items-start pl-6 sm:flex-row sm:items-center md:pl-8">
@@ -282,14 +282,23 @@ export default function Home() {
                   </svg>
                 </div>
                 <div className="mt-6 flex-grow sm:mt-0 sm:pl-6">
-                  <h2 className="title-font mb-1 text-3xl font-medium tracking-tight text-zinc-300">
+                  <h2 className="mb-1 text-3xl font-medium tracking-tight text-zinc-300">
                     KyloApps - Internship
                   </h2>
-                  <p className="leading-relaxed">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Voluptate, repellendus ratione vel ipsam ab cumque in, optio
-                    minus, nostrum quo similique voluptatem non odit nisi? Illum
-                    unde veritatis obcaecati praesentium!
+                  <p className="text-lg leading-relaxed">
+                    Took 4 projects (2 new, 2 existing) head-on. Quickly got up
+                    to speed by learning new technologies, showing off my
+                    versatility
+                  </p>
+                  <p className="mt-4 text-lg leading-relaxed">
+                    Developed dynamic React frontends from Figma prototypes,
+                    earning client satisfaction. Established clear communication
+                    practices, enhancing team and client interactions.
+                  </p>
+                  <p className="mt-4 text-lg leading-relaxed">
+                    Impact: Enhanced code quality, boosted Lighthouse score by
+                    40%, and minimized rerenders through optimized React
+                    practices.
                   </p>
                 </div>
               </div>
@@ -298,7 +307,7 @@ export default function Home() {
               <div className="absolute inset-0 flex h-full w-6 items-center justify-center">
                 <div className="pointer-events-none h-full w-1 bg-gray-300"></div>
               </div>
-              <div className="title-font relative z-10 mt-10 inline-flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-zinc-500 text-sm text-white sm:mt-0 ">
+              <div className="relative z-10 mt-10 inline-flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-zinc-500 text-sm text-white sm:mt-0 ">
                 3
               </div>
               <div className="flex flex-grow flex-col items-start pl-6 sm:flex-row sm:items-center md:pl-8">
@@ -317,7 +326,7 @@ export default function Home() {
                   </svg>
                 </div>
                 <div className="mt-6 flex-grow sm:mt-0 sm:pl-6">
-                  <h2 className="title-font mb-1 text-3xl font-medium tracking-tight text-zinc-300">
+                  <h2 className="mb-1 text-3xl font-medium tracking-tight text-zinc-300">
                     TechFryDay - Internship
                   </h2>
                   <p className="leading-relaxed">
@@ -333,7 +342,7 @@ export default function Home() {
               <div className="absolute inset-0 flex h-full w-6 items-center justify-center">
                 <div className="pointer-events-none h-full w-1 bg-gray-300"></div>
               </div>
-              <div className="title-font relative z-10 mt-10 inline-flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-zinc-500 text-sm text-white sm:mt-0 ">
+              <div className="relative z-10 mt-10 inline-flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-zinc-500 text-sm text-white sm:mt-0 ">
                 4
               </div>
               <div className="flex flex-grow flex-col items-start pl-6 sm:flex-row sm:items-center md:pl-8">
@@ -352,7 +361,7 @@ export default function Home() {
                   </svg>
                 </div>
                 <div className="mt-6 flex-grow sm:mt-0 sm:pl-6">
-                  <h2 className="title-font mb-1 text-3xl font-medium tracking-tight text-zinc-300">
+                  <h2 className="mb-1 text-3xl font-medium tracking-tight text-zinc-300">
                     MIS Software - Freelance
                   </h2>
                   <p className="leading-relaxed">
