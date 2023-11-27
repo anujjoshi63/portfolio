@@ -1,6 +1,6 @@
 import Card from "@/components/elements/card";
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, LinkIcon } from "lucide-react";
 import Intro from "@/components/sections/Intro";
 export default function Home() {
   return (
@@ -27,11 +27,11 @@ export default function Home() {
             </Link>
           </div>
           <div className="space-y-3">
-            <h2 className="mt-20 font-semibold tracking-tight sm:text-3xl md:text-4xl lg:text-5xl">
+            <h2 className="mt-20 text-4xl font-normal tracking-tight sm:text-3xl md:text-4xl md:font-semibold lg:text-5xl">
               highlights
             </h2>
           </div>
-          <div className="flex w-full flex-wrap gap-8">
+          <div className="flex w-full flex-col flex-wrap gap-8 md:flex-row">
             <Card
               title="Grad student, ASU"
               subtitle="MS in Computer Science"
@@ -56,7 +56,7 @@ export default function Home() {
       <section key="2" className="w-full py-12">
         <div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6 lg:gap-10">
           <div className="space-y-2">
-            <h2 className="font-semibold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl">
+            <h2 className="text-4xl font-normal tracking-tight sm:text-4xl md:text-5xl md:font-semibold lg:text-6xl">
               skills
             </h2>
           </div>
@@ -100,7 +100,7 @@ export default function Home() {
       <section key="3" className="w-full py-12">
         <div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6 lg:gap-10">
           <div className="space-y-2">
-            <h2 className="font-semibold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl">
+            <h2 className="text-4xl font-normal tracking-tight sm:text-4xl md:text-5xl md:font-semibold lg:text-6xl">
               projects
             </h2>
           </div>
@@ -159,7 +159,7 @@ export default function Home() {
       <section key="4" className="w-full py-12">
         <div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6 lg:gap-10">
           <div className="space-y-2">
-            <h2 className="font-semibold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl">
+            <h2 className="text-4xl font-normal tracking-tight sm:text-4xl md:text-5xl md:font-semibold lg:text-6xl">
               work experience
             </h2>
           </div>
@@ -201,7 +201,7 @@ export default function Home() {
 							</div>
 						</div>
 					</div> */}
-          <div className="container mx-auto flex flex-wrap px-5">
+          <div className="container mx-auto mt-4 flex flex-wrap px-5 md:mt-0">
             <div className="relative mx-auto flex pb-20 pt-10 sm:items-center md:w-2/3">
               <div className="absolute inset-0 flex h-full w-6 items-center justify-center">
                 <div className="pointer-events-none h-full w-1 bg-gray-300"></div>
@@ -210,8 +210,8 @@ export default function Home() {
                 1
               </div>
               <div className="flex flex-grow flex-col items-start pl-6 sm:flex-row sm:items-center md:pl-8">
-                <div className="inline-flex h-24 w-24 flex-shrink-0 items-center justify-center rounded-full bg-indigo-100 text-indigo-950">
-                  Dev
+                <div className="hidden h-24 w-24 flex-shrink-0 items-center justify-center rounded-full text-indigo-100 md:inline-flex">
+                  {/* Role: Dev */}
                 </div>
                 <div className="mt-6 flex-grow sm:mt-0 sm:pl-6">
                   <h2 className="text-3xl font-medium tracking-tight text-zinc-300">
@@ -242,18 +242,8 @@ export default function Home() {
                 2
               </div>
               <div className="flex flex-grow flex-col items-start pl-6 sm:flex-row sm:items-center md:pl-8">
-                <div className="inline-flex h-24 w-24 flex-shrink-0 items-center justify-center rounded-full bg-indigo-100 text-indigo-950">
-                  <svg
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    className="h-12 w-12"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-                  </svg>
+                <div className="hidden h-24 w-24 flex-shrink-0 items-center justify-center rounded-full text-indigo-100 md:inline-flex">
+                  {/* Role: Dev */}
                 </div>
                 <div className="mt-6 flex-grow sm:mt-0 sm:pl-6">
                   <h2 className="mb-1 text-3xl font-medium tracking-tight text-zinc-300">
@@ -285,19 +275,8 @@ export default function Home() {
                 3
               </div>
               <div className="flex flex-grow flex-col items-start pl-6 sm:flex-row sm:items-center md:pl-8">
-                <div className="inline-flex h-24 w-24 flex-shrink-0 items-center justify-center rounded-full bg-indigo-100 text-indigo-950">
-                  <svg
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    className="h-12 w-12"
-                    viewBox="0 0 24 24"
-                  >
-                    <circle cx="12" cy="5" r="3"></circle>
-                    <path d="M12 22V8M5 12H2a10 10 0 0020 0h-3"></path>
-                  </svg>
+                <div className="hidden h-24 w-24 flex-shrink-0 items-center justify-center rounded-full text-indigo-100 md:inline-flex">
+                  {/* Role: Trainer */}
                 </div>
                 <div className="mt-6 flex-grow sm:mt-0 sm:pl-6">
                   <h2 className="mb-1 text-3xl font-medium tracking-tight text-zinc-300">
@@ -324,19 +303,8 @@ export default function Home() {
                 4
               </div>
               <div className="flex flex-grow flex-col items-start pl-6 sm:flex-row sm:items-center md:pl-8">
-                <div className="inline-flex h-24 w-24 flex-shrink-0 items-center justify-center rounded-full bg-indigo-100 text-indigo-950">
-                  <svg
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    className="h-12 w-12"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
-                    <circle cx="12" cy="7" r="4"></circle>
-                  </svg>
+                <div className="hidden h-24 w-24 flex-shrink-0 items-center justify-center rounded-full text-indigo-100 md:inline-flex">
+                  {/* Role: Dev */}
                 </div>
                 <div className="mt-6 flex-grow sm:mt-0 sm:pl-6">
                   <h2 className="mb-1 text-3xl font-medium tracking-tight text-zinc-300">
@@ -381,45 +349,60 @@ export default function Home() {
       <section key="6" className="w-full py-20">
         <div className="container grid w-full items-center justify-center gap-4 border-t border-zinc-800 text-center md:px-6 lg:gap-10">
           <div className="mt-10 space-y-2">
-            <h2 className="font-semibold tracking-tight sm:text-4xl md:text-5xl lg:text-5xl">
+            <h2 className=" text-4xl font-medium tracking-tight md:text-5xl md:font-semibold lg:text-5xl">
               let&apos;s get in touch
             </h2>
           </div>
-          <div className="flex w-full flex-1 justify-evenly text-xl">
+          <div className="flex w-full flex-1 flex-col justify-evenly text-xl md:flex-row">
             <Link
               className="underline underline-offset-2"
               href={"https://www.linkedin.com/in/thejoshi/"}
               target="_blank"
             >
-              <div className="mx-2 flex-1">LinkedIn</div>
+              <div className="mx-2 flex flex-1 items-center gap-1 align-middle">
+                LinkedIn
+                <LinkIcon width={14} color="gray" className="md:hidden" />
+              </div>
             </Link>
             <Link
               className="underline underline-offset-2"
               href={"mailto://ajosh104@asu.edu"}
               target="_blank"
             >
-              <div className="mx-2 flex-1">Email</div>
+              <div className="mx-2 flex flex-1 items-center gap-1 align-middle">
+                Email
+                <LinkIcon width={14} color="gray" className="md:hidden" />
+              </div>
             </Link>
             <Link
               className="underline underline-offset-2"
               href={"https://github.com/anujjoshi63"}
               target="_blank"
             >
-              <div className="mx-2 flex-1">GitHub</div>
+              <div className="mx-2 flex flex-1 items-center gap-1 align-middle">
+                GitHub
+                <LinkIcon width={14} color="gray" className="md:hidden" />
+              </div>
             </Link>
             <Link
               className="underline underline-offset-2"
               href={"https://twitter.com/anujjosh"}
               target="_blank"
             >
-              <div className="mx-2 flex-1">Twitter</div>
+              <div className="mx-2 flex flex-1 items-center gap-1 align-middle">
+                Twitter
+                <LinkIcon width={14} color="gray" className="md:hidden" />
+              </div>
             </Link>
             <Link
               className="underline underline-offset-2"
               href={"https://instagram.com/anuj._.joshi/"}
               target="_blank"
             >
-              <div className="mx-2 flex-1">Instagram</div>
+              <div className="mx-2 flex flex-1 items-center gap-1 align-middle">
+                Instagram
+                <LinkIcon width={14} color="gray" className="md:hidden" />
+              </div>
             </Link>
           </div>
         </div>
