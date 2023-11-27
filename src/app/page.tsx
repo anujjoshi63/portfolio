@@ -245,12 +245,12 @@ export default function Home() {
                   </h2>
                   <p className="text-lg leading-relaxed">
                     simplifies all finances and decision making for car shop
-                    owners
+                    businesses
                   </p>
                   <p className="mt-4 text-lg leading-relaxed">
-                    designed and developed a modern web app using T3 Stack
-                    (Next.js, TypeScript, Tailwind, and tRPC), seamlessly
-                    managing deployment, database integration, and robust CI/CD
+                    developed a modern web app using T3 Stack (Next.js,
+                    TypeScript, Tailwind, and tRPC), seamlessly managing
+                    deployment, database integration, and robust CI/CD
                     pipelines.
                   </p>
                   <p className="mt-4 text-lg leading-relaxed">
@@ -286,19 +286,19 @@ export default function Home() {
                     KyloApps - Internship
                   </h2>
                   <p className="text-lg leading-relaxed">
-                    Took 4 projects (2 new, 2 existing) head-on. Quickly got up
-                    to speed by learning new technologies, showing off my
-                    versatility
+                    Brought 4 projects (2 new, 2 existing) to completion.
+                    Quickly got up to speed by learning new technologies,
+                    showing off my versatility
                   </p>
                   <p className="mt-4 text-lg leading-relaxed">
-                    Developed dynamic React frontends from Figma prototypes,
-                    earning client satisfaction. Established clear communication
-                    practices, enhancing team and client interactions.
+                    Developed frontends from Figma, ensuring client
+                    satisfaction. Integrated robust dev and communication,
+                    enhancing team & client relations.
                   </p>
                   <p className="mt-4 text-lg leading-relaxed">
-                    Impact: Enhanced code quality, boosted Lighthouse score by
-                    40%, and minimized rerenders through optimized React
-                    practices.
+                    Enhanced code quality and increased Lighthouse score by 40%
+                    using advanced React techniques. Successfully mentored a
+                    non-React frontend developer to proficiency.
                   </p>
                 </div>
               </div>
@@ -329,11 +329,15 @@ export default function Home() {
                   <h2 className="mb-1 text-3xl font-medium tracking-tight text-zinc-300">
                     TechFryDay - Internship
                   </h2>
-                  <p className="leading-relaxed">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Voluptate, repellendus ratione vel ipsam ab cumque in, optio
-                    minus, nostrum quo similique voluptatem non odit nisi? Illum
-                    unde veritatis obcaecati praesentium!
+                  <p className="text-lg leading-relaxed">
+                    Elevated Python skills of over 40 undergraduates, achieving
+                    a 90% positive feedback rate in two intensive workshops
+                    through innovative teaching methods.
+                  </p>
+                  <p className="mt-4 text-lg leading-relaxed">
+                    Addressed student challenges in a voice recognition workshop
+                    through expert troubleshooting, cutting trainer
+                    interventions by half
                   </p>
                 </div>
               </div>
@@ -364,11 +368,19 @@ export default function Home() {
                   <h2 className="mb-1 text-3xl font-medium tracking-tight text-zinc-300">
                     MIS Software - Freelance
                   </h2>
-                  <p className="leading-relaxed">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Voluptate, repellendus ratione vel ipsam ab cumque in, optio
-                    minus, nostrum quo similique voluptatem non odit nisi? Illum
-                    unde veritatis obcaecati praesentium!
+                  <p className="mt-4 text-lg leading-relaxed">
+                    Developed a sophisticated MIS software, revolutionizing a
+                    chemical enterprise's operations through automation.
+                  </p>
+                  <p className="mt-4 text-lg leading-relaxed">
+                    The app manages over 500 inquiries and tracks 300+ sample
+                    deliveries monthly, demonstrating strong automation and data
+                    management capabilities.
+                  </p>
+                  <p className="mt-4 text-lg leading-relaxed">
+                    Impact: Enhanced process efficiency, reducing task times by
+                    90% and halving report creation time, significantly boosting
+                    operational excellence.
                   </p>
                 </div>
               </div>
