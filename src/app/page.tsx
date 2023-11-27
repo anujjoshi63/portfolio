@@ -312,7 +312,7 @@ export default function Home() {
                   </h2>
                   <p className="mt-4 text-lg leading-relaxed">
                     Developed a sophisticated MIS software, revolutionizing a
-                    chemical enterprise's operations through automation.
+                    chemical enterprise&apos;s operations through automation.
                   </p>
                   <p className="mt-4 text-lg leading-relaxed">
                     The app manages over 500 inquiries and tracks 300+ sample
