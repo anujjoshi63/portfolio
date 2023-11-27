@@ -53,7 +53,7 @@ export default function Home() {
 						</Link>
 					</div> */}
           <div className="space-y-3">
-            <h2 className="mt-20 font-bold tracking-tight sm:text-3xl md:text-4xl lg:text-5xl">
+            <h2 className="mt-20 font-semibold tracking-tight sm:text-3xl md:text-4xl lg:text-5xl">
               highlights
             </h2>
           </div>
@@ -82,7 +82,7 @@ export default function Home() {
       <section key="2" className="w-full py-12">
         <div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6 lg:gap-10">
           <div className="space-y-2">
-            <h2 className="font-bold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl">
+            <h2 className="font-semibold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl">
               skills
             </h2>
           </div>
@@ -126,7 +126,7 @@ export default function Home() {
       <section key="3" className="w-full py-12">
         <div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6 lg:gap-10">
           <div className="space-y-2">
-            <h2 className="font-bold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl">
+            <h2 className="font-semibold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl">
               projects
             </h2>
           </div>
@@ -185,7 +185,7 @@ export default function Home() {
       <section key="4" className="w-full py-12">
         <div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6 lg:gap-10">
           <div className="space-y-2">
-            <h2 className="font-bold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl">
+            <h2 className="font-semibold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl">
               work experience
             </h2>
           </div>
@@ -379,7 +379,7 @@ export default function Home() {
       {/* <section key="5" className="w-full py-12 ">
 				<div className="container grid items-center justify-center gap-4 text-center md:px-6 lg:gap-10">
 					<div className="space-y-3">
-						<h2 className="lg:text-5xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+						<h2 className="lg:text-5xl font-semibold tracking-tighter sm:text-4xl md:text-5xl">
 							sold yet? ask GPT about me
 						</h2>
 					</div>
@@ -395,7 +395,7 @@ export default function Home() {
       <section key="6" className="w-full py-20">
         <div className="container grid w-full items-center justify-center gap-4 border-t border-zinc-800 text-center md:px-6 lg:gap-10">
           <div className="mt-10 space-y-2">
-            <h2 className="font-bold tracking-tight sm:text-4xl md:text-5xl lg:text-5xl">
+            <h2 className="font-semibold tracking-tight sm:text-4xl md:text-5xl lg:text-5xl">
               let&apos;s get in touch
             </h2>
           </div>
