@@ -1,29 +1,12 @@
-import Card from "@/components/ui/card";
+import Card from "@/components/elements/card";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import Intro from "@/components/sections/Intro";
 export default function Home() {
   return (
     <div className="min-h-screen">
       <section key="1" className="w-full py-12 md:py-24 lg:py-32">
-        <div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6 lg:gap-10">
-          <div className="space-y-2">
-            <h2 className="text-4xl font-bold tracking-tight md:text-5xl lg:text-6xl">
-              Anuj Joshi
-            </h2>
-            <p className="mx-auto max-w-[700px] text-zinc-500 md:text-xl/relaxed lg:text-xl/relaxed xl:text-xl/relaxed">
-              <span className="text-zinc-200">Software Dev</span> showcasing a
-              blend of <span className="text-zinc-200">Freelance</span> work,{" "}
-              <span className="text-zinc-200">Open Source</span> contributions,
-              personal projects, and academic pursuits. Special interest in{" "}
-              <span className="whitespace-nowrap text-zinc-200">
-                Full Stack
-              </span>{" "}
-              development, writing{" "}
-              <span className="text-zinc-200">blazing-fast</span> code and
-              development
-              <span className="text-zinc-200"> productivity.</span>{" "}
-            </p>
-          </div>
+          <Intro />
 
           {/* <div className="flex items-center justify-center gap-4 w-full font-light text-lg text-zinc-300">
 						<Link
