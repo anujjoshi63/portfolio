@@ -366,7 +366,7 @@ export default function Home() {
             </Link>
             <Link
               className="underline underline-offset-2"
-              href={"mailto://ajosh104@asu.edu"}
+              href={"mailto:ajosh104@asu.edu"}
               target="_blank"
             >
               <div className="mx-2 flex flex-1 items-center gap-1 align-middle">
