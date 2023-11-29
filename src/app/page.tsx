@@ -1,10 +1,10 @@
 "use client";
 import Card from "@/components/elements/card";
-import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import Footer from "@/components/sections/Footer";
 import Intro from "@/components/sections/Intro";
 import { motion } from "framer-motion";
-import Footer from "@/components/sections/Footer";
+import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 export default function Home() {
   return (
