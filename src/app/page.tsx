@@ -34,10 +34,7 @@ export default function Home() {
             <Link href={"https://github.com/anujjoshi63"} target="_blank">
               <div className="underline underline-offset-4">GitHub</div>
             </Link>
-            <Link
-              href={"https://www.instagram.com/anuj._.joshi/"}
-              target="_blank"
-            >
+            <Link href={"https://teensy.tech/anujresume"} target="_blank">
               <div className="underline underline-offset-4">Resume</div>
             </Link>
           </motion.div>
@@ -54,7 +51,7 @@ export default function Home() {
             viewport={{ once: true }}
           >
             <div className="space-y-3">
-              <h2 className="mt-20 text-4xl font-normal tracking-tight sm:text-3xl md:text-4xl md:font-semibold lg:text-5xl">
+              <h2 className="mt-20 py-8 text-4xl font-normal tracking-tight sm:text-3xl md:text-4xl md:font-semibold lg:text-5xl">
                 highlights
               </h2>
             </div>
