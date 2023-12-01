@@ -7,8 +7,8 @@ const satoshi = localFont({
   display: "swap",
 });
 export const metadata: Metadata = {
-  title: "Anuj Joshi - Software Engineer",
-  description: "blah blah blah",
+  title: "Anuj Joshi - CS Grad Student at ASU | Loves to code ",
+  description: "Software Engineer | Open Source",
 };
 
 export default function RootLayout({
