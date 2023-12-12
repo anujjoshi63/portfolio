@@ -124,7 +124,7 @@ export default function Home() {
                       Node.js
                     </HoverCardTrigger>
                     <HoverCardContent className="w-fit rounded-xl border-zinc-700 bg-zinc-900">
-                      I know, I know. It's a runtime.
+                      I know, I know. It&apos;s a runtime.
                     </HoverCardContent>
                   </HoverCard>
 
