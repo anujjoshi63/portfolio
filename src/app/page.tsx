@@ -5,7 +5,11 @@ import Intro from "@/components/sections/Intro";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
-
+import {
+  HoverCard,
+  HoverCardContent,
+  HoverCardTrigger,
+} from "@/components/ui/hover-card";
 export default function Home() {
   return (
     <div className="min-h-screen">
@@ -115,18 +119,41 @@ export default function Home() {
                   <div>Express</div>
                   <div>Electron</div>
                   {/* <div>React Native</div> */}
-                  <div>Node.js</div>
+                  <HoverCard openDelay={0} closeDelay={250}>
+                    <HoverCardTrigger className="cursor-default">
+                      Node.js
+                    </HoverCardTrigger>
+                    <HoverCardContent className="w-fit rounded-xl border-zinc-700 bg-zinc-900">
+                      I know, I know. It&apos;s a runtime.
+                    </HoverCardContent>
+                  </HoverCard>
+
+                  {/* <div>Node.js</div> */}
                   {/* <div>and more</div> */}
                 </div>
               </div>
               <div className="flex w-fit min-w-[15rem] flex-1 flex-col items-center gap-2 rounded-xl bg-zinc-800 p-6 shadow-xl">
                 <h1 className="text-2xl font-semibold">others</h1>
                 <div className="flex flex-col items-start text-lg">
-                  <div>Git</div>
-                  <div>GitHub</div>
                   <div>Figma</div>
                   <div>AWS</div>
                   <div>Linux</div>
+                  <div>Git</div>
+                  <HoverCard openDelay={0} closeDelay={250}>
+                    <HoverCardTrigger>
+                      <div className="cursor-default">GitHub</div>
+                    </HoverCardTrigger>
+                    <HoverCardContent className="w-fit rounded-xl  border-zinc-700 bg-zinc-900">
+                      Checkout my github{" "}
+                      <Link
+                        href={"https://github.com/anujjoshi63"}
+                        className="underline"
+                        target="_blank"
+                      >
+                        here
+                      </Link>
+                    </HoverCardContent>
+                  </HoverCard>
                 </div>
               </div>
             </div>
@@ -156,7 +183,7 @@ export default function Home() {
                 <h1 className="text-2xl font-semibold">Teensy</h1>
                 <div className="flex flex-col items-center text-lg">
                   <div className="max-w-[18ch] flex-1">
-                    next level URL shortner with Analytics ✨
+                    Next level URL Shortener with Analytics ✨
                   </div>
                 </div>
                 <Link
@@ -170,7 +197,7 @@ export default function Home() {
                 <h1 className="text-2xl font-semibold">Zeno Stack</h1>
                 <div className="flex flex-col items-center text-lg">
                   <div className="max-w-[18ch]">
-                    Cross-platform typesafe react boilerplate 💯
+                    Cross-platform Typesafe React Boilerplate 💯
                   </div>
                 </div>
                 <Link
@@ -184,7 +211,7 @@ export default function Home() {
                 <h1 className="text-2xl font-semibold">AutoShopInsights</h1>
                 <div className="flex flex-col items-center text-lg">
                   <div className="max-w-[18ch]">
-                    One-stop solution for car shop finances 🚀
+                    One-stop solution for car shop finances. 🚀
                   </div>
                 </div>
                 <Link
@@ -195,11 +222,11 @@ export default function Home() {
                 </Link>
               </div>
             </div>
-            <div className="flex w-full  justify-end">
+            {/* <div className="flex w-full  justify-end">
               <div className="flex gap-2 rounded-xl bg-zinc-800 px-3 py-1 shadow-lg transition-all hover:-translate-y-1 hover:shadow-xl">
                 My work <ArrowRight fontSize={"1rem"} />
               </div>
-            </div>
+            </div> */}
           </div>
         </section>{" "}
       </motion.div>{" "}
@@ -266,7 +293,7 @@ export default function Home() {
                 whileInView={{ opacity: 1 }}
                 transition={{
                   type: "tween",
-                  duration: 1,
+                  duration: 1.5,
                 }}
               >
                 {" "}
@@ -310,7 +337,7 @@ export default function Home() {
                 whileInView={{ opacity: 1 }}
                 transition={{
                   type: "tween",
-                  duration: 1,
+                  duration: 1.5,
                 }}
               >
                 {" "}
@@ -355,7 +382,7 @@ export default function Home() {
                 whileInView={{ opacity: 1 }}
                 transition={{
                   type: "tween",
-                  duration: 1,
+                  duration: 1.5,
                 }}
               >
                 {" "}
@@ -395,7 +422,7 @@ export default function Home() {
                 whileInView={{ opacity: 1 }}
                 transition={{
                   type: "tween",
-                  duration: 1,
+                  duration: 1.5,
                 }}
               >
                 {" "}
