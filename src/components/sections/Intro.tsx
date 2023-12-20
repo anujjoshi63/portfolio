@@ -28,6 +28,21 @@ const Intro = () => {
         }}
         viewport={{ once: true }}
       >
+        {/* <div className="flex max-w-2xl flex-wrap items-center justify-center gap-2 text-2xl font-extralight">
+          <span className="w-fit rounded-lg bg-[hsl(260,18%,16%)] px-2 text-center  font-extralight">
+            MS CS student, ASU
+          </span>
+          <span className="w-fit rounded-lg bg-[hsl(260,18%,16%)] px-2   ">
+            Seeking
+            <span className="font-medium"> Summer '24 Internships</span>
+          </span>
+          <span className="w-fit rounded-lg  px-2  text-center">
+            Skills? React, Next, TypeScript, Python & more 🚀
+          </span>
+          <span className="mt-2 w-fit rounded-lg  px-2  text-center  text-2xl  font-extralight">
+            Checkout portfolio for more →
+          </span>
+        </div> */}
         <p className="mx-auto max-w-[700px] text-xl/normal font-normal text-[hsl(220,10%,60%)] md:text-xl/relaxed md:font-thin lg:text-xl/relaxed xl:text-xl/relaxed">
           <span className="font-medium text-[hsl(220,10%,75%)]">
             Software Engineer

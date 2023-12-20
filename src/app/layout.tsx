@@ -7,8 +7,24 @@ const satoshi = localFont({
   display: "swap",
 });
 export const metadata: Metadata = {
-  title: "Anuj Joshi - CS Grad Student at ASU | Loves to code ",
-  description: "Software Engineer | Open Source",
+  title: "Anuj Joshi ",
+  description: "Software Engineer | Loves to code | Open Source",
+  creator: "Anuj Joshi",
+  publisher: "Anuj on Vercel",
+  keywords: [
+    "Next.js",
+    "React",
+    "JavaScript",
+    "TypeScript",
+    "Fresher",
+    "internship",
+    "developer",
+    "full stack",
+    "frontend",
+  ],
+  openGraph: {
+    images: "/og-image.png",
+  },
 };
 
 export default function RootLayout({
