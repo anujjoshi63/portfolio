@@ -7,7 +7,8 @@ const satoshi = localFont({
   display: "swap",
 });
 export const metadata: Metadata = {
-  title: "Anuj Joshi ",
+  metadataBase: new URL("https://anujjoshi.vercel.app/"),
+  title: "Anuj Joshi",
   description: "Software Engineer | Loves to code | Open Source",
   creator: "Anuj Joshi",
   publisher: "Anuj on Vercel",
