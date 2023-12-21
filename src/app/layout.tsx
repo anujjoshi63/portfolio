@@ -24,7 +24,23 @@ export const metadata: Metadata = {
     "frontend",
   ],
   openGraph: {
-    images: "/og-image.png",
+    title: "Anuj Joshi",
+    description: "Software Engineer | Loves to code | Open Source",
+    url: "https://anujjoshi.vercel.app/",
+    siteName: "Anuj Joshi",
+    images: [
+      {
+        url: "https://anujjoshi.vercel.app/og-image.png",
+        alt: "Anuj is 1. student at asu, 2. skilled in react, js, ts, python, 3. looking for software engineering summer internship",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary",
+    images: "https://anujjoshi.vercel.app/og-image.png",
   },
 };
 
