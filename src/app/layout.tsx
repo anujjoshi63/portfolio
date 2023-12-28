@@ -53,9 +53,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={satoshi.className}>{children}</body>
-      <Analytics />
-      <SpeedInsights />
+      <body className={satoshi.className}>
+        {children}
+        <Analytics />
+        <SpeedInsights />
+      </body>
     </html>
   );
 }
