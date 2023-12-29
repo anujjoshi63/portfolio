@@ -43,8 +43,8 @@ const Intro = () => {
             Checkout portfolio for more →
           </span>
         </div> */}
-        <p className="mx-auto max-w-[700px] text-xl/normal font-normal text-[hsl(220,10%,60%)] md:text-xl/relaxed md:font-thin lg:text-xl/relaxed xl:text-xl/relaxed">
-          <span className="font-medium text-[hsl(220,10%,75%)]">
+        <p className="mx-auto max-w-[700px] text-xl/normal font-normal text-[hsl(240,11%,56%)] md:text-xl/relaxed md:font-thin lg:text-xl/relaxed xl:text-xl/relaxed">
+          <span className="font-medium text-[hsl(240,11%,86%)]">
             Software Engineer
           </span>{" "}
           <motion.span
@@ -60,7 +60,7 @@ const Intro = () => {
           >
             with{" "}
           </motion.span>
-          <span className="font-medium text-[hsl(220,10%,75%)]">Freelance</span>{" "}
+          <span className="font-medium text-[hsl(240,11%,86%)]">Freelance</span>{" "}
           <motion.span
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -74,7 +74,7 @@ const Intro = () => {
           >
             exp,{" "}
           </motion.span>
-          <span className="font-medium text-[hsl(220,10%,75%)]">
+          <span className="font-medium text-[hsl(240,11%,86%)]">
             Open Source
           </span>{" "}
           <motion.span
@@ -90,7 +90,7 @@ const Intro = () => {
           >
             contributions,{" "}
           </motion.span>
-          <span className="font-medium text-[hsl(220,10%,75%)]">
+          <span className="font-medium text-[hsl(240,11%,86%)]">
             Internships
           </span>{" "}
           <motion.span
@@ -106,11 +106,11 @@ const Intro = () => {
           >
             and{" "}
           </motion.span>
-          <span className="font-medium text-[hsl(220,10%,75%)]"> projects</span>
+          <span className="font-medium text-[hsl(240,11%,86%)]"> projects</span>
           .{" "}
           <span className="whitespace-nowrap italic">
             – I like my code{" "}
-            <span className="font-medium text-[hsl(220,10%,75%)]">
+            <span className="font-medium text-[hsl(240,11%,86%)]">
               blazing fast
               {" ;)"}
             </span>

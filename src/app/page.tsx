@@ -2,14 +2,14 @@
 import Card from "@/components/elements/card";
 import Footer from "@/components/sections/Footer";
 import Intro from "@/components/sections/Intro";
-import { motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
-import Link from "next/link";
 import {
   HoverCard,
   HoverCardContent,
   HoverCardTrigger,
 } from "@/components/ui/hover-card";
+import { motion } from "framer-motion";
+import { ArrowUpRight } from "lucide-react";
+import Link from "next/link";
 export default function Home() {
   return (
     <div className="min-h-screen">
@@ -18,7 +18,7 @@ export default function Home() {
           <Intro />
 
           <motion.div
-            className="mt-4 flex w-full items-center justify-center gap-4 text-lg font-light text-zinc-300 "
+            className="mt-4 flex w-full items-center justify-center gap-4 text-lg font-light text-[hsl(240,11%,86%)] "
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{
@@ -33,13 +33,19 @@ export default function Home() {
               href={"https://www.linkedin.com/in/thejoshi/"}
               target="_blank"
             >
-              <div className="underline underline-offset-4">LinkedIn</div>
+              <div className="flex items-center">
+                LinkedIn <ArrowUpRight width={16} color="gray" />
+              </div>
             </Link>
             <Link href={"https://github.com/anujjoshi63"} target="_blank">
-              <div className="underline underline-offset-4">GitHub</div>
+              <div className="flex items-center">
+                GitHub <ArrowUpRight width={16} color="gray" />
+              </div>
             </Link>
             <Link href={"https://teensy.tech/anujresume"} target="_blank">
-              <div className="underline underline-offset-4">Resume</div>
+              <div className="flex items-center">
+                Resume <ArrowUpRight width={16} color="gray" />
+              </div>
             </Link>
           </motion.div>
           <motion.div
@@ -54,11 +60,9 @@ export default function Home() {
             }}
             viewport={{ once: true }}
           >
-            <div className="space-y-3">
-              <h2 className="mt-20 py-8 text-4xl font-normal tracking-tight sm:text-3xl md:text-4xl md:font-semibold lg:text-5xl">
-                highlights
-              </h2>
-            </div>
+            <h2 className="mt-20 py-8 text-4xl font-normal tracking-tight sm:text-3xl md:text-4xl md:font-semibold lg:text-5xl">
+              highlights
+            </h2>
             <div className="flex w-full flex-col flex-wrap gap-8 md:flex-row">
               <Card
                 title="Grad student, ASU"
@@ -83,7 +87,6 @@ export default function Home() {
         </div>
       </section>
       <motion.div
-        className="space-y-3"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{
@@ -94,14 +97,12 @@ export default function Home() {
       >
         <section key="2" className="w-full py-12">
           <div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6 lg:gap-10">
-            <div className="space-y-2">
-              <h2 className="text-4xl font-normal tracking-tight sm:text-4xl md:text-5xl md:font-semibold lg:text-6xl">
-                skills
-              </h2>
-            </div>
+            <h2 className="text-4xl font-normal tracking-tight sm:text-4xl md:text-5xl md:font-semibold lg:text-6xl">
+              skills
+            </h2>
 
             <div className="flex w-full flex-wrap gap-4">
-              <div className="flex w-fit min-w-[15rem] flex-1 flex-col items-center gap-2 rounded-xl bg-zinc-800 p-6 shadow-xl">
+              <div className="flex w-fit min-w-[15rem] flex-1 flex-col items-center gap-2 rounded-xl border border-zinc-700 bg-zinc-800 p-6 shadow-xl">
                 <h1 className="text-2xl font-semibold">languages</h1>
                 <div className="flex flex-col items-start text-lg">
                   <div>TypeScript</div>
@@ -111,7 +112,7 @@ export default function Home() {
                   <div>HTML/CSS</div>
                 </div>
               </div>
-              <div className="flex w-fit min-w-[15rem] flex-1 flex-col items-center gap-2 rounded-xl bg-zinc-800 p-6 shadow-xl">
+              <div className="flex w-fit min-w-[15rem] flex-1 flex-col items-center gap-2 rounded-xl border border-zinc-700 bg-zinc-800 p-6 shadow-xl">
                 <h1 className="text-2xl font-semibold">frameworks</h1>
                 <div className="flex flex-col items-start text-lg">
                   <div>React</div>
@@ -132,7 +133,7 @@ export default function Home() {
                   {/* <div>and more</div> */}
                 </div>
               </div>
-              <div className="flex w-fit min-w-[15rem] flex-1 flex-col items-center gap-2 rounded-xl bg-zinc-800 p-6 shadow-xl">
+              <div className="flex w-fit min-w-[15rem] flex-1 flex-col items-center gap-2 rounded-xl border border-zinc-700 bg-zinc-800 p-6 shadow-xl">
                 <h1 className="text-2xl font-semibold">others</h1>
                 <div className="flex flex-col items-start text-lg">
                   <div>Figma</div>
@@ -161,7 +162,6 @@ export default function Home() {
         </section>
       </motion.div>
       <motion.div
-        className="space-y-3"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{
@@ -172,14 +172,12 @@ export default function Home() {
       >
         <section key="3" className="w-full py-12">
           <div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6 lg:gap-10">
-            <div className="space-y-2">
-              <h2 className="text-4xl font-normal tracking-tight sm:text-4xl md:text-5xl md:font-semibold lg:text-6xl">
-                projects
-              </h2>
-            </div>
+            <h2 className="text-4xl font-normal tracking-tight sm:text-4xl md:text-5xl md:font-semibold lg:text-6xl">
+              projects
+            </h2>
 
             <div className="flex w-full flex-wrap gap-4">
-              <div className="flex w-fit min-w-[15rem] flex-1 flex-col items-center gap-2 rounded-xl bg-zinc-800 p-6 shadow-xl">
+              <div className="flex w-fit min-w-[15rem] flex-1 flex-col items-center gap-2 rounded-xl border border-zinc-700 bg-zinc-800 p-6 shadow-xl">
                 <h1 className="text-2xl font-semibold">Teensy</h1>
                 <div className="flex flex-col items-center text-lg">
                   <div className="max-w-[18ch] flex-1">
@@ -193,7 +191,7 @@ export default function Home() {
                   Repository Link
                 </Link>
               </div>
-              <div className="flex w-fit min-w-[15rem] flex-1 flex-col items-center gap-2 rounded-xl bg-zinc-800 p-6 shadow-xl">
+              <div className="flex w-fit min-w-[15rem] flex-1 flex-col items-center gap-2 rounded-xl border border-zinc-700 bg-zinc-800 p-6 shadow-xl">
                 <h1 className="text-2xl font-semibold">Zeno Stack</h1>
                 <div className="flex flex-col items-center text-lg">
                   <div className="max-w-[18ch]">
@@ -207,7 +205,7 @@ export default function Home() {
                   Repository Link
                 </Link>
               </div>
-              <div className="flex w-fit min-w-[15rem] flex-1 flex-col items-center gap-2 rounded-xl bg-zinc-800 p-6 shadow-xl">
+              <div className="flex w-fit min-w-[15rem] flex-1 flex-col items-center gap-2 rounded-xl border border-zinc-700 bg-zinc-800 p-6 shadow-xl">
                 <h1 className="text-2xl font-semibold">AutoShopInsights</h1>
                 <div className="flex flex-col items-center text-lg">
                   <div className="max-w-[18ch]">
@@ -222,11 +220,6 @@ export default function Home() {
                 </Link>
               </div>
             </div>
-            {/* <div className="flex w-full  justify-end">
-              <div className="flex gap-2 rounded-xl bg-zinc-800 px-3 py-1 shadow-lg transition-all hover:-translate-y-1 hover:shadow-xl">
-                My work <ArrowRight fontSize={"1rem"} />
-              </div>
-            </div> */}
           </div>
         </section>{" "}
       </motion.div>{" "}
@@ -296,7 +289,6 @@ export default function Home() {
                   duration: 1.5,
                 }}
               >
-                {" "}
                 <div className="relative mx-auto flex pb-20 pt-10 sm:items-center md:w-2/3">
                   <div className="absolute inset-0 flex h-full w-6 items-center justify-center">
                     <div className="pointer-events-none h-full w-1 bg-gray-300"></div>
@@ -309,11 +301,11 @@ export default function Home() {
                       {/* Role: Dev */}
                     </div>
                     <div className="mt-6 flex-grow sm:mt-0 sm:pl-6">
-                      <h2 className="text-3xl font-medium tracking-tight text-zinc-300">
+                      <h2 className="text-3xl font-medium tracking-tight text-[hsl(240,11%,86%)]">
                         Auto Shop Insights - Freelance
                       </h2>
                       <p className="text-lg leading-relaxed">
-                        simplifies all finances and decision making for car shop
+                        simplifies finances and decision making for car shop
                         businesses
                       </p>
                       <p className="mt-4 text-lg leading-relaxed">
@@ -340,7 +332,6 @@ export default function Home() {
                   duration: 1.5,
                 }}
               >
-                {" "}
                 <div className="relative mx-auto flex pb-20 sm:items-center md:w-2/3">
                   <div className="absolute inset-0 flex h-full w-6 items-center justify-center">
                     <div className="pointer-events-none h-full w-1 bg-gray-300"></div>
@@ -353,7 +344,7 @@ export default function Home() {
                       {/* Role: Dev */}
                     </div>
                     <div className="mt-6 flex-grow sm:mt-0 sm:pl-6">
-                      <h2 className="mb-1 text-3xl font-medium tracking-tight text-zinc-300">
+                      <h2 className="mb-1 text-3xl font-medium tracking-tight text-[hsl(240,11%,86%)]">
                         KyloApps - Internship
                       </h2>
                       <p className="text-lg leading-relaxed">
@@ -385,7 +376,6 @@ export default function Home() {
                   duration: 1.5,
                 }}
               >
-                {" "}
                 <div className="relative mx-auto flex pb-20 sm:items-center md:w-2/3">
                   <div className="absolute inset-0 flex h-full w-6 items-center justify-center">
                     <div className="pointer-events-none h-full w-1 bg-gray-300"></div>
@@ -398,7 +388,7 @@ export default function Home() {
                       {/* Role: Trainer */}
                     </div>
                     <div className="mt-6 flex-grow sm:mt-0 sm:pl-6">
-                      <h2 className="mb-1 text-3xl font-medium tracking-tight text-zinc-300">
+                      <h2 className="mb-1 text-3xl font-medium tracking-tight text-[hsl(240,11%,86%)]">
                         TechFryDay - Internship
                       </h2>
                       <p className="text-lg leading-relaxed">
@@ -425,7 +415,6 @@ export default function Home() {
                   duration: 1.5,
                 }}
               >
-                {" "}
                 <div className="relative mx-auto flex pb-10 sm:items-center md:w-2/3">
                   <div className="absolute inset-0 flex h-full w-6 items-center justify-center">
                     <div className="pointer-events-none h-full w-1 bg-gray-300"></div>
@@ -438,7 +427,7 @@ export default function Home() {
                       {/* Role: Dev */}
                     </div>
                     <div className="mt-6 flex-grow sm:mt-0 sm:pl-6">
-                      <h2 className="mb-1 text-3xl font-medium tracking-tight text-zinc-300">
+                      <h2 className="mb-1 text-3xl font-medium tracking-tight text-[hsl(240,11%,86%)]">
                         MIS Software - Freelance
                       </h2>
                       <p className="mt-4 text-lg leading-relaxed">

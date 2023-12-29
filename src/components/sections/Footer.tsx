@@ -1,6 +1,6 @@
 "use client";
 import { motion, useAnimation } from "framer-motion";
-import { LinkIcon } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -9,7 +9,7 @@ const Footer = () => {
   const controls = useAnimation();
   const animateTextColor = async () => {
     await controls.start({
-      color: "#ff5d83",
+      color: "#ff0000",
       opacity: 0,
       transition: {
         type: "tween",
@@ -18,7 +18,7 @@ const Footer = () => {
       },
     });
     await controls.start({
-      color: "#e6e6e6",
+      color: "#f4f4f6",
       opacity: 1,
       transition: {
         type: "tween",
@@ -34,70 +34,49 @@ const Footer = () => {
 
   return (
     <motion.section key="6" className="w-full py-20">
-      <div className="container grid w-full items-center justify-center gap-4 border-t border-zinc-800 text-center md:px-6 lg:gap-10">
+      <div className="container grid w-full items-center justify-center gap-4  border-zinc-800 text-center md:px-6 lg:gap-10">
+        <div className="h-[1px] w-full bg-gradient-to-r from-[hsl(240,10%,0%)] via-[hsl(240,10%,20%)] to-[hsl(240,10%,0%)]"></div>
         <div className="mt-10 space-y-2">
           <h2 className=" text-4xl font-medium tracking-tight md:text-5xl md:font-semibold lg:text-5xl">
-            let&apos;s get in{" "}
             <motion.span
               className="cursor-pointer"
               animate={controls}
               initial={{ opacity: 1, scale: 1, x: 0 }}
               onClick={handleClick}
             >
-              {" "}
-              touch
+              let&apos;s get in touch
             </motion.span>
           </h2>
         </div>
         <div className="flex w-full flex-1 flex-col justify-evenly text-xl md:flex-row">
-          <Link
-            className="underline underline-offset-2"
-            href={"https://www.linkedin.com/in/thejoshi/"}
-            target="_blank"
-          >
-            <div className="mx-2 flex flex-1 items-center gap-1 align-middle">
+          <Link href={"https://www.linkedin.com/in/thejoshi/"} target="_blank">
+            <div className="mx-2 flex flex-1 items-center align-middle">
               LinkedIn
-              <LinkIcon width={14} color="gray" className="md:hidden" />
+              <ArrowUpRight width={16} color="gray" />
             </div>
           </Link>
-          <Link
-            className="underline underline-offset-2"
-            href={"mailto:ajosh104@asu.edu"}
-            target="_blank"
-          >
-            <div className="mx-2 flex flex-1 items-center gap-1 align-middle">
+          <Link href={"mailto:ajosh104@asu.edu"} target="_blank">
+            <div className="mx-2 flex flex-1 items-center align-middle">
               Email
-              <LinkIcon width={14} color="gray" className="md:hidden" />
+              <ArrowUpRight width={16} color="gray" />
             </div>
           </Link>
-          <Link
-            className="underline underline-offset-2"
-            href={"https://github.com/anujjoshi63"}
-            target="_blank"
-          >
-            <div className="mx-2 flex flex-1 items-center gap-1 align-middle">
+          <Link href={"https://github.com/anujjoshi63"} target="_blank">
+            <div className="mx-2 flex flex-1 items-center align-middle">
               GitHub
-              <LinkIcon width={14} color="gray" className="md:hidden" />
+              <ArrowUpRight width={16} color="gray" />
             </div>
           </Link>
-          <Link
-            className="underline underline-offset-2"
-            href={"https://twitter.com/anujjosh"}
-            target="_blank"
-          >
-            <div className="mx-2 flex flex-1 items-center gap-1 align-middle">
-              Twitter
-              <LinkIcon width={14} color="gray" className="md:hidden" />
-            </div>
-          </Link>
-          <Link
-            className="underline underline-offset-2"
-            href={"https://instagram.com/anuj._.joshi/"}
-            target="_blank"
-          >
-            <div className="mx-2 flex flex-1 items-center gap-1 align-middle">
+          <Link href={"https://instagram.com/anuj._.joshi/"} target="_blank">
+            <div className="mx-2 flex flex-1 items-center align-middle">
               Instagram
-              <LinkIcon width={14} color="gray" className="md:hidden" />
+              <ArrowUpRight width={16} color="gray" />
+            </div>
+          </Link>
+          <Link href={"https://twitter.com/anujjosh"} target="_blank">
+            <div className="mx-2 flex flex-1 items-center align-middle">
+              Twitter
+              <ArrowUpRight width={16} color="gray" />
             </div>
           </Link>
         </div>
