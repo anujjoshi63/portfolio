@@ -8,7 +8,7 @@ type CardProps = {
 const Card = ({ title, subtitle, otherData, imgPath }: CardProps) => {
   return (
     <div>
-      <div className="flex w-full min-w-[15rem] flex-1 flex-col items-center gap-2 rounded-xl border border-neutral-600 bg-zinc-700 p-6 shadow-xl md:w-fit">
+      <div className="flex w-full min-w-[15rem] flex-1 flex-col items-center gap-2 rounded-xl border border-zinc-700 bg-zinc-800 p-6 shadow-xl md:w-fit">
         {/* <Image
           alt="project"
           src={imgPath}

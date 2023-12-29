@@ -2,6 +2,7 @@
 import Card from "@/components/elements/card";
 import Footer from "@/components/sections/Footer";
 import Intro from "@/components/sections/Intro";
+import WorkExperience from "@/components/sections/WorkExperience";
 import {
   HoverCard,
   HoverCardContent,
@@ -33,17 +34,17 @@ export default function Home() {
               href={"https://www.linkedin.com/in/thejoshi/"}
               target="_blank"
             >
-              <div className="flex items-center">
+              <div className="flex items-center transition-all duration-300 hover:text-[hsl(240,0%,95%)]  hover:drop-shadow-[0_1px_4px_hsl(240,0%,55%)]">
                 LinkedIn <ArrowUpRight width={16} color="gray" />
               </div>
             </Link>
             <Link href={"https://github.com/anujjoshi63"} target="_blank">
-              <div className="flex items-center">
+              <div className="flex items-center transition-all duration-300 hover:text-[hsl(240,0%,95%)]  hover:drop-shadow-[0_1px_4px_hsl(240,0%,55%)]">
                 GitHub <ArrowUpRight width={16} color="gray" />
               </div>
             </Link>
             <Link href={"https://teensy.tech/anujresume"} target="_blank">
-              <div className="flex items-center">
+              <div className="flex items-center transition-all duration-300 hover:text-[hsl(240,0%,95%)]  hover:drop-shadow-[0_1px_4px_hsl(240,0%,55%)]">
                 Resume <ArrowUpRight width={16} color="gray" />
               </div>
             </Link>
@@ -78,8 +79,8 @@ export default function Home() {
               />
               <Card
                 title="Freelance"
-                subtitle="2 enterprise level projects"
-                otherData="numerous small gigs"
+                subtitle="2 enterprise projects"
+                otherData="and numerous other gigs"
                 imgPath="/favicon.ico"
               />
             </div>
@@ -145,13 +146,12 @@ export default function Home() {
                       <div className="cursor-default">GitHub</div>
                     </HoverCardTrigger>
                     <HoverCardContent className="w-fit rounded-xl  border-zinc-700 bg-zinc-900">
-                      Checkout my github{" "}
                       <Link
                         href={"https://github.com/anujjoshi63"}
                         className="underline"
                         target="_blank"
                       >
-                        here
+                        Checkout my github here
                       </Link>
                     </HoverCardContent>
                   </HoverCard>
@@ -177,21 +177,20 @@ export default function Home() {
             </h2>
 
             <div className="flex w-full flex-wrap gap-4">
-              <div className="flex w-fit min-w-[15rem] flex-1 flex-col items-center gap-2 rounded-xl border border-zinc-700 bg-zinc-800 p-6 shadow-xl">
-                <h1 className="text-2xl font-semibold">Teensy</h1>
+              <div className="ease flex w-fit min-w-[15rem] flex-1 flex-col items-center gap-3 rounded-xl border border-zinc-700 bg-zinc-800 p-6 shadow-xl transition-all duration-300 hover:border-zinc-500 hover:drop-shadow-[0_0_2px_hsl(240,0%,40%)] md:hover:-translate-y-1">
+                <div className="text-2xl font-semibold">Teensy</div>
                 <div className="flex flex-col items-center text-lg">
                   <div className="max-w-[18ch] flex-1">
-                    Next level URL Shortener with Analytics ✨
+                    URL Shortener with Analytics ✨
                   </div>
                 </div>
-                <Link
-                  className="flex flex-1 items-center underline"
-                  href={"https://github.com/shiroyasha9/teensy"}
-                >
-                  Repository Link
+                <Link href={"https://teensy.tech"} target="_blank">
+                  <div className="flex items-center justify-center">
+                    Website Link <ArrowUpRight size={16} color="gray" />
+                  </div>
                 </Link>
               </div>
-              <div className="flex w-fit min-w-[15rem] flex-1 flex-col items-center gap-2 rounded-xl border border-zinc-700 bg-zinc-800 p-6 shadow-xl">
+              <div className="ease flex w-fit min-w-[15rem] flex-1 flex-col items-center gap-3 rounded-xl border border-zinc-700 bg-zinc-800 p-6 shadow-xl transition-all duration-300 hover:border-zinc-500 hover:drop-shadow-[0_0_2px_hsl(240,0%,40%)] md:hover:-translate-y-1">
                 <h1 className="text-2xl font-semibold">Zeno Stack</h1>
                 <div className="flex flex-col items-center text-lg">
                   <div className="max-w-[18ch]">
@@ -199,13 +198,16 @@ export default function Home() {
                   </div>
                 </div>
                 <Link
-                  className="w-full items-center text-center underline"
+                  className="w-full items-center text-center"
                   href={"https://github.com/zeno-oss/zeno"}
+                  target="_blank"
                 >
-                  Repository Link
+                  <div className="flex items-center justify-center">
+                    Repository Link <ArrowUpRight size={16} color="gray" />
+                  </div>
                 </Link>
               </div>
-              <div className="flex w-fit min-w-[15rem] flex-1 flex-col items-center gap-2 rounded-xl border border-zinc-700 bg-zinc-800 p-6 shadow-xl">
+              <div className="ease flex w-fit min-w-[15rem] flex-1 flex-col items-center gap-3 rounded-xl border border-zinc-700 bg-zinc-800 p-6 shadow-xl transition-all duration-300 hover:border-zinc-500 hover:drop-shadow-[0_0_2px_hsl(240,0%,40%)] md:hover:-translate-y-1">
                 <h1 className="text-2xl font-semibold">AutoShopInsights</h1>
                 <div className="flex flex-col items-center text-lg">
                   <div className="max-w-[18ch]">
@@ -213,246 +215,20 @@ export default function Home() {
                   </div>
                 </div>
                 <Link
-                  className="w-full items-center text-center underline"
+                  className="w-full items-center text-center"
                   href={"https://autoshopinsights.com/"}
+                  target="_blank"
                 >
-                  Deployment URL
+                  <div className="flex items-center justify-center">
+                    Website Link <ArrowUpRight size={16} color="gray" />
+                  </div>
                 </Link>
               </div>
             </div>
           </div>
-        </section>{" "}
-      </motion.div>{" "}
-      <motion.div
-        className="space-y-3"
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{
-          type: "tween",
-          duration: 1,
-        }}
-        viewport={{ once: true }}
-      >
-        <section key="4" className="w-full py-12">
-          <div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6 lg:gap-10">
-            <div className="space-y-2">
-              <h2 className="text-4xl font-normal tracking-tight sm:text-4xl md:text-5xl md:font-semibold lg:text-6xl">
-                work experience
-              </h2>
-            </div>
-            {/* <div className="flex flex-col w-full gap-4 flex-wrap">
-						<div className="flex flex-col items-center shadow-xl rounded-xl p-6 gap-2 flex-1 bg-zinc-800 min-w-[15rem] w-full">
-							<h1 className="text-2xl font-semibold">KyloApps</h1>
-							<div className="flex flex-col items-start text-lg mt-2">
-								<div>TypeScript</div>
-								<div>Python</div>
-								<div>JavaScript</div>
-								<div>SQL</div>
-								<div>HTML/CSS</div>
-							</div>
-						</div>
-						<div className="flex flex-col items-center shadow-xl rounded-xl p-6 gap-2 flex-1 bg-zinc-800 min-w-[15rem] w-full">
-							<h1 className="text-2xl font-semibold">
-								TechFryDay
-							</h1>
-							<div className="flex flex-col items-start text-lg mt-2">
-								<div>React</div>
-								<div>Next.js</div>
-								<div>Express</div>
-								<div>Electron</div>
-								<div>React Native</div>
-								<div>Node.js</div>
-								<div>and more</div>
-							</div>
-						</div>
-						<div className="flex flex-col items-center shadow-xl rounded-xl p-6 gap-2 flex-1 bg-zinc-800 min-w-[15rem] w-full">
-							<h1 className="text-2xl font-semibold">
-								Freelance
-							</h1>
-							<div className="flex flex-col items-start text-lg mt-2">
-								<div>Git</div>
-								<div>GitHub</div>
-								<div>Figma</div>
-								<div>AWS</div>
-								<div>Linux</div>
-							</div>
-						</div>
-					</div> */}
-            <div className="container mx-auto mt-4 flex flex-wrap px-5 md:mt-0">
-              <motion.div
-                viewport={{ once: true }}
-                className="space-y-3"
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{
-                  type: "tween",
-                  duration: 1.5,
-                }}
-              >
-                <div className="relative mx-auto flex pb-20 pt-10 sm:items-center md:w-2/3">
-                  <div className="absolute inset-0 flex h-full w-6 items-center justify-center">
-                    <div className="pointer-events-none h-full w-1 bg-gray-300"></div>
-                  </div>
-                  <div className="relative z-10 mt-10 inline-flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-zinc-500 text-sm text-white sm:mt-0 ">
-                    1
-                  </div>
-                  <div className="flex flex-grow flex-col items-start pl-6 sm:flex-row sm:items-center md:pl-8">
-                    <div className="hidden h-24 w-24 flex-shrink-0 items-center justify-center rounded-full text-indigo-100 md:inline-flex">
-                      {/* Role: Dev */}
-                    </div>
-                    <div className="mt-6 flex-grow sm:mt-0 sm:pl-6">
-                      <h2 className="text-3xl font-medium tracking-tight text-[hsl(240,11%,86%)]">
-                        Auto Shop Insights - Freelance
-                      </h2>
-                      <p className="text-lg leading-relaxed">
-                        simplifies finances and decision making for car shop
-                        businesses
-                      </p>
-                      <p className="mt-4 text-lg leading-relaxed">
-                        developed a modern web app using T3 Stack (Next.js,
-                        TypeScript, Tailwind, and tRPC), seamlessly managing
-                        deployment, database integration, and robust CI/CD
-                        pipelines.
-                      </p>
-                      <p className="mt-4 text-lg leading-relaxed">
-                        Impact: automated complex financial processes, reducing
-                        time spent by 80%
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </motion.div>
-              <motion.div
-                viewport={{ once: true }}
-                className="space-y-3"
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{
-                  type: "tween",
-                  duration: 1.5,
-                }}
-              >
-                <div className="relative mx-auto flex pb-20 sm:items-center md:w-2/3">
-                  <div className="absolute inset-0 flex h-full w-6 items-center justify-center">
-                    <div className="pointer-events-none h-full w-1 bg-gray-300"></div>
-                  </div>
-                  <div className="relative z-10 mt-10 inline-flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-zinc-500 text-sm text-white sm:mt-0 ">
-                    2
-                  </div>
-                  <div className="flex flex-grow flex-col items-start pl-6 sm:flex-row sm:items-center md:pl-8">
-                    <div className="hidden h-24 w-24 flex-shrink-0 items-center justify-center rounded-full text-indigo-100 md:inline-flex">
-                      {/* Role: Dev */}
-                    </div>
-                    <div className="mt-6 flex-grow sm:mt-0 sm:pl-6">
-                      <h2 className="mb-1 text-3xl font-medium tracking-tight text-[hsl(240,11%,86%)]">
-                        KyloApps - Internship
-                      </h2>
-                      <p className="text-lg leading-relaxed">
-                        Brought 4 projects (2 new, 2 existing) to completion.
-                        Quickly got up to speed by learning new technologies,
-                        showing off my versatility
-                      </p>
-                      <p className="mt-4 text-lg leading-relaxed">
-                        Developed frontends from Figma, ensuring client
-                        satisfaction. Integrated robust dev and communication,
-                        enhancing team & client relations.
-                      </p>
-                      <p className="mt-4 text-lg leading-relaxed">
-                        Enhanced code quality and increased Lighthouse score by
-                        40% using advanced React techniques. Successfully
-                        mentored a non-React frontend developer to proficiency.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </motion.div>
-              <motion.div
-                viewport={{ once: true }}
-                className="space-y-3"
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{
-                  type: "tween",
-                  duration: 1.5,
-                }}
-              >
-                <div className="relative mx-auto flex pb-20 sm:items-center md:w-2/3">
-                  <div className="absolute inset-0 flex h-full w-6 items-center justify-center">
-                    <div className="pointer-events-none h-full w-1 bg-gray-300"></div>
-                  </div>
-                  <div className="relative z-10 mt-10 inline-flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-zinc-500 text-sm text-white sm:mt-0 ">
-                    3
-                  </div>
-                  <div className="flex flex-grow flex-col items-start pl-6 sm:flex-row sm:items-center md:pl-8">
-                    <div className="hidden h-24 w-24 flex-shrink-0 items-center justify-center rounded-full text-indigo-100 md:inline-flex">
-                      {/* Role: Trainer */}
-                    </div>
-                    <div className="mt-6 flex-grow sm:mt-0 sm:pl-6">
-                      <h2 className="mb-1 text-3xl font-medium tracking-tight text-[hsl(240,11%,86%)]">
-                        TechFryDay - Internship
-                      </h2>
-                      <p className="text-lg leading-relaxed">
-                        Elevated Python skills of over 40 undergraduates,
-                        achieving a 90% positive feedback rate in two intensive
-                        workshops through innovative teaching methods.
-                      </p>
-                      <p className="mt-4 text-lg leading-relaxed">
-                        Addressed student challenges in a voice recognition
-                        workshop through expert troubleshooting, cutting trainer
-                        interventions by half
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </motion.div>
-              <motion.div
-                viewport={{ once: true }}
-                className="space-y-3"
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{
-                  type: "tween",
-                  duration: 1.5,
-                }}
-              >
-                <div className="relative mx-auto flex pb-10 sm:items-center md:w-2/3">
-                  <div className="absolute inset-0 flex h-full w-6 items-center justify-center">
-                    <div className="pointer-events-none h-full w-1 bg-gray-300"></div>
-                  </div>
-                  <div className="relative z-10 mt-10 inline-flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-zinc-500 text-sm text-white sm:mt-0 ">
-                    4
-                  </div>
-                  <div className="flex flex-grow flex-col items-start pl-6 sm:flex-row sm:items-center md:pl-8">
-                    <div className="hidden h-24 w-24 flex-shrink-0 items-center justify-center rounded-full text-indigo-100 md:inline-flex">
-                      {/* Role: Dev */}
-                    </div>
-                    <div className="mt-6 flex-grow sm:mt-0 sm:pl-6">
-                      <h2 className="mb-1 text-3xl font-medium tracking-tight text-[hsl(240,11%,86%)]">
-                        MIS Software - Freelance
-                      </h2>
-                      <p className="mt-4 text-lg leading-relaxed">
-                        Developed a sophisticated MIS software, revolutionizing
-                        a chemical enterprise&apos;s operations through
-                        automation.
-                      </p>
-                      <p className="mt-4 text-lg leading-relaxed">
-                        The app manages over 500 inquiries and tracks 300+
-                        sample deliveries monthly, demonstrating strong
-                        automation and data management capabilities.
-                      </p>
-                      <p className="mt-4 text-lg leading-relaxed">
-                        Impact: Enhanced process efficiency, reducing task times
-                        by 90% and halving report creation time, significantly
-                        boosting operational excellence.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </motion.div>
-            </div>
-          </div>
         </section>
       </motion.div>
+      <WorkExperience />
       {/* <section key="5" className="w-full py-12 ">
 				<div className="container grid items-center justify-center gap-4 text-center md:px-6 lg:gap-10">
 					<div className="space-y-3">
