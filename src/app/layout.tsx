@@ -9,11 +9,12 @@ const satoshi = localFont({
   display: "swap",
 });
 export const metadata: Metadata = {
-  metadataBase: new URL("https://anujjoshi.vercel.app/"),
-  title: "Anuj Joshi",
+  icons: "/favicon.ico",
+  metadataBase: new URL("https://anujjoshi.me/"),
+  title: "Anuj Joshi | Portfolio",
   description: "Software Engineer | Loves to code | Open Source",
   creator: "Anuj Joshi",
-  publisher: "Anuj on Vercel",
+  publisher: "Anuj",
   keywords: [
     "Next.js",
     "React",
@@ -28,11 +29,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Anuj Joshi",
     description: "Software Engineer | Loves to code | Open Source",
-    url: "https://anujjoshi.vercel.app/",
+    url: "https://anujjoshi.me/",
     siteName: "Anuj Joshi",
     images: [
       {
-        url: "https://anujjoshi.vercel.app/og-image.png",
+        url: "https://anujjoshi.me/og-image.png",
         alt: "Anuj is 1. student at asu, 2. skilled in react, js, ts, python, 3. looking for software engineering summer internship",
       },
     ],
@@ -42,7 +43,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary",
-    images: "https://anujjoshi.vercel.app/og-image.png",
+    images: "https://anujjoshi.me/og-image.png",
   },
 };
 
