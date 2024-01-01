@@ -43,10 +43,8 @@ const Intro = () => {
             Checkout portfolio for more →
           </span>
         </div> */}
-        <p className="mx-auto max-w-[700px] text-xl/normal font-normal text-[hsl(240,11%,56%)] md:text-xl/relaxed md:font-thin lg:text-xl/relaxed xl:text-xl/relaxed">
-          <span className="font-medium text-[hsl(240,11%,86%)]">
-            Software Engineer
-          </span>{" "}
+        <p className="mx-auto max-w-[700px] text-xl/normal font-thin text-[hsl(240,11%,80%)]">
+          <span className="font-medium tracking-tight">Software Engineer</span>{" "}
           <motion.span
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -60,23 +58,7 @@ const Intro = () => {
           >
             with{" "}
           </motion.span>
-          <span className="font-medium text-[hsl(240,11%,86%)]">Freelance</span>{" "}
-          <motion.span
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{
-              type: "spring",
-              damping: 10,
-              stiffness: 20,
-              delay: 0.5,
-            }}
-            viewport={{ once: true }}
-          >
-            exp,{" "}
-          </motion.span>
-          <span className="font-medium text-[hsl(240,11%,86%)]">
-            Open Source
-          </span>{" "}
+          <span className="font-medium tracking-tight">open source</span>{" "}
           <motion.span
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -90,9 +72,21 @@ const Intro = () => {
           >
             contributions,{" "}
           </motion.span>
-          <span className="font-medium text-[hsl(240,11%,86%)]">
-            Internships
-          </span>{" "}
+          <span className="font-medium tracking-tight">internships</span>
+          <motion.span
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{
+              type: "spring",
+              damping: 10,
+              stiffness: 20,
+              delay: 0.5,
+            }}
+            viewport={{ once: true }}
+          >
+            ,{" "}
+          </motion.span>
+          <span className="font-medium tracking-tight">freelance gigs</span>{" "}
           <motion.span
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -106,15 +100,12 @@ const Intro = () => {
           >
             and{" "}
           </motion.span>
-          <span className="font-medium text-[hsl(240,11%,86%)]"> projects</span>
-          .{" "}
-          <span className="whitespace-nowrap italic">
-            – I like my code{" "}
-            <span className="font-medium text-[hsl(240,11%,86%)]">
-              blazing fast
-              {" ;)"}
-            </span>
-          </span>
+          <span className="font-medium tracking-tight">personal projects</span>
+          {" –  "} more{" "}
+          <span className="whitespace-nowrap italic text-[hsla(25,25%,56%,0.7)]">
+            coffee,
+          </span>{" "}
+          more <span className=" tracking-tight">code</span>
         </p>
       </motion.div>
     </div>
