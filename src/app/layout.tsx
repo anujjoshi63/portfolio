@@ -15,6 +15,9 @@ export const metadata: Metadata = {
   description: "Software Engineer | Loves to code | Open Source",
   creator: "Anuj Joshi",
   publisher: "Anuj",
+  alternates: {
+    canonical: "/",
+  },
   keywords: [
     "Next.js",
     "React",
