@@ -14,7 +14,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className="min-h-screen">
-      <section key="1" className="w-full py-12 md:py-24 lg:py-32">
+      <section key="introduction" className="w-full py-12 md:py-24 lg:py-32">
         <div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6 lg:gap-6">
           <Intro />
 
@@ -96,7 +96,7 @@ export default function Home() {
         }}
         viewport={{ once: true }}
       >
-        <section key="2" className="w-full py-12">
+        <section key="skills" className="w-full py-12">
           <div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6 lg:gap-10">
             <div className="text-4xl font-normal tracking-tight sm:text-4xl md:text-5xl md:font-semibold lg:text-6xl">
               skills
@@ -170,7 +170,7 @@ export default function Home() {
         }}
         viewport={{ once: true }}
       >
-        <section key="3" className="w-full py-12">
+        <section key="projects" className="w-full py-12">
           <div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6 lg:gap-10">
             <div className="text-4xl font-normal tracking-tight sm:text-4xl md:text-5xl md:font-semibold lg:text-6xl">
               projects
