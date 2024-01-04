@@ -16,11 +16,11 @@ const Card = ({ title, subtitle, otherData, imgPath }: CardProps) => {
           height={100}
           className="aspect-square rounded-lg"
         /> */}
-        <h1 className="whitespace-nowrap text-2xl font-bold">{title}</h1>
-        <h4 className=" mt-2 whitespace-nowrap text-lg font-light">
+        <div className="whitespace-nowrap text-2xl font-bold">{title}</div>
+        <div className=" mt-2 whitespace-nowrap text-lg font-light">
           {subtitle}
-        </h4>
-        <h4 className="-mt-2 whitespace-nowrap text-zinc-300">{otherData}</h4>
+        </div>
+        <div className="-mt-2 whitespace-nowrap text-zinc-300">{otherData}</div>
       </div>
     </div>
   );

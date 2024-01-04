@@ -61,9 +61,9 @@ export default function Home() {
             }}
             viewport={{ once: true }}
           >
-            <h2 className="mt-20 py-8 text-4xl font-normal tracking-tight sm:text-3xl md:text-4xl md:font-semibold lg:text-5xl">
+            <div className="mt-20 py-8 text-4xl font-normal tracking-tight sm:text-3xl md:text-4xl md:font-semibold lg:text-5xl">
               highlights
-            </h2>
+            </div>
             <div className="flex w-full flex-col flex-wrap gap-8 md:flex-row">
               <Card
                 title="Grad student, ASU"
@@ -98,13 +98,13 @@ export default function Home() {
       >
         <section key="2" className="w-full py-12">
           <div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6 lg:gap-10">
-            <h2 className="text-4xl font-normal tracking-tight sm:text-4xl md:text-5xl md:font-semibold lg:text-6xl">
+            <div className="text-4xl font-normal tracking-tight sm:text-4xl md:text-5xl md:font-semibold lg:text-6xl">
               skills
-            </h2>
+            </div>
 
             <div className="flex w-full flex-wrap gap-4">
               <div className="flex w-fit min-w-[15rem] flex-1 flex-col items-center gap-2 rounded-xl border border-zinc-700 bg-zinc-800 p-6 shadow-xl">
-                <h1 className="text-2xl font-semibold">languages</h1>
+                <div className="text-2xl font-semibold">languages</div>
                 <div className="flex flex-col items-start text-lg">
                   <div>TypeScript</div>
                   <div>Python</div>
@@ -114,7 +114,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="flex w-fit min-w-[15rem] flex-1 flex-col items-center gap-2 rounded-xl border border-zinc-700 bg-zinc-800 p-6 shadow-xl">
-                <h1 className="text-2xl font-semibold">frameworks</h1>
+                <div className="text-2xl font-semibold">frameworks</div>
                 <div className="flex flex-col items-start text-lg">
                   <div>React</div>
                   <div>Next.js</div>
@@ -135,7 +135,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="flex w-fit min-w-[15rem] flex-1 flex-col items-center gap-2 rounded-xl border border-zinc-700 bg-zinc-800 p-6 shadow-xl">
-                <h1 className="text-2xl font-semibold">others</h1>
+                <div className="text-2xl font-semibold">others</div>
                 <div className="flex flex-col items-start text-lg">
                   <div>Figma</div>
                   <div>AWS</div>
@@ -172,9 +172,9 @@ export default function Home() {
       >
         <section key="3" className="w-full py-12">
           <div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6 lg:gap-10">
-            <h2 className="text-4xl font-normal tracking-tight sm:text-4xl md:text-5xl md:font-semibold lg:text-6xl">
+            <div className="text-4xl font-normal tracking-tight sm:text-4xl md:text-5xl md:font-semibold lg:text-6xl">
               projects
-            </h2>
+            </div>
 
             <div className="flex w-full flex-wrap gap-4">
               <div className="ease flex w-fit min-w-[15rem] flex-1 flex-col items-center gap-3 rounded-xl border border-zinc-700 bg-zinc-800 p-6 shadow-xl transition-all duration-300 hover:border-zinc-500 hover:drop-shadow-[0_0_2px_hsl(240,0%,40%)] md:hover:-translate-y-1">
@@ -191,7 +191,7 @@ export default function Home() {
                 </Link>
               </div>
               <div className="ease flex w-fit min-w-[15rem] flex-1 flex-col items-center gap-3 rounded-xl border border-zinc-700 bg-zinc-800 p-6 shadow-xl transition-all duration-300 hover:border-zinc-500 hover:drop-shadow-[0_0_2px_hsl(240,0%,40%)] md:hover:-translate-y-1">
-                <h1 className="text-2xl font-semibold">Zeno Stack</h1>
+                <div className="text-2xl font-semibold">Zeno Stack</div>
                 <div className="flex flex-col items-center text-lg">
                   <div className="max-w-[18ch]">
                     Cross-platform Typesafe React Boilerplate 💯
@@ -208,7 +208,7 @@ export default function Home() {
                 </Link>
               </div>
               <div className="ease flex w-fit min-w-[15rem] flex-1 flex-col items-center gap-3 rounded-xl border border-zinc-700 bg-zinc-800 p-6 shadow-xl transition-all duration-300 hover:border-zinc-500 hover:drop-shadow-[0_0_2px_hsl(240,0%,40%)] md:hover:-translate-y-1">
-                <h1 className="text-2xl font-semibold">AutoShopInsights</h1>
+                <div className="text-2xl font-semibold">AutoShopInsights</div>
                 <div className="flex flex-col items-center text-lg">
                   <div className="max-w-[18ch]">
                     One-stop solution for car shop finances. 🚀
@@ -232,9 +232,9 @@ export default function Home() {
       {/* <section key="5" className="w-full py-12 ">
 				<div className="container grid items-center justify-center gap-4 text-center md:px-6 lg:gap-10">
 					<div className="space-y-3">
-						<h2 className="lg:text-5xl font-semibold tracking-tighter sm:text-4xl md:text-5xl">
+						<div className="lg:text-5xl font-semibold tracking-tighter sm:text-4xl md:text-5xl">
 							sold yet? ask GPT about me
-						</h2>
+						</div>
 					</div>
 
 					<div className="flex flex-col-reverse w-full gap-4 flex-wrap bg-zinc-800 rounded-lg min-h-fit h-[10ch]">

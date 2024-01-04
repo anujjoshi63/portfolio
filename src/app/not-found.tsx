@@ -4,9 +4,9 @@ import Link from "next/link";
 export default function NotFound() {
   return (
     <div className="flex h-screen w-full flex-col items-center justify-center gap-4">
-      <h2 className="border-b border-b-zinc-800 py-1 text-2xl font-bold">
+      <div className="border-b border-b-zinc-800 py-1 text-2xl font-bold">
         404 - Page Not Found
-      </h2>
+      </div>
       <p className="text-lg">Here&apos;s a poem instead:</p>
       <Image
         alt="never-gonna-give-you-up"

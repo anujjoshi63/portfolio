@@ -39,7 +39,7 @@ const Footer = () => {
       </div>
       <div className="container grid w-full items-center justify-center gap-4  border-zinc-800 text-center md:px-6 lg:gap-10">
         <div className="mt-10 space-y-2">
-          <h2 className=" text-4xl font-medium tracking-tight md:text-5xl md:font-semibold lg:text-5xl">
+          <div className=" text-4xl font-medium tracking-tight md:text-5xl md:font-semibold lg:text-5xl">
             <motion.span
               className="cursor-pointer"
               animate={controls}
@@ -48,7 +48,7 @@ const Footer = () => {
             >
               let&apos;s get in touch
             </motion.span>
-          </h2>
+          </div>
         </div>
         <div className="flex w-full flex-1 flex-col justify-evenly text-xl md:flex-row">
           <Link href={"https://www.linkedin.com/in/thejoshi/"} target="_blank">

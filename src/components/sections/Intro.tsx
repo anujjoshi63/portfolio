@@ -13,9 +13,9 @@ const Intro = () => {
         }}
         viewport={{ once: true }}
       >
-        <h2 className="text-6xl font-medium tracking-tight md:text-5xl md:font-bold lg:text-6xl">
+        <h1 className="text-6xl font-medium tracking-tight md:text-5xl md:font-bold lg:text-6xl">
           Anuj Joshi
-        </h2>
+        </h1>
       </motion.div>
       <motion.div
         initial={{ opacity: 0 }}

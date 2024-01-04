@@ -19,9 +19,9 @@ const WorkExperience = () => {
       <section key="4" className="w-full py-12">
         <div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6 lg:gap-10">
           <div className="space-y-2">
-            <h2 className="text-4xl font-normal tracking-tight sm:text-4xl md:text-5xl md:font-semibold lg:text-6xl">
+            <div className="text-4xl font-normal tracking-tight sm:text-4xl md:text-5xl md:font-semibold lg:text-6xl">
               work experience
-            </h2>
+            </div>
           </div>
           {/* <div className="flex flex-col w-full gap-4 flex-wrap">
                     <div className="flex flex-col items-center shadow-xl rounded-xl p-6 gap-2 flex-1 bg-zinc-800 min-w-[15rem] w-full">
@@ -84,9 +84,9 @@ const WorkExperience = () => {
                     {/* Role: Dev */}
                   </div>
                   <div className="mt-6 flex-grow sm:mt-0 sm:pl-6">
-                    <h2 className="text-3xl font-medium tracking-tight text-[hsl(240,11%,86%)]">
+                    <div className="text-3xl font-medium tracking-tight text-[hsl(240,11%,86%)]">
                       Auto Shop Insights - Freelance
-                    </h2>
+                    </div>
                     <p className="text-lg leading-relaxed">
                       simplifies finances and decision making for car shop
                       businesses
@@ -127,9 +127,9 @@ const WorkExperience = () => {
                     {/* Role: Dev */}
                   </div>
                   <div className="mt-6 flex-grow sm:mt-0 sm:pl-6">
-                    <h2 className="mb-1 text-3xl font-medium tracking-tight text-[hsl(240,11%,86%)]">
+                    <div className="mb-1 text-3xl font-medium tracking-tight text-[hsl(240,11%,86%)]">
                       KyloApps - Internship
-                    </h2>
+                    </div>
                     <p className="text-lg leading-relaxed">
                       Brought 4 projects (2 new, 2 existing) to completion.
                       Quickly got up to speed by learning new technologies,
@@ -171,9 +171,9 @@ const WorkExperience = () => {
                     {/* Role: Trainer */}
                   </div>
                   <div className="mt-6 flex-grow sm:mt-0 sm:pl-6">
-                    <h2 className="mb-1 text-3xl font-medium tracking-tight text-[hsl(240,11%,86%)]">
+                    <div className="mb-1 text-3xl font-medium tracking-tight text-[hsl(240,11%,86%)]">
                       TechFryDay - Internship
-                    </h2>
+                    </div>
                     <p className="text-lg leading-relaxed">
                       Elevated Python skills of over 40 undergraduates,
                       achieving a 90% positive feedback rate in two intensive
@@ -210,9 +210,9 @@ const WorkExperience = () => {
                     {/* Role: Dev */}
                   </div>
                   <div className="mt-6 flex-grow sm:mt-0 sm:pl-6">
-                    <h2 className="mb-1 text-3xl font-medium tracking-tight text-[hsl(240,11%,86%)]">
+                    <div className="mb-1 text-3xl font-medium tracking-tight text-[hsl(240,11%,86%)]">
                       MIS Software - Freelance
-                    </h2>
+                    </div>
                     <p className="mt-4 text-lg leading-relaxed">
                       Developed a sophisticated MIS software, revolutionizing a
                       chemical enterprise&apos;s operations through automation.
