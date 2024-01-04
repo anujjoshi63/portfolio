@@ -12,7 +12,8 @@ export const metadata: Metadata = {
   icons: "/favicon.ico",
   metadataBase: new URL("https://anujjoshi.me/"),
   title: "Anuj Joshi",
-  description: "Software Engineer | Loves to code | Open Source",
+  description:
+    "Anuj Joshi, a Computer Science Master's student at Arizona State University, specializes in JavaScript, React, Node.js, Git, Next.js, TypeScript, and Python. He led front-end development at KyloApps, focusing on creating great user experiences including performance optimizations. Anuj contributed to the notable open-source project Zeno, earning over 100 GitHub stars, and developed effective freelance solutions, emphasizing web and software efficiency.",
   creator: "Anuj Joshi",
   publisher: "Anuj",
   alternates: {
