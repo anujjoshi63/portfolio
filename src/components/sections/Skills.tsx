@@ -86,5 +86,6 @@ const Skills = forwardRef((_, ref: Ref<HTMLDivElement>) => {
     </motion.div>
   );
 });
+Skills.displayName = "Skills";
 
 export default Skills;

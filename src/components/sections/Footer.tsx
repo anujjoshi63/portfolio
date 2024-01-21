@@ -55,5 +55,5 @@ const Footer = forwardRef((_, ref: Ref<HTMLDivElement>) => {
     </motion.section>
   );
 });
-
+Footer.displayName = "Footer";
 export default Footer;

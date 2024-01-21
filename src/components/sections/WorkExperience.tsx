@@ -238,5 +238,5 @@ const WorkExperience = forwardRef((_, ref: Ref<HTMLDivElement>) => {
     </motion.div>
   );
 });
-
+WorkExperience.displayName = "WorkExperience";
 export default WorkExperience;
