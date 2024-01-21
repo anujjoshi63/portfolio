@@ -1,8 +1,10 @@
 "use client";
 import { motion } from "framer-motion";
+import { ArrowUpRight } from "lucide-react";
+import Link from "next/link";
 const Intro = () => {
   return (
-    <div className="space-y-6">
+    <div className="mt-8 space-y-6 md:mt-0">
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -107,6 +109,34 @@ const Intro = () => {
           </span>{" "}
           more <span className=" tracking-tight">code</span>
         </p>
+      </motion.div>
+      <motion.div
+        className="mt-4 flex w-full items-center justify-center gap-4 text-lg font-light text-[hsl(240,11%,86%)] "
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{
+          type: "spring",
+          damping: 10,
+          stiffness: 50,
+          delay: 0.3,
+        }}
+        viewport={{ once: true }}
+      >
+        <Link href={"https://www.linkedin.com/in/thejoshi/"} target="_blank">
+          <div className="flex items-center transition-all duration-300 hover:text-[hsl(240,0%,95%)]  hover:drop-shadow-[0_1px_4px_hsl(240,0%,55%)]">
+            LinkedIn <ArrowUpRight width={16} color="gray" />
+          </div>
+        </Link>
+        <Link href={"https://github.com/anujjoshi63"} target="_blank">
+          <div className="flex items-center transition-all duration-300 hover:text-[hsl(240,0%,95%)]  hover:drop-shadow-[0_1px_4px_hsl(240,0%,55%)]">
+            GitHub <ArrowUpRight width={16} color="gray" />
+          </div>
+        </Link>
+        <Link href={"https://teensy.tech/anujresume"} target="_blank">
+          <div className="flex items-center transition-all duration-300 hover:text-[hsl(240,0%,95%)]  hover:drop-shadow-[0_1px_4px_hsl(240,0%,55%)]">
+            Resume <ArrowUpRight width={16} color="gray" />
+          </div>
+        </Link>
       </motion.div>
     </div>
   );

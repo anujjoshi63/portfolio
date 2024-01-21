@@ -1,37 +1,10 @@
 "use client";
-import { motion, useAnimation } from "framer-motion";
+import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
-import { useState } from "react";
+import { Ref, forwardRef } from "react";
 
-const Footer = () => {
-  const [isClicked, setIsClicked] = useState(false);
-  const controls = useAnimation();
-  const animateTextColor = async () => {
-    await controls.start({
-      color: "#ff66aa",
-      opacity: 0,
-      transition: {
-        type: "tween",
-        duration: 1.2,
-        delay: 0.3,
-      },
-    });
-    await controls.start({
-      color: "#f4f4f6",
-      opacity: 1,
-      transition: {
-        type: "tween",
-        duration: 0.7,
-      },
-    });
-  };
-
-  const handleClick = () => {
-    setIsClicked(!isClicked);
-    animateTextColor();
-  };
-
+const Footer = forwardRef((_, ref: Ref<HTMLDivElement>) => {
   return (
     <motion.section key="6" className="w-full py-20">
       <div className="flex w-full justify-center">
@@ -40,17 +13,13 @@ const Footer = () => {
       <div className="container grid w-full items-center justify-center gap-4  border-zinc-800 text-center md:px-6 lg:gap-10">
         <div className="mt-10 space-y-2">
           <div className=" text-4xl font-medium tracking-tight md:text-5xl md:font-semibold lg:text-5xl">
-            <motion.span
-              className="cursor-pointer"
-              animate={controls}
-              initial={{ opacity: 1, scale: 1, x: 0 }}
-              onClick={handleClick}
-            >
-              let&apos;s get in touch
-            </motion.span>
+            <span>let&apos;s get in touch</span>
           </div>
         </div>
-        <div className="flex w-full flex-1 flex-col justify-evenly text-xl md:flex-row">
+        <div
+          className="flex w-full flex-1 flex-col justify-evenly rounded-lg py-2 text-xl transition-all duration-500 ease-in-out md:flex-row"
+          ref={ref}
+        >
           <Link href={"https://www.linkedin.com/in/thejoshi/"} target="_blank">
             <div className="mx-2 flex flex-1 items-center align-middle text-[hsl(240,0%,85%)] transition-all  duration-300 hover:text-[hsl(240,0%,95%)]  hover:drop-shadow-[0_1px_4px_hsl(240,0%,55%)]">
               LinkedIn
@@ -85,6 +54,6 @@ const Footer = () => {
       </div>
     </motion.section>
   );
-};
+});
 
 export default Footer;

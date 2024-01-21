@@ -1,7 +1,8 @@
-import React from "react";
+"use client";
 import { motion } from "framer-motion";
+import { Ref, forwardRef } from "react";
 
-const WorkExperience = () => {
+const WorkExperience = forwardRef((_, ref: Ref<HTMLDivElement>) => {
   return (
     <motion.div
       className="space-y-3"
@@ -16,7 +17,7 @@ const WorkExperience = () => {
       <div className="flex w-full justify-center">
         <div className="h-[1px] w-1/3 bg-gradient-to-r from-[hsl(240,10%,0%)] via-[hsl(240,10%,20%)] to-[hsl(240,10%,0%)]"></div>
       </div>
-      <section key="experience" className="w-full py-12">
+      <section key="experience" className="w-full py-12" ref={ref}>
         <div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6 lg:gap-10">
           <div className="space-y-2">
             <div className="text-4xl font-normal tracking-tight sm:text-4xl md:text-5xl md:font-semibold lg:text-6xl">
@@ -236,6 +237,6 @@ const WorkExperience = () => {
       </section>
     </motion.div>
   );
-};
+});
 
 export default WorkExperience;
