@@ -23,6 +23,9 @@ body {
   font-family: "Satoshi", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: hsl(240, 10%, 4%);
-  color: hsl(240, 11%, 96%);
+}
+
+:root {
+  --theme-black: 240, 10%, 4%;
+  --theme-white: 240, 11%, 96%;
 }

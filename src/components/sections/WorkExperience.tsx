@@ -85,7 +85,7 @@ const WorkExperience = forwardRef((_, ref: Ref<HTMLDivElement>) => {
                     {/* Role: Dev */}
                   </div>
                   <div className="mt-6 flex-grow sm:mt-0 sm:pl-6">
-                    <div className="text-3xl font-medium tracking-tight text-[hsl(240,11%,86%)]">
+                    <div className="text-3xl font-medium tracking-tight dark:text-[hsl(240,11%,86%)]">
                       Auto Shop Insights - Freelance
                     </div>
                     <p className="text-lg leading-relaxed">
@@ -128,7 +128,7 @@ const WorkExperience = forwardRef((_, ref: Ref<HTMLDivElement>) => {
                     {/* Role: Dev */}
                   </div>
                   <div className="mt-6 flex-grow sm:mt-0 sm:pl-6">
-                    <div className="mb-1 text-3xl font-medium tracking-tight text-[hsl(240,11%,86%)]">
+                    <div className="mb-1 text-3xl font-medium tracking-tight dark:text-[hsl(240,11%,86%)]">
                       KyloApps - Internship
                     </div>
                     <p className="text-lg leading-relaxed">
@@ -172,7 +172,7 @@ const WorkExperience = forwardRef((_, ref: Ref<HTMLDivElement>) => {
                     {/* Role: Trainer */}
                   </div>
                   <div className="mt-6 flex-grow sm:mt-0 sm:pl-6">
-                    <div className="mb-1 text-3xl font-medium tracking-tight text-[hsl(240,11%,86%)]">
+                    <div className="mb-1 text-3xl font-medium tracking-tight dark:text-[hsl(240,11%,86%)]">
                       TechFryDay - Internship
                     </div>
                     <p className="text-lg leading-relaxed">
@@ -211,7 +211,7 @@ const WorkExperience = forwardRef((_, ref: Ref<HTMLDivElement>) => {
                     {/* Role: Dev */}
                   </div>
                   <div className="mt-6 flex-grow sm:mt-0 sm:pl-6">
-                    <div className="mb-1 text-3xl font-medium tracking-tight text-[hsl(240,11%,86%)]">
+                    <div className="mb-1 text-3xl font-medium tracking-tight dark:text-[hsl(240,11%,86%)]">
                       MIS Software - Freelance
                     </div>
                     <p className="mt-4 text-lg leading-relaxed">
