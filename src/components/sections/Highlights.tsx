@@ -25,18 +25,21 @@ const Highlights = () => {
           subtitle="MS in Computer Science"
           otherData="Aug 2023 - May 2025"
           imgPath="/favicon.ico"
+          url="https://search.asu.edu/profile/4753683"
         />
         <Card
           title="Zeno Stack"
           subtitle="Cross-Platform Monorepo"
           otherData="100+ stars on GitHub"
           imgPath="/favicon.ico"
+          url="https://github.com/zeno-oss/zeno/"
         />
         <Card
           title="Freelance"
           subtitle="2 enterprise projects"
           otherData="and numerous other gigs"
           imgPath="/favicon.ico"
+          url="https://autoshopinsights.com/"
         />
       </div>
     </motion.div>
