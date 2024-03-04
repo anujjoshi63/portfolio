@@ -26,8 +26,15 @@ const WorkExperienceCard = ({
             {title}
           </div>
           <p className="text-lg leading-relaxed">{oneLineDescription}</p>
-          {bullets.map((bullet: string) => {
-            return <p className="mt-4 text-lg leading-relaxed">{bullet}</p>;
+          {bullets.map((bullet: string, index: number) => {
+            return (
+              <p
+                className="mt-4 text-lg leading-relaxed"
+                key={bullet[0] + index.toString()}
+              >
+                {bullet}
+              </p>
+            );
           })}
         </div>
       </div>
