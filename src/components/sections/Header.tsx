@@ -54,10 +54,12 @@ md:top-6"
               behavior: "smooth",
             });
             await new Promise((resolve) => setTimeout(resolve, 500));
-            footerRef.current?.classList.add("bg-slate-700");
+            footerRef.current?.classList.add("bg-slate-300");
+            footerRef.current?.classList.add("dark:bg-slate-900");
             footerRef.current?.classList.add("scale-105");
             setTimeout(() => {
-              footerRef.current?.classList.remove("bg-slate-700");
+              footerRef.current?.classList.remove("bg-slate-300");
+              footerRef.current?.classList.remove("dark:bg-slate-900");
               footerRef.current?.classList.remove("scale-105");
             }, 500);
           }}
