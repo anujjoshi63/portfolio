@@ -11,7 +11,7 @@ type CardProps = {
 const Card = ({ title, subtitle, otherData, imgPath, url }: CardProps) => {
   return (
     <Link href={url} target="_blank">
-      <div className="flex w-full min-w-[15rem] flex-1 flex-col items-center gap-2 rounded-xl border border-zinc-700 bg-themeWhite p-6 text-themeBlack shadow-xl  dark:bg-zinc-800 dark:text-themeWhite md:w-fit ">
+      <div className="flex w-full min-w-[15rem] flex-1 flex-col items-center gap-2 rounded-xl border border-zinc-700 bg-themeWhite p-6 text-themeBlack shadow-xl transition-all dark:bg-zinc-800 dark:text-themeWhite md:w-fit md:hover:-translate-y-1 ">
         {/* <Image
           alt="project"
           src={imgPath}
