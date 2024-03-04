@@ -16,7 +16,7 @@ const Projects = () => {
     >
       <section key="projects" className="w-full py-12">
         <div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6 lg:gap-10">
-          <div className="text-4xl font-normal tracking-tight sm:text-4xl md:text-5xl md:font-semibold lg:text-6xl">
+          <div className="text-4xl font-normal tracking-tight sm:text-3xl md:text-4xl md:font-semibold lg:text-5xl">
             projects
           </div>
 

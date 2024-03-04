@@ -15,12 +15,12 @@ const WorkExperience = forwardRef((_, ref: Ref<HTMLDivElement>) => {
       viewport={{ once: true }}
     >
       <div className="flex w-full justify-center">
-        <div className="h-[1px] w-1/3 bg-gradient-to-r from-[hsl(240,10%,0%)] via-[hsl(240,10%,20%)] to-[hsl(240,10%,0%)]"></div>
+        <div className="h-[1px] w-1/3 bg-gradient-to-r from-[hsl(240,10%,100%)] via-[hsl(240,10%,70%)] to-[hsl(240,10%,100%)] dark:from-[hsl(240,10%,0%)] dark:via-[hsl(240,10%,20%)] dark:to-[hsl(240,10%,0%)]"></div>
       </div>
       <section key="experience" className="w-full py-12" ref={ref}>
         <div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6 lg:gap-10">
           <div className="space-y-2">
-            <div className="text-4xl font-normal tracking-tight sm:text-4xl md:text-5xl md:font-semibold lg:text-6xl">
+            <div className="text-4xl font-normal tracking-tight sm:text-3xl md:text-4xl md:font-semibold lg:text-5xl">
               work experience
             </div>
           </div>
