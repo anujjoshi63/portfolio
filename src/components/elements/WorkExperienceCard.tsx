@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { MoveRight } from "lucide-react";
 
 const WorkExperienceCard = ({
   title,
@@ -26,16 +27,19 @@ const WorkExperienceCard = ({
             {title}
           </div>
           <p className="text-lg leading-relaxed">{oneLineDescription}</p>
-          {bullets.map((bullet: string, index: number) => {
-            return (
-              <p
-                className="mt-4 text-lg leading-relaxed"
-                key={bullet[0] + index.toString()}
-              >
-                {bullet}
-              </p>
-            );
-          })}
+          <div className="flex flex-col">
+            {bullets.map((bullet: string, index: number) => {
+              return (
+                <div
+                  className="mt-3 flex gap-2 text-lg leading-relaxed"
+                  key={bullet[0] + index.toString()}
+                >
+                  <MoveRight width={14} className="mt-[4px] min-w-[14px]" />
+                  {bullet}
+                </div>
+              );
+            })}
+          </div>
         </div>
       </div>
     </motion.div>

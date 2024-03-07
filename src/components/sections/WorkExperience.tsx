@@ -66,10 +66,10 @@ const WorkExperience = forwardRef((_, ref: Ref<HTMLDivElement>) => {
           <div className="container mx-auto mt-4 flex flex-col flex-wrap gap-8 px-5 md:mt-0">
             <WorkExperienceCard
               title="Auto Shop Insights - Freelance"
-              oneLineDescription="simplifies finances and decision making for car shop businesses"
+              oneLineDescription="Simplifies finances and decision making for car shop businesses"
               bullets={[
-                "developed a modern web app using T3 Stack (Next.js, TypeScript, Tailwind, and tRPC), seamlessly managing deployment, database integration, and robust CI/CD pipelines.",
-                "Impact: automated complex financial processes, reducing time spent by 80%",
+                "Developed a modern web app using T3 Stack (Next.js, TypeScript, Tailwind, and tRPC), seamlessly managing deployment, database integration, and robust CI/CD pipelines.",
+                "Automated complex financial processes, reducing time spent by 80%",
               ]}
             />
             {/* <motion.div
@@ -106,10 +106,10 @@ const WorkExperience = forwardRef((_, ref: Ref<HTMLDivElement>) => {
             </motion.div> */}
             <WorkExperienceCard
               title="KyloApps - Internship"
-              oneLineDescription="brought 4 projects (2 new, 2 existing) to completion"
+              oneLineDescription="Brought 4 projects (2 new, 2 existing) to completion"
               bullets={[
-                "Developed frontends from Figma, ensuring client satisfaction. Integrated robust dev and communication, enhancing team & client relations.",
-                "Enhanced code quality and increased Lighthouse score by 40% using advanced React techniques. Successfully mentored a non-React frontend developer to proficiency.",
+                "Developed frontends from Figma designs ensuring client satisfaction. Communicated directly with clients to understand requirements and provide updates.",
+                "Enhanced code quality and increased Lighthouse score by 40% using advanced React patterns. Successfully mentored a non-React frontend developer to proficiency.",
               ]}
             />
             {/* <motion.div
@@ -207,19 +207,18 @@ const WorkExperience = forwardRef((_, ref: Ref<HTMLDivElement>) => {
             </motion.div> */}
             <WorkExperienceCard
               title="MIS Software - Freelance"
-              oneLineDescription="revolutionizing a chemical enterprise's operations through automation"
+              oneLineDescription="Revolutionalized a chemical enterprise's operations through automation"
               bullets={[
-                "Developed a sophisticated MIS software, revolutionizing a chemical enterprise's operations through automation.",
-                "The app manages over 500 inquiries and tracks 300+ sample deliveries monthly, demonstrating strong automation and data management capabilities.",
-                "Impact: Enhanced process efficiency, reducing task times by 90% and halving report creation time, significantly boosting operational excellence.",
+                "Developed a robust MIS software that manages over 500 inquiries and tracks 300+ sample deliveries monthly, demonstrating strong automation and data management capabilities.",
+                "Enhanced operations efficiency, reducing task times by 90% and halving reports creation time.",
               ]}
             />
             <WorkExperienceCard
               title="TechFryDay - Internship"
-              oneLineDescription="Taught programming using Python"
+              oneLineDescription="Taught programming concepts using Python"
               bullets={[
-                "Elevated Python skills of over 40 undergraduates, achieving a 90% positive feedback rate in two intensive workshops through innovative teaching methods.",
-                "Addressed student challenges in a voice recognition workshop through expert troubleshooting, cutting trainer interventions by half.",
+                "Elevated Python skills of over 40 undergraduates in two intensive workshops through innovative and hands-on teaching methods.",
+                "Taught troubleshooting techniques and debugged students' code, cutting trainer interventions by half in a voice recognition workshop.",
               ]}
             />
           </div>
