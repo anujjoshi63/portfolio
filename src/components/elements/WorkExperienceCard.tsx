@@ -20,7 +20,7 @@ const WorkExperienceCard = ({
         duration: 1.5,
       }}
     >
-      <div className="relative mx-auto flex rounded-lg border border-black p-4 shadow-md dark:border-zinc-700 dark:bg-zinc-800 md:w-2/3">
+      <div className="relative mx-auto flex rounded-lg border border-zinc-400 p-4 shadow-md dark:border-zinc-700 dark:bg-zinc-800 md:w-2/3">
         <div className="flex flex-col">
           <div className="text-3xl font-medium tracking-tight dark:text-[hsl(240,11%,86%)]">
             {title}
