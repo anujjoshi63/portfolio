@@ -20,7 +20,7 @@ export default function Home() {
   return (
     <div className={darkMode ? "dark" : ""}>
       <div
-        className="fixed right-5 top-5 transition-all duration-700 dark:text-themeWhite"
+        className="fixed right-5 top-5 z-10 rounded-full bg-themeWhite p-1 shadow-sm transition-all duration-700 dark:bg-themeBlack dark:text-themeWhite"
         onClick={() => setDarkMode((old) => !old)}
       >
         {darkMode ? <SunMediumIcon /> : <MoonIcon />}
