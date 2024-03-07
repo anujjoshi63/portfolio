@@ -14,9 +14,9 @@ const Footer = forwardRef((_, ref: Ref<HTMLDivElement>) => {
   return (
     <motion.section key="6" className="w-full py-20">
       <div className="flex w-full justify-center">
-        <div className="h-[1px] w-1/3 bg-gradient-to-r from-[hsl(240,10%,0%)] via-[hsl(240,10%,20%)] to-[hsl(240,10%,0%)]"></div>
+        <div className="h-[1px] w-1/3 bg-gradient-to-r from-[hsl(240,10%,100%)] via-[hsl(240,10%,70%)] to-[hsl(240,10%,100%)] dark:from-[hsl(240,10%,0%)] dark:via-[hsl(240,10%,20%)] dark:to-[hsl(240,10%,0%)]"></div>
       </div>
-      <div className="container grid w-full items-center justify-center gap-4 border-zinc-800 text-center md:px-6 lg:gap-10">
+      <div className="container grid w-full items-center justify-center gap-4 text-center md:px-6 lg:gap-10">
         <div className="mt-10 space-y-2">
           <div className=" text-4xl font-medium tracking-tight md:text-5xl md:font-semibold lg:text-5xl">
             <span>let&apos;s get in touch</span>
