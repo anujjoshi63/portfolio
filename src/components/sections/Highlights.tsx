@@ -17,7 +17,7 @@ const Highlights = () => {
       viewport={{ once: true }}
     >
       <div className="mt-20 py-8 text-4xl font-normal tracking-tight sm:text-3xl md:text-4xl md:font-semibold lg:text-5xl">
-        highlights
+        milestones
       </div>
       <div className="flex w-full flex-col flex-wrap gap-8 md:flex-row">
         <Card
@@ -25,18 +25,21 @@ const Highlights = () => {
           subtitle="MS in Computer Science"
           otherData="Aug 2023 - May 2025"
           imgPath="/favicon.ico"
+          url="https://search.asu.edu/profile/4753683"
         />
         <Card
           title="Zeno Stack"
           subtitle="Cross-Platform Monorepo"
           otherData="100+ stars on GitHub"
           imgPath="/favicon.ico"
+          url="https://github.com/zeno-oss/zeno/"
         />
         <Card
           title="Freelance"
-          subtitle="2 enterprise projects"
-          otherData="and numerous other gigs"
+          subtitle="2 high-scale projects"
+          otherData="+numerous other gigs"
           imgPath="/favicon.ico"
+          url="https://autoshopinsights.com/"
         />
       </div>
     </motion.div>

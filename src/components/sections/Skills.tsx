@@ -21,12 +21,12 @@ const Skills = forwardRef((_, ref: Ref<HTMLDivElement>) => {
     >
       <section key="skills" className="w-full py-12" ref={ref}>
         <div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6 lg:gap-10">
-          <div className="text-4xl font-normal tracking-tight sm:text-4xl md:text-5xl md:font-semibold lg:text-6xl">
+          <div className="text-4xl font-normal tracking-tight sm:text-3xl md:text-4xl md:font-semibold lg:text-5xl">
             skills
           </div>
 
           <div className="flex w-full flex-wrap gap-4">
-            <div className="flex w-fit min-w-[15rem] flex-1 flex-col items-center gap-2 rounded-xl border border-zinc-700 bg-zinc-800 p-6 shadow-xl">
+            <div className="flex w-fit min-w-[15rem] flex-1 flex-col items-center gap-2 rounded-xl border border-zinc-400 bg-themeWhite p-6 shadow-xl dark:border-zinc-700 dark:bg-zinc-800">
               <div className="text-2xl font-semibold">languages</div>
               <div className="flex flex-col items-start text-lg">
                 <div>TypeScript</div>
@@ -36,7 +36,7 @@ const Skills = forwardRef((_, ref: Ref<HTMLDivElement>) => {
                 <div>HTML/CSS</div>
               </div>
             </div>
-            <div className="flex w-fit min-w-[15rem] flex-1 flex-col items-center gap-2 rounded-xl border border-zinc-700 bg-zinc-800 p-6 shadow-xl">
+            <div className="flex w-fit min-w-[15rem] flex-1 flex-col items-center gap-2 rounded-xl border border-zinc-400 bg-themeWhite p-6 shadow-xl dark:border-zinc-700 dark:bg-zinc-800">
               <div className="text-2xl font-semibold">frameworks</div>
               <div className="flex flex-col items-start text-lg">
                 <div>React</div>
@@ -48,7 +48,7 @@ const Skills = forwardRef((_, ref: Ref<HTMLDivElement>) => {
                   <HoverCardTrigger className="cursor-default">
                     Node.js
                   </HoverCardTrigger>
-                  <HoverCardContent className="w-fit rounded-xl border-zinc-700 bg-zinc-900">
+                  <HoverCardContent className="w-fit rounded-xl border-zinc-400 bg-themeWhite px-4 py-2 dark:border-zinc-700 dark:bg-zinc-900">
                     I know, I know. It&apos;s a runtime.
                   </HoverCardContent>
                 </HoverCard>
@@ -57,7 +57,7 @@ const Skills = forwardRef((_, ref: Ref<HTMLDivElement>) => {
                 {/* <div>and more</div> */}
               </div>
             </div>
-            <div className="flex w-fit min-w-[15rem] flex-1 flex-col items-center gap-2 rounded-xl border border-zinc-700 bg-zinc-800 p-6 shadow-xl">
+            <div className="flex w-fit min-w-[15rem] flex-1 flex-col items-center gap-2 rounded-xl border border-zinc-400 bg-themeWhite p-6 shadow-xl dark:border-zinc-700 dark:bg-zinc-800">
               <div className="text-2xl font-semibold">others</div>
               <div className="flex flex-col items-start text-lg">
                 <div>Figma</div>
@@ -68,7 +68,7 @@ const Skills = forwardRef((_, ref: Ref<HTMLDivElement>) => {
                   <HoverCardTrigger>
                     <div className="cursor-default">GitHub</div>
                   </HoverCardTrigger>
-                  <HoverCardContent className="w-fit rounded-xl  border-zinc-700 bg-zinc-900">
+                  <HoverCardContent className="w-fit rounded-xl border-zinc-400 bg-themeWhite px-4 py-2 dark:border-zinc-700 dark:bg-zinc-900">
                     <Link
                       href={"https://github.com/anujjoshi63"}
                       className="underline"

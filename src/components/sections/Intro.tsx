@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import { ArrowUpRight } from "lucide-react";
+import { FileIcon, GithubIcon, LinkedinIcon } from "lucide-react";
 import Link from "next/link";
 const Intro = () => {
   return (
@@ -45,7 +45,7 @@ const Intro = () => {
             Checkout portfolio for more →
           </span>
         </div> */}
-        <p className="mx-auto max-w-[700px] text-xl/normal font-thin text-[hsl(240,11%,80%)]">
+        <p className="mx-auto max-w-[700px] text-xl/normal font-thin  text-themeBlack dark:text-themeWhite ">
           <span className="font-medium tracking-tight">Software Engineer</span>{" "}
           <motion.span
             initial={{ opacity: 0 }}
@@ -104,14 +104,14 @@ const Intro = () => {
           </motion.span>
           <span className="font-medium tracking-tight">personal projects</span>
           {" –  "} more{" "}
-          <span className="whitespace-nowrap italic text-[hsla(25,25%,56%,0.7)]">
+          <span className="whitespace-nowrap italic text-[hsla(25,80%,35%,1)] dark:text-[hsla(25,25%,56%,0.7)]">
             coffee,
           </span>{" "}
           more <span className=" tracking-tight">code</span>
         </p>
       </motion.div>
       <motion.div
-        className="mt-4 flex w-full items-center justify-center gap-4 text-lg font-light text-[hsl(240,11%,86%)] "
+        className="mt-4 flex w-full items-center justify-center gap-6 bg-themeWhite font-light text-themeBlack dark:bg-themeBlack dark:text-themeWhite "
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{
@@ -122,19 +122,37 @@ const Intro = () => {
         }}
         viewport={{ once: true }}
       >
-        <Link href={"https://www.linkedin.com/in/thejoshi/"} target="_blank">
-          <div className="flex items-center transition-all duration-300 hover:text-[hsl(240,0%,95%)]  hover:drop-shadow-[0_1px_4px_hsl(240,0%,55%)]">
-            LinkedIn <ArrowUpRight width={16} color="gray" />
+        <Link
+          href={"https://www.linkedin.com/in/thejoshi/"}
+          target="_blank"
+          title="Anuj's LinkedIn Profile"
+        >
+          <div className="flex items-center justify-center gap-1 opacity-75 transition-all duration-300 hover:opacity-95 hover:drop-shadow-[0_1px_4px_hsl(240,0%,55%)] dark:hover:text-[hsl(240,0%,95%)]">
+            <LinkedinIcon width={16} className="text-black dark:text-white" />
+            <span className="leading-3">LinkedIn</span>
+            {/* <ArrowUpRight width={16} color="gray" className="-ml-2" /> */}
           </div>
         </Link>
-        <Link href={"https://github.com/anujjoshi63"} target="_blank">
-          <div className="flex items-center transition-all duration-300 hover:text-[hsl(240,0%,95%)]  hover:drop-shadow-[0_1px_4px_hsl(240,0%,55%)]">
-            GitHub <ArrowUpRight width={16} color="gray" />
+        <Link
+          href={"https://github.com/anujjoshi63"}
+          target="_blank"
+          title="Anuj's GitHub Profile"
+        >
+          <div className="flex items-center justify-center gap-1 opacity-75 transition-all duration-300 hover:opacity-95 hover:drop-shadow-[0_1px_4px_hsl(240,0%,55%)] dark:hover:text-[hsl(240,0%,95%)]">
+            <GithubIcon width={16} className="text-black dark:text-white" />
+            <span className="leading-3">GitHub</span>
+            {/* <ArrowUpRight width={16} color="gray" /> */}
           </div>
         </Link>
-        <Link href={"https://teensy.tech/anujresume"} target="_blank">
-          <div className="flex items-center transition-all duration-300 hover:text-[hsl(240,0%,95%)]  hover:drop-shadow-[0_1px_4px_hsl(240,0%,55%)]">
-            Resume <ArrowUpRight width={16} color="gray" />
+        <Link
+          href={"https://teensy.tech/anujresume"}
+          target="_blank"
+          title="Anuj's Resume"
+        >
+          <div className="flex items-center justify-center gap-1 opacity-75 transition-all duration-300 hover:opacity-95 hover:drop-shadow-[0_1px_4px_hsl(240,0%,55%)] dark:hover:text-[hsl(240,0%,95%)]">
+            <FileIcon width={16} className="text-black dark:text-white" />
+            <span className="leading-3">Resume</span>
+            {/* <ArrowUpRight width={16} color="gray" /> */}
           </div>
         </Link>
       </motion.div>

@@ -1,14 +1,17 @@
+import Link from "next/link";
+
 type CardProps = {
   title: string;
   subtitle: string;
   imgPath: string;
   otherData?: string;
+  url: string;
   onClick?: () => void;
 };
-const Card = ({ title, subtitle, otherData, imgPath }: CardProps) => {
+const Card = ({ title, subtitle, otherData, imgPath, url }: CardProps) => {
   return (
-    <div>
-      <div className="flex w-full min-w-[15rem] flex-1 flex-col items-center gap-2 rounded-xl border border-zinc-700 bg-zinc-800 p-6 shadow-xl md:w-fit">
+    <Link href={url} target="_blank">
+      <div className="flex w-full min-w-[15rem] flex-1 flex-col items-center gap-2 rounded-xl border border-zinc-400 bg-themeWhite p-6 text-themeBlack shadow-xl transition-all dark:border-zinc-700 dark:bg-zinc-800 dark:text-themeWhite md:w-fit md:hover:-translate-y-1 ">
         {/* <Image
           alt="project"
           src={imgPath}
@@ -20,9 +23,11 @@ const Card = ({ title, subtitle, otherData, imgPath }: CardProps) => {
         <div className=" mt-2 whitespace-nowrap text-lg font-light">
           {subtitle}
         </div>
-        <div className="-mt-2 whitespace-nowrap text-zinc-300">{otherData}</div>
+        <div className="-mt-2 whitespace-nowrap bg-themeWhite text-themeBlack opacity-75 dark:bg-zinc-800 dark:text-themeWhite">
+          {otherData}
+        </div>
       </div>
-    </div>
+    </Link>
   );
 };
 
