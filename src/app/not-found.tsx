@@ -7,7 +7,7 @@ export default function NotFound() {
       <div className="border-b border-b-zinc-800 py-1 text-2xl font-bold">
         404 - Page Not Found
       </div>
-      <p className="text-lg">Here&apos;s a poem instead:</p>
+      <p className="text-lg">Here&apos;s a poem about Anuj:</p>
       <Image
         alt="never-gonna-give-you-up"
         src={"/rr.gif"}
@@ -16,17 +16,18 @@ export default function NotFound() {
       />
       <div className="flex flex-col ">
         <p>
-          Anuj&apos;s{" "}
-          <span className="italic text-white">never gonna give you up</span>
+          <span className="italic dark:text-white">
+            never gonna give you up
+          </span>
         </p>
 
         <p>
-          Anuj&apos;s{" "}
-          <span className="italic text-white"> never gonna let you down</span>
+          <span className="italic dark:text-white">
+            never gonna let you down
+          </span>
         </p>
         <p>
-          Anuj&apos;s{" "}
-          <span className="italic text-white">
+          <span className="italic dark:text-white">
             never gonna run around and desert you
           </span>
         </p>
