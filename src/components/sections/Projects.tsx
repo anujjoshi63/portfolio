@@ -3,14 +3,41 @@ import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 
+type ProjectCardProps = {
+  title: string;
+  description: string;
+  link: string;
+  linkText: string;
+};
+
+const ProjectCard = ({
+  title,
+  description,
+  link,
+  linkText,
+}: ProjectCardProps) => (
+  <div className="ease flex w-fit min-w-[15rem] flex-1 flex-col items-center gap-3 rounded-xl border border-zinc-400 p-6 shadow-xl transition-all duration-300 hover:border-zinc-500 dark:border-zinc-700 dark:bg-zinc-800 dark:hover:drop-shadow-[0_0_2px_hsl(240,0%,40%)] md:hover:-translate-y-1">
+    <div className="text-2xl font-semibold">{title}</div>
+    <div className="flex flex-col items-center text-lg">
+      <div className="max-w-[18ch] flex-1">{description}</div>
+    </div>
+    <Link href={link} target="_blank">
+      <div className="flex items-center justify-center">
+        {linkText} <ArrowUpRight size={16} color="gray" />
+      </div>
+    </Link>
+  </div>
+);
+
 const Projects = () => {
   return (
     <motion.div
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
+      initial={{ opacity: 0, y: 100, filter: "blur(4px)" }}
+      whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
       transition={{
-        type: "tween",
-        duration: 1,
+        type: "spring",
+        damping: 10,
+        stiffness: 50,
       }}
       viewport={{ once: true }}
     >
@@ -21,53 +48,24 @@ const Projects = () => {
           </div>
 
           <div className="flex w-full flex-wrap gap-4">
-            <div className="ease flex w-fit min-w-[15rem] flex-1 flex-col items-center gap-3 rounded-xl border border-zinc-400 p-6 shadow-xl transition-all duration-300 hover:border-zinc-500 dark:border-zinc-700 dark:bg-zinc-800 dark:hover:drop-shadow-[0_0_2px_hsl(240,0%,40%)] md:hover:-translate-y-1">
-              <div className="text-2xl font-semibold">Teensy</div>
-              <div className="flex flex-col items-center text-lg">
-                <div className="max-w-[18ch] flex-1">
-                  URL Shortener with Analytics ✨
-                </div>
-              </div>
-              <Link href={"https://teensy.tech"} target="_blank">
-                <div className="flex items-center justify-center">
-                  Website Link <ArrowUpRight size={16} color="gray" />
-                </div>
-              </Link>
-            </div>
-            <div className="ease flex w-fit min-w-[15rem] flex-1 flex-col items-center gap-3 rounded-xl border border-zinc-400 p-6 shadow-xl transition-all duration-300 hover:border-zinc-500 dark:border-zinc-700 dark:bg-zinc-800 dark:hover:drop-shadow-[0_0_2px_hsl(240,0%,40%)] md:hover:-translate-y-1">
-              <div className="text-2xl font-semibold">Zeno Stack</div>
-              <div className="flex flex-col items-center text-lg">
-                <div className="max-w-[18ch]">
-                  Cross-platform Typesafe React Boilerplate 💯
-                </div>
-              </div>
-              <Link
-                className="w-full items-center text-center"
-                href={"https://github.com/zeno-oss/zeno"}
-                target="_blank"
-              >
-                <div className="flex items-center justify-center">
-                  Repository Link <ArrowUpRight size={16} color="gray" />
-                </div>
-              </Link>
-            </div>
-            <div className="ease flex w-fit min-w-[15rem] flex-1 flex-col items-center gap-3 rounded-xl border border-zinc-400 p-6 shadow-xl transition-all duration-300 hover:border-zinc-500 dark:border-zinc-700 dark:bg-zinc-800 dark:hover:drop-shadow-[0_0_2px_hsl(240,0%,40%)] md:hover:-translate-y-1">
-              <div className="text-2xl font-semibold">AutoShopInsights</div>
-              <div className="flex flex-col items-center text-lg">
-                <div className="max-w-[18ch]">
-                  One-stop solution for car shop finances. 🚀
-                </div>
-              </div>
-              <Link
-                className="w-full items-center text-center"
-                href={"https://autoshopinsights.com/"}
-                target="_blank"
-              >
-                <div className="flex items-center justify-center">
-                  Website Link <ArrowUpRight size={16} color="gray" />
-                </div>
-              </Link>
-            </div>
+            <ProjectCard
+              title="Teensy"
+              description="URL Shortener with Analytics ✨"
+              link="https://teensy.tech"
+              linkText="Website Link"
+            />
+            <ProjectCard
+              title="Zeno Stack"
+              description="Cross-platform Typesafe React Boilerplate 💯"
+              link="https://github.com/zeno-oss/zeno"
+              linkText="Repository Link"
+            />
+            <ProjectCard
+              title="AutoShopInsights"
+              description="One-stop solution for car shop finances. 🚀"
+              link="https://autoshopinsights.com/"
+              linkText="Website Link"
+            />
           </div>
         </div>
       </section>

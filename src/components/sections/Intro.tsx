@@ -6,8 +6,8 @@ const Intro = () => {
   return (
     <div className="mt-8 space-y-6 md:mt-0">
       <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
+        initial={{ opacity: 0, y: 10 }}
+        whileInView={{ opacity: 1, y: 0 }}
         transition={{
           type: "spring",
           damping: 10,
@@ -20,8 +20,8 @@ const Intro = () => {
         </h1>
       </motion.div>
       <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
+        initial={{ opacity: 0, y: 10 }}
+        whileInView={{ opacity: 1, y: 0 }}
         transition={{
           type: "spring",
           damping: 10,
@@ -54,7 +54,7 @@ const Intro = () => {
               type: "spring",
               damping: 10,
               stiffness: 20,
-              delay: 0.5,
+              delay: 1,
             }}
             viewport={{ once: true }}
           >
@@ -68,7 +68,7 @@ const Intro = () => {
               type: "spring",
               damping: 10,
               stiffness: 20,
-              delay: 0.5,
+              delay: 1,
             }}
             viewport={{ once: true }}
           >
@@ -82,7 +82,7 @@ const Intro = () => {
               type: "spring",
               damping: 10,
               stiffness: 20,
-              delay: 0.5,
+              delay: 1,
             }}
             viewport={{ once: true }}
           >
@@ -96,24 +96,36 @@ const Intro = () => {
               type: "spring",
               damping: 10,
               stiffness: 20,
-              delay: 0.5,
+              delay: 1,
             }}
             viewport={{ once: true }}
           >
             and{" "}
           </motion.span>
           <span className="font-medium tracking-tight">personal projects</span>
-          {" –  "} more{" "}
-          <span className="whitespace-nowrap italic text-[hsla(25,80%,35%,1)] dark:text-[hsla(25,25%,56%,0.7)]">
-            coffee,
-          </span>{" "}
-          more <span className=" tracking-tight">code</span>
+          <motion.span
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{
+              type: "spring",
+              damping: 10,
+              stiffness: 20,
+              delay: 1,
+            }}
+            viewport={{ once: true }}
+          >
+            {" –  "} more{" "}
+            <span className="whitespace-nowrap italic text-[hsla(25,80%,35%,1)] dark:text-[hsla(25,25%,56%,0.7)]">
+              coffee,
+            </span>{" "}
+            more <span className=" tracking-tight">code</span>
+          </motion.span>
         </p>
       </motion.div>
       <motion.div
         className="mt-4 flex w-full items-center justify-center gap-6 bg-themeWhite font-light text-themeBlack dark:bg-themeBlack dark:text-themeWhite "
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
+        initial={{ opacity: 0, y: 10 }}
+        whileInView={{ opacity: 1, y: 0 }}
         transition={{
           type: "spring",
           damping: 10,

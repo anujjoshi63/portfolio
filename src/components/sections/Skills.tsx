@@ -11,11 +11,12 @@ import { Ref, forwardRef } from "react";
 const Skills = forwardRef((_, ref: Ref<HTMLDivElement>) => {
   return (
     <motion.div
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
+      initial={{ opacity: 0, y: 100, filter: "blur(4px)" }}
+      whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
       transition={{
-        type: "tween",
-        duration: 1,
+        type: "spring",
+        damping: 10,
+        stiffness: 50,
       }}
       viewport={{ once: true }}
     >

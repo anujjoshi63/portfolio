@@ -1,46 +1,71 @@
-"use client";
 import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import Card from "../elements/card";
 
+type CardData = {
+  title: string;
+  subtitle: string;
+  otherData: string;
+  imgPath: string;
+  url: string;
+};
+
+const cardData: CardData[] = [
+  {
+    title: "Grad student, ASU",
+    subtitle: "MS in Computer Science",
+    otherData: "Aug 2023 - May 2025",
+    imgPath: "/favicon.ico",
+    url: "https://search.asu.edu/profile/4753683",
+  },
+  {
+    title: "Zeno Stack",
+    subtitle: "Cross-Platform Monorepo",
+    otherData: "100+ stars on GitHub",
+    imgPath: "/favicon.ico",
+    url: "https://github.com/zeno-oss/zeno/",
+  },
+  {
+    title: "Freelance",
+    subtitle: "2 high-scale projects",
+    otherData: "+numerous other gigs",
+    imgPath: "/favicon.ico",
+    url: "https://autoshopinsights.com/",
+  },
+];
+
 const Highlights = () => {
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+  });
+
   return (
     <motion.div
+      ref={ref}
       className="space-y-3"
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
+      initial={{ opacity: 0, y: 100, filter: "blur(4px)" }}
+      animate={inView ? { opacity: 1, y: 0, filter: "blur(0px)" } : {}}
       transition={{
         type: "spring",
         damping: 10,
         stiffness: 20,
-        delay: 0.5,
+        delay: 1,
       }}
-      viewport={{ once: true }}
     >
       <div className="mt-20 py-8 text-4xl font-normal tracking-tight sm:text-3xl md:text-4xl md:font-semibold lg:text-5xl">
         milestones
       </div>
       <div className="flex w-full flex-col flex-wrap gap-8 md:flex-row">
-        <Card
-          title="Grad student, ASU"
-          subtitle="MS in Computer Science"
-          otherData="Aug 2023 - May 2025"
-          imgPath="/favicon.ico"
-          url="https://search.asu.edu/profile/4753683"
-        />
-        <Card
-          title="Zeno Stack"
-          subtitle="Cross-Platform Monorepo"
-          otherData="100+ stars on GitHub"
-          imgPath="/favicon.ico"
-          url="https://github.com/zeno-oss/zeno/"
-        />
-        <Card
-          title="Freelance"
-          subtitle="2 high-scale projects"
-          otherData="+numerous other gigs"
-          imgPath="/favicon.ico"
-          url="https://autoshopinsights.com/"
-        />
+        {cardData.map((data, index) => (
+          <Card
+            key={index}
+            title={data.title}
+            subtitle={data.subtitle}
+            otherData={data.otherData}
+            imgPath={data.imgPath}
+            url={data.url}
+          />
+        ))}
       </div>
     </motion.div>
   );
