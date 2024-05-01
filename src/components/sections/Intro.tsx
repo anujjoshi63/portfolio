@@ -58,9 +58,11 @@ const Intro = () => {
             }}
             viewport={{ once: true }}
           >
-            with{" "}
+            delivering impactful open-source,{" "}
           </motion.span>
-          <span className="font-medium tracking-tight">open source</span>{" "}
+          <span className="font-medium tracking-tight">
+            internship, freelance
+          </span>{" "}
           <motion.span
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -72,37 +74,12 @@ const Intro = () => {
             }}
             viewport={{ once: true }}
           >
-            contributions,{" "}
+            and,
           </motion.span>
-          <span className="font-medium tracking-tight">internships</span>
-          <motion.span
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{
-              type: "spring",
-              damping: 10,
-              stiffness: 20,
-              delay: 1,
-            }}
-            viewport={{ once: true }}
-          >
-            ,{" "}
-          </motion.span>
-          <span className="font-medium tracking-tight">freelance gigs</span>{" "}
-          <motion.span
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{
-              type: "spring",
-              damping: 10,
-              stiffness: 20,
-              delay: 1,
-            }}
-            viewport={{ once: true }}
-          >
-            and{" "}
-          </motion.span>
-          <span className="font-medium tracking-tight">personal projects</span>
+          <span className="font-medium tracking-tight">
+            {" "}
+            personal projects.{" "}
+          </span>
           <motion.span
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
