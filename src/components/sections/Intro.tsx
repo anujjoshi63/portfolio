@@ -15,7 +15,7 @@ const Intro = () => {
         }}
         viewport={{ once: true }}
       >
-        <h1 className="text-6xl font-medium tracking-tight md:text-5xl md:font-bold lg:text-6xl">
+        <h1 className="w-full text-left text-6xl font-medium tracking-tight md:text-5xl md:font-bold lg:text-6xl">
           Anuj Joshi
         </h1>
       </motion.div>
@@ -45,7 +45,7 @@ const Intro = () => {
             Checkout portfolio for more →
           </span>
         </div> */}
-        <p className="mx-auto max-w-[700px] text-xl/normal font-thin  text-themeBlack dark:text-themeWhite ">
+        <p className="w-full text-left text-xl/normal font-thin text-themeBlack dark:text-themeWhite ">
           <span className="font-medium tracking-tight">Software Engineer</span>{" "}
           <motion.span
             initial={{ opacity: 0 }}
@@ -76,10 +76,7 @@ const Intro = () => {
           >
             and,
           </motion.span>
-          <span className="font-medium tracking-tight">
-            {" "}
-            personal projects.{" "}
-          </span>
+          <span className="font-medium tracking-tight"> personal projects</span>
           <motion.span
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -91,7 +88,7 @@ const Intro = () => {
             }}
             viewport={{ once: true }}
           >
-            {" –  "} more{" "}
+            {" – "} more{" "}
             <span className="whitespace-nowrap italic text-[hsla(25,80%,35%,1)] dark:text-[hsla(25,25%,56%,0.7)]">
               coffee,
             </span>{" "}

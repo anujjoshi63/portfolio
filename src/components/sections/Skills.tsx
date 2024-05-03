@@ -20,31 +20,35 @@ const Skills = forwardRef((_, ref: Ref<HTMLDivElement>) => {
       }}
       viewport={{ once: true }}
     >
-      <section key="skills" className="w-full py-12" ref={ref}>
-        <div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6 lg:gap-10">
+      <section key="skills" className="w-fullpy-12" ref={ref}>
+        <div className="container flex w-full flex-col items-center justify-center gap-4 px-4 text-center md:px-6 lg:gap-10">
           <div className="text-4xl font-normal tracking-tight sm:text-3xl md:text-4xl md:font-semibold lg:text-5xl">
             skills
           </div>
 
-          <div className="flex w-full flex-wrap gap-4">
-            <div className="flex w-fit min-w-[15rem] flex-1 flex-col items-center gap-2 rounded-xl border border-zinc-400 bg-themeWhite p-6 shadow-xl dark:border-zinc-700 dark:bg-zinc-800">
-              <div className="text-2xl font-semibold">languages</div>
-              <div className="flex flex-col items-start text-lg">
-                <div>TypeScript</div>
-                <div>Python</div>
-                <div>JavaScript</div>
-                <div>SQL</div>
-                <div>HTML/CSS</div>
+          <div className="flex w-full flex-wrap justify-center gap-4">
+            <div className="flex w-fit min-w-[14rem]  flex-col items-center gap-2 rounded-xl border border-zinc-400 bg-themeWhite p-6 shadow-xl dark:border-zinc-700 dark:bg-zinc-800">
+              <div className="w-full text-left text-2xl font-semibold">
+                languages
+              </div>
+              <div className="flex w-full flex-col items-start text-lg">
+                <div className="w-full text-left">TypeScript</div>
+                <div className="w-full text-left">Python</div>
+                <div className="w-full text-left">JavaScript</div>
+                <div className="w-full text-left">SQL</div>
+                <div className="w-full text-left">HTML/CSS</div>
               </div>
             </div>
-            <div className="flex w-fit min-w-[15rem] flex-1 flex-col items-center gap-2 rounded-xl border border-zinc-400 bg-themeWhite p-6 shadow-xl dark:border-zinc-700 dark:bg-zinc-800">
-              <div className="text-2xl font-semibold">frameworks</div>
-              <div className="flex flex-col items-start text-lg">
-                <div>React</div>
-                <div>Next.js</div>
-                <div>Express</div>
-                <div>Electron</div>
-                {/* <div>React Native</div> */}
+            <div className="flex w-fit min-w-[14rem]  flex-col items-center gap-2 rounded-xl border border-zinc-400 bg-themeWhite p-6 shadow-xl dark:border-zinc-700 dark:bg-zinc-800">
+              <div className="w-full text-left text-2xl font-semibold">
+                frameworks
+              </div>
+              <div className="flex w-full flex-col items-start text-lg">
+                <div className="w-full text-left">React</div>
+                <div className="w-full text-left">Next.js</div>
+                <div className="w-full text-left">Express</div>
+                <div className="w-full text-left">Electron</div>
+                {/* <div className="w-full text-left">React Native</div> */}
                 <HoverCard openDelay={0} closeDelay={250}>
                   <HoverCardTrigger className="cursor-default">
                     Node.js
@@ -53,32 +57,35 @@ const Skills = forwardRef((_, ref: Ref<HTMLDivElement>) => {
                     I know, I know. It&apos;s a runtime.
                   </HoverCardContent>
                 </HoverCard>
-
-                {/* <div>Node.js</div> */}
-                {/* <div>and more</div> */}
               </div>
             </div>
-            <div className="flex w-fit min-w-[15rem] flex-1 flex-col items-center gap-2 rounded-xl border border-zinc-400 bg-themeWhite p-6 shadow-xl dark:border-zinc-700 dark:bg-zinc-800">
-              <div className="text-2xl font-semibold">others</div>
-              <div className="flex flex-col items-start text-lg">
-                <div>Figma</div>
-                <div>AWS</div>
-                <div>Linux</div>
-                <div>Git</div>
-                <HoverCard openDelay={0} closeDelay={250}>
-                  <HoverCardTrigger>
-                    <div className="cursor-default">GitHub</div>
-                  </HoverCardTrigger>
-                  <HoverCardContent className="w-fit rounded-xl border-zinc-400 bg-themeWhite px-4 py-2 dark:border-zinc-700 dark:bg-zinc-900">
-                    <Link
-                      href={"https://github.com/anujjoshi63"}
-                      className="underline"
-                      target="_blank"
-                    >
-                      Checkout my github here
-                    </Link>
-                  </HoverCardContent>
-                </HoverCard>
+            <div className="flex w-fit min-w-[14rem]  flex-col items-center gap-2 rounded-xl border border-zinc-400 bg-themeWhite p-6 shadow-xl dark:border-zinc-700 dark:bg-zinc-800">
+              <div className="w-full text-left text-2xl font-semibold">
+                others
+              </div>
+              <div className="flex w-full flex-col items-start text-lg">
+                <div className="w-full text-left">Figma</div>
+                <div className="w-full text-left">AWS</div>
+                <div className="w-full text-left">Linux</div>
+                <div className="flex w-full text-left">
+                  Git &
+                  <div>
+                    <HoverCard openDelay={0} closeDelay={250}>
+                      <HoverCardTrigger>
+                        <div className="cursor-default">&nbsp;GitHub</div>
+                      </HoverCardTrigger>
+                      <HoverCardContent className="w-fit rounded-xl border-zinc-400 bg-themeWhite px-4 py-2 dark:border-zinc-700 dark:bg-zinc-900">
+                        <Link
+                          href={"https://github.com/anujjoshi63"}
+                          className="underline"
+                          target="_blank"
+                        >
+                          Checkout my github here
+                        </Link>
+                      </HoverCardContent>
+                    </HoverCard>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
