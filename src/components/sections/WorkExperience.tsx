@@ -4,40 +4,91 @@ import { Ref, forwardRef } from "react";
 import WorkExperienceCard from "../elements/WorkExperienceCard";
 
 const WorkExperience = forwardRef((_, ref: Ref<HTMLDivElement>) => {
-  const workExperiences = [
+  const workExperiences: {
+    title: string;
+    url?: string;
+    oneLineDescription: string;
+    bullets: JSX.Element[] | string[];
+  }[] = [
     {
-      title: "Auto Shop Insights - Freelance",
+      title: "AutoShopInsights - Freelance Project",
+      url: "https://autoshopinsights.com/",
       oneLineDescription:
-        "Simplifies finances and decision making for car shop businesses",
+        "Simplifying financial management and decision-making for auto repair businesses",
       bullets: [
-        "Developed a modern web app using T3 Stack (Next.js, TypeScript, Tailwind, and tRPC), seamlessly managing deployment, database integration, and robust CI/CD pipelines.",
-        "Automated complex financial processes, reducing time spent by 80%",
+        <span>
+          Engineered a <b>high performance</b> web app using{" "}
+          <b title="t3 stack by theo">
+            Next.js, TypeScript, Tailwind,{" "}
+            <span className="font-normal">and</span> tRPC
+          </b>
+          , simplifying financial processes and providing valuable insights to
+          shop owners.
+        </span>,
+        <span>
+          Implemented <b>secure payment</b> processing with <b>Stripe</b>,
+          designed an intuitive UI, and <b>optimized performance</b> by
+          leveraging <b>Planetscale</b> for the database and <b>Vercel</b> for
+          hosting and CI/CD.
+        </span>,
+        <span>
+          Automated complex financial tasks, <b>reducing manual work by 80%</b>{" "}
+          and empowering shop owners to make <b>data-driven decisions</b>.
+        </span>,
       ],
     },
     {
-      title: "KyloApps - Internship",
+      title: "KyloApps - Software Development Internship",
       oneLineDescription:
-        "Brought 4 projects (2 new, 2 existing) to completion",
+        "Transforming user experiences through effective collaboration and technical fluency",
       bullets: [
-        "Developed frontends from Figma designs ensuring client satisfaction. Communicated directly with clients to understand requirements and provide updates.",
-        "Enhanced code quality and increased Lighthouse score by 40% using advanced React patterns. Successfully mentored a non-React frontend developer to proficiency.",
+        <span>
+          Spearheaded development and deployment of{" "}
+          <b>4 enterprise web apps </b>
+          using <b>React, TypeScript</b>, and <b>Material-UI</b>, enhancing user
+          experience and improving performance.
+        </span>,
+        <span>
+          Optimized code quality and <b>boosted Lighthouse score by 40% 🚀</b>{" "}
+          by implementing advanced React patterns. <b>Successfully mentored</b>{" "}
+          a non-React frontend developer to proficiency, promoting knowledge
+          sharing and team growth.
+        </span>,
       ],
     },
     {
-      title: "MIS Software - Freelance",
+      title: "MIS Software - Freelance Project",
       oneLineDescription:
         "Revolutionalized a chemical enterprise's operations through automation",
       bullets: [
-        "Developed a robust MIS software that manages over 500 inquiries and tracks 300+ sample deliveries monthly, demonstrating strong automation and data management capabilities.",
-        "Enhanced operations efficiency, reducing task times by 90% and halving reports creation time.",
+        <span>
+          Engineered a robust MIS software using <b>React, Express</b>, and{" "}
+          <b>Electron</b>, efficiently managing over <b>500 inquiries</b> and
+          tracking <b>300+ sample deliveries</b> monthly, demonstrating strong{" "}
+          automation and data management capabilities.
+        </span>,
+        <span>
+          Streamlined operations by <b>reducing task times by 90%</b> and{" "}
+          <b>cutting reports creation time in half</b>, significantly enhancing
+          efficiency and productivity.
+        </span>,
       ],
     },
     {
-      title: "TechFryDay - Internship",
+      title: "TechFryDay - Assistant Instructor",
       oneLineDescription: "Taught programming concepts using Python",
       bullets: [
-        "Elevated Python skills of over 40 undergraduates in two intensive workshops through innovative and hands-on teaching methods.",
-        "Taught troubleshooting techniques and debugged students' code, cutting trainer interventions by half in a voice recognition workshop.",
+        <span>
+          <b>Taught Python</b> programming <b>to 40+ undergraduates</b> in two
+          intensive workshops, employing engaging, hands-on teaching methods
+          that garnered <b>90% positive feedback</b>.
+        </span>,
+        <span>
+          Taught troubleshooting techniques and debugged students' code in a
+          voice recognition workshop,{" "}
+          <b>reducing trainer interventions by 50%</b> and fostering a more
+          independent learning environment.
+        </span>,
       ],
     },
   ];
@@ -53,20 +104,18 @@ const WorkExperience = forwardRef((_, ref: Ref<HTMLDivElement>) => {
       }}
       viewport={{ once: true }}
     >
-      <div className="flex w-full justify-center">
-        <div className="h-[1px] w-1/3 bg-gradient-to-r from-[hsl(240,10%,100%)] via-[hsl(240,10%,70%)] to-[hsl(240,10%,100%)] dark:from-[hsl(240,10%,0%)] dark:via-[hsl(240,10%,20%)] dark:to-[hsl(240,10%,0%)]"></div>
-      </div>
       <section key="experience" className="w-full py-12" ref={ref}>
-        <div className="container grid items-center justify-center gap-4 px-4  md:px-6 lg:gap-10">
+        <div className="container grid items-center justify-center gap-4 px-4 md:px-6 lg:gap-10">
           <div className="space-y-2">
             <div className="text-center text-4xl font-normal tracking-tight sm:text-3xl md:text-4xl md:font-semibold lg:text-5xl">
-              work experience
+              work
             </div>
           </div>
 
           <div className="container mx-auto mt-4 flex flex-col flex-wrap gap-8 px-5 md:mt-0">
             {workExperiences.map((experience, index) => (
               <WorkExperienceCard
+                url={experience.url}
                 key={index}
                 title={experience.title}
                 oneLineDescription={experience.oneLineDescription}
