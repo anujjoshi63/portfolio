@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import Card from "../elements/card";
+import HighlightCard from "../elements/HighlightCard";
 
 type CardData = {
   title: string;
@@ -12,22 +12,22 @@ type CardData = {
 
 const cardData: CardData[] = [
   {
-    title: "Grad student, ASU",
-    subtitle: "MS in Computer Science",
+    title: "Graduate Student, ASU",
+    subtitle: "Master's in Computer Science",
     otherData: "Aug 2023 - May 2025",
     imgPath: "/favicon.ico",
     url: "https://search.asu.edu/profile/4753683",
   },
   {
     title: "Zeno Stack",
-    subtitle: "Cross-Platform Monorepo",
+    subtitle: "Cross-Platform React Monorepo",
     otherData: "100+ stars on GitHub",
     imgPath: "/favicon.ico",
     url: "https://github.com/zeno-oss/zeno/",
   },
   {
-    title: "Freelance",
-    subtitle: "2 high-scale projects",
+    title: "Freelance projects",
+    subtitle: "Two high-scale projects",
     otherData: "+numerous other gigs",
     imgPath: "/favicon.ico",
     url: "https://autoshopinsights.com/",
@@ -57,7 +57,7 @@ const Highlights = () => {
       </div>
       <div className="flex w-full flex-col flex-wrap gap-8 md:flex-row">
         {cardData.map((data, index) => (
-          <Card
+          <HighlightCard
             key={index}
             title={data.title}
             subtitle={data.subtitle}
