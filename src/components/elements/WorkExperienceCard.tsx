@@ -17,6 +17,7 @@ const WorkExperienceCard = ({
   bullets,
   url,
 }: WorkExperienceCardProps) => {
+  const id = useId();
   const [ref, inView] = useInView({
     triggerOnce: true, // This will ensure the animation only plays once
   });
@@ -52,7 +53,7 @@ const WorkExperienceCard = ({
               return (
                 <div
                   className="mt-3 flex gap-2 text-lg leading-relaxed"
-                  key={useId()}
+                  key={id + "-" + index}
                 >
                   <MoveRight width={14} className="mt-[4px] min-w-[14px]" />
                   {bullet}
