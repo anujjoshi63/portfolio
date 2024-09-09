@@ -7,4 +7,3 @@ import Skills from "./Skills";
 import WorkExperience from "./WorkExperience";
 
 export { Footer, Header, Highlights, Intro, Projects, Skills, WorkExperience };
-

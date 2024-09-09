@@ -1,4 +1,5 @@
-"use client";
+"use client"
+import Name from "@/components/IntroSection/Name";
 import {
   Footer,
   Header,
@@ -9,42 +10,37 @@ import {
   WorkExperience,
 } from "@/components/sections/";
 import { MoonIcon, SunMediumIcon } from "lucide-react";
-import { useRef, useState } from "react";
+import { useState } from "react";
 
 export default function Home() {
-  const about = useRef<HTMLDivElement>(null);
-  const skills = useRef<HTMLDivElement>(null);
-  const workExperience = useRef<HTMLDivElement>(null);
-  const links = useRef<HTMLDivElement>(null);
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
   return (
     <div className={darkMode ? "dark" : ""}>
       <div
         className="fixed right-5 top-5 z-10 rounded-full bg-themeWhite p-1 shadow-sm transition-all duration-700 dark:bg-themeBlack dark:text-themeWhite"
         onClick={() => setDarkMode((old) => !old)}
+        onKeyUp={
+          () => setDarkMode((old) => !old)
+        }
       >
         {darkMode ? <SunMediumIcon /> : <MoonIcon />}
       </div>
       <div
         className="min-h-screen bg-themeWhite text-themeBlack dark:bg-themeBlack dark:text-themeWhite"
-        ref={about}
       >
-        <Header
-          workExperienceRef={workExperience}
-          skillsRef={skills}
-          introRef={about}
-          footerRef={links}
-        />
+        <Header />
         <section key="introduction" className="w-full py-12 md:py-24 lg:py-32">
           <div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6 lg:gap-6">
-            <Intro />
+            <Intro >
+              <Name />
+            </Intro>
             <Highlights />
           </div>
         </section>
-        <Skills ref={skills} />
+        <Skills />
         <Projects />
 
-        <WorkExperience ref={workExperience} />
+        <WorkExperience />
         {/* <section key="5" className="w-full py-12 ">
 				<div className="container grid items-center justify-center gap-4 text-center md:px-6 lg:gap-10">
 					<div className="space-y-3">
@@ -60,7 +56,7 @@ export default function Home() {
 					</div>
 				</div>
 			</section> */}
-        <Footer ref={links} />
+        <Footer />
       </div>
     </div>
   );

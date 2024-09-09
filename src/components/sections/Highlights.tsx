@@ -1,3 +1,4 @@
+"use client"
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import HighlightCard from "../elements/HighlightCard";
@@ -58,7 +59,7 @@ const Highlights = () => {
       <div className="flex w-full flex-col flex-wrap gap-8 md:flex-row">
         {cardData.map((data, index) => (
           <HighlightCard
-            key={index}
+            key={`${data.title}+${index}`}
             title={data.title}
             subtitle={data.subtitle}
             otherData={data.otherData}

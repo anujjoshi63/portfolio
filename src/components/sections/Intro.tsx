@@ -2,9 +2,10 @@
 import { motion } from "framer-motion";
 import { FileIcon, GithubIcon, LinkedinIcon } from "lucide-react";
 import Link from "next/link";
-const Intro = () => {
+const Intro = ({ children }: { children: JSX.Element }) => {
+
   return (
-    <div className="mt-8 space-y-6 md:mt-0">
+    <div className="mt-8 space-y-6 md:mt-0" id="intro_section">
       <motion.div
         initial={{ opacity: 0, y: 10 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -15,9 +16,7 @@ const Intro = () => {
         }}
         viewport={{ once: true }}
       >
-        <h1 className="w-full text-left text-6xl font-medium tracking-tight md:text-5xl md:font-bold lg:text-6xl">
-          Anuj Joshi
-        </h1>
+        {children}
       </motion.div>
       <motion.div
         initial={{ opacity: 0, y: 10 }}
@@ -89,7 +88,7 @@ const Intro = () => {
             viewport={{ once: true }}
           >
             {" – "} more{" "}
-            <span className="whitespace-nowrap italic text-[hsla(25,80%,35%,1)] dark:text-[hsla(25,25%,56%,0.7)]">
+            <span className="whitespace-nowrap italic text-[hsla(25,80%,35%,1)] dark:text-[hsla(25,25%,70%,0.7)]">
               coffee,
             </span>{" "}
             more <span className=" tracking-tight">code</span>

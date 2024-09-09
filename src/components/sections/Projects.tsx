@@ -20,7 +20,7 @@ const Projects = () => {
             projects
           </div>
 
-          <div className="flex w-full flex-wrap gap-4">
+          <div className="flex w-full flex-wrap justify-center gap-8 md:justify-start">
             <ProjectCard
               title="Teensy"
               description="URL Shortener with Analytics ✨"
