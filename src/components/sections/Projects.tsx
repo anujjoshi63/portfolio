@@ -20,7 +20,12 @@ const Projects = () => {
             projects
           </div>
 
-          <div className="flex w-full flex-wrap justify-center gap-8 md:justify-start">
+          <div className="flex w-full flex-wrap justify-center gap-8 lg:justify-start">
+            <ProjectCard
+              title="Dope Control"
+              description="Dopamine management for peak productivity 🧠"
+              link="https://dc.anujjoshi.me"
+            />
             <ProjectCard
               title="Teensy"
               description="URL Shortener with Analytics ✨"
