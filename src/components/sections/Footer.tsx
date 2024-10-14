@@ -48,17 +48,6 @@ const Footer = () => {
               <ArrowUpRight width={16} color="gray" className="-ml-[5px]" />
             </div>
           </Link>
-          <Link href={"https://instagram.com/anuj._.joshi/"} target="_blank">
-            <div className="mx-2 flex flex-1 items-center gap-1 align-middle transition-all duration-300 hover:drop-shadow-[0_1px_4px_hsl(240,0%,55%)] dark:text-[hsl(240,0%,85%)]">
-              <Instagram
-                width={16}
-                color="#E1306C"
-                className="text-white opacity-75 hover:opacity-95"
-              />{" "}
-              Instagram
-              <ArrowUpRight width={16} color="gray" className="-ml-[5px]" />
-            </div>
-          </Link>
         </div>
       </div>
     </motion.section>
