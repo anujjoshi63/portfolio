@@ -1,8 +1,16 @@
-import { Analytics } from "@vercel/analytics/react";
-import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
+import dynamic from "next/dynamic";
 import localFont from "next/font/local";
 import "./globals.css";
+
+const DynamicAnalytics = dynamic(
+  () => import("@vercel/analytics/react").then((mod) => mod.Analytics),
+  { ssr: false },
+);
+const DynamicSpeedInsights = dynamic(
+  () => import("@vercel/speed-insights/next").then((mod) => mod.SpeedInsights),
+  { ssr: false },
+);
 
 const satoshi = localFont({
   src: "./fonts/Satoshi-Variable.ttf",
@@ -18,6 +26,10 @@ export const metadata: Metadata = {
   publisher: "Anuj",
   alternates: {
     canonical: "/",
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
   keywords: [
     "Next.js",
@@ -43,7 +55,7 @@ export const metadata: Metadata = {
     images: [
       {
         url: "https://anujjoshi.me/og-image.png",
-        alt: "Anuj is 1. student at asu, 2. skilled in react, js, ts, python, 3. looking for software engineering summer internship",
+        alt: "Anuj is 1. student at asu, 2. skilled in react, js, ts, python, 3. looking for software engineering or applied ai roles for may 2025",
       },
     ],
     locale: "en_US",
@@ -65,8 +77,31 @@ export default function RootLayout({
     <html lang="en">
       <body className={satoshi.className}>
         {children}
-        <Analytics />
-        <SpeedInsights />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              name: "Anuj Joshi",
+              url: "https://anujjoshi.me/",
+              jobTitle: "Software Engineer",
+              alumniOf: "Arizona State University",
+              knowsAbout: [
+                "JavaScript",
+                "React",
+                "Node.js",
+                "Next.js",
+                "TypeScript",
+                "Python",
+                "LLMs",
+                "OpenAI API",
+              ],
+            }),
+          }}
+        />
+        <DynamicAnalytics />
+        <DynamicSpeedInsights />
       </body>
     </html>
   );
