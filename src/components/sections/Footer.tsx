@@ -11,7 +11,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <motion.section key="6" className="w-full py-20" >
+    <motion.section key="6" className="w-full py-20">
       <div className="flex w-full justify-center">
         <div className="h-[1px] w-1/3 bg-gradient-to-r from-[hsl(240,10%,100%)] via-[hsl(240,10%,70%)] to-[hsl(240,10%,100%)] dark:from-[hsl(240,10%,0%)] dark:via-[hsl(240,10%,20%)] dark:to-[hsl(240,10%,0%)]" />
       </div>
@@ -59,16 +59,10 @@ const Footer = () => {
               <ArrowUpRight width={16} color="gray" className="-ml-[5px]" />
             </div>
           </Link>
-          <Link href={"https://twitter.com/anujjosh"} target="_blank">
-            <div className="mx-2 flex flex-1 items-center gap-1 align-middle transition-all duration-300 hover:drop-shadow-[0_1px_4px_hsl(240,0%,55%)] dark:text-[hsl(240,0%,85%)]">
-              𝕏 {"(Twitter)"}
-              <ArrowUpRight width={16} color="gray" className="-ml-[5px]" />
-            </div>
-          </Link>
         </div>
       </div>
     </motion.section>
   );
-}
+};
 Footer.displayName = "Footer";
 export default Footer;
