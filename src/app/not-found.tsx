@@ -12,6 +12,7 @@ export default function NotFound() {
         src={"/rr.gif"}
         width={100}
         height={100}
+        unoptimized
       />
       <Link
         href="/"
