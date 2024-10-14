@@ -2,8 +2,8 @@
 import { motion } from "framer-motion";
 import {
   ArrowUpRight,
+  CodeIcon,
   GithubIcon,
-  Instagram,
   LinkedinIcon,
   Mail,
 } from "lucide-react";
@@ -43,8 +43,18 @@ const Footer = () => {
               <GithubIcon
                 width={16}
                 className="text-themeBlack opacity-75 hover:opacity-95 dark:text-white"
-              />{" "}
+              />
               GitHub
+              <ArrowUpRight width={16} color="gray" className="-ml-[5px]" />
+            </div>
+          </Link>
+          <Link href={"https://leetcode.com/anujjosh"} target="_blank">
+            <div className="mx-2 flex flex-1 items-center gap-1 align-middle transition-all duration-300 hover:drop-shadow-[0_1px_4px_hsl(240,0%,55%)] dark:text-[hsl(240,0%,85%)]">
+              <CodeIcon
+                width={16}
+                className="text-themeBlack opacity-75 hover:opacity-95 dark:text-white"
+              />
+              LeetCode
               <ArrowUpRight width={16} color="gray" className="-ml-[5px]" />
             </div>
           </Link>
