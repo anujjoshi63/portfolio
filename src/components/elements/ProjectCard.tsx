@@ -10,7 +10,7 @@ type ProjectCardProps = {
 const ProjectCard = ({ title, description, link }: ProjectCardProps) => (
   <Link href={link} target="_blank" className="mt-3 w-fit">
     <div className="ease flex w-fit min-w-[15rem] flex-1 flex-col items-center gap-3 rounded-xl border border-zinc-400 p-6 shadow-xl transition-all duration-300 hover:border-zinc-500 dark:border-zinc-700 dark:bg-zinc-800 dark:hover:drop-shadow-[0_0_2px_hsl(240,0%,40%)] md:hover:-translate-y-1">
-      <div className="gap flex w-full items-center text-left text-2xl font-semibold">
+      <div className="gap flex w-full items-center text-left text-2xl font-semibold tracking-tighter">
         {title}{" "}
         <ArrowUpRight
           size={20}
