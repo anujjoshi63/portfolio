@@ -17,7 +17,7 @@ const Footer = () => {
       </div>
       <div className="container grid w-full items-center justify-center gap-4 text-center md:px-6 lg:gap-10">
         <div className="mt-10 space-y-2">
-          <div className=" text-4xl font-medium tracking-tight md:text-5xl md:font-semibold lg:text-5xl">
+          <div className="text-4xl font-medium tracking-tighter md:text-5xl md:font-semibold lg:text-5xl">
             <span>let&apos;s get in touch</span>
           </div>
         </div>
