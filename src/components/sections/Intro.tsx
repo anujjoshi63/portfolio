@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import { FileIcon, GithubIcon, LinkedinIcon } from "lucide-react";
 import Link from "next/link";
 const Intro = ({ children }: { children: JSX.Element }) => {
-
   return (
     <div className="mt-8 space-y-6 md:mt-0" id="intro_section">
       <motion.div
@@ -44,23 +43,9 @@ const Intro = ({ children }: { children: JSX.Element }) => {
             Checkout portfolio for more →
           </span>
         </div> */}
-        <p className="w-full text-left text-xl/normal font-thin text-themeBlack dark:text-themeWhite ">
-          <span className="font-medium tracking-tight">Software Engineer</span>{" "}
-          <motion.span
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{
-              type: "spring",
-              damping: 10,
-              stiffness: 20,
-              delay: 1,
-            }}
-            viewport={{ once: true }}
-          >
-            delivering impactful open-source,{" "}
-          </motion.span>
-          <span className="font-medium tracking-tight">
-            internship, freelance
+        <p className="w-full text-left text-xl/normal font-thin text-themeBlack dark:text-themeWhite">
+          <span className="font-medium tracking-tighter">
+            Full-stack engineer
           </span>{" "}
           <motion.span
             initial={{ opacity: 0 }}
@@ -73,9 +58,9 @@ const Intro = ({ children }: { children: JSX.Element }) => {
             }}
             viewport={{ once: true }}
           >
-            and,
+            specializing in
           </motion.span>
-          <span className="font-medium tracking-tight"> personal projects</span>
+          <span className="italic"> AI-driven</span>{" "}
           <motion.span
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -87,16 +72,30 @@ const Intro = ({ children }: { children: JSX.Element }) => {
             }}
             viewport={{ once: true }}
           >
-            {" – "} more{" "}
-            <span className="whitespace-nowrap italic text-[hsla(25,80%,35%,1)] dark:text-[hsla(25,25%,70%,0.7)]">
-              coffee,
-            </span>{" "}
-            more <span className=" tracking-tight">code</span>
+            web applications and
+          </motion.span>
+          <span className="font-medium tracking-tighter">
+            {" "}
+            scalable solutions
+          </span>
+          <motion.span
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{
+              type: "spring",
+              damping: 10,
+              stiffness: 20,
+              delay: 1,
+            }}
+            viewport={{ once: true }}
+            className="hidden italic md:block"
+          >
+            {" –"} Current SDE Intern at AI startup
           </motion.span>
         </p>
       </motion.div>
       <motion.div
-        className="mt-4 flex w-full items-center justify-center gap-6 bg-themeWhite font-light text-themeBlack dark:bg-themeBlack dark:text-themeWhite "
+        className="mt-4 flex w-full items-center justify-center gap-8 bg-themeWhite py-8 font-light text-themeBlack dark:bg-themeBlack dark:text-themeWhite"
         initial={{ opacity: 0, y: 10 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{
