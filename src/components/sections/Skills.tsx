@@ -5,7 +5,7 @@ import { forwardRef } from "react";
 
 const Skills = forwardRef((_, ref: Ref<HTMLDivElement>) => {
   const skillsMap = {
-    Languages: ["JavaScript", "TypeScript", "Python", "SQL"],
+    Languages: ["JavaScript", "TypeScript", "Python", "SQL", "Java"],
     "Front-End": [
       "React",
       "Next.js",
@@ -54,7 +54,7 @@ const Skills = forwardRef((_, ref: Ref<HTMLDivElement>) => {
                 key={key}
                 className="flex w-fit min-w-[14rem]  flex-col items-center gap-2 rounded-xl border border-zinc-400 bg-themeWhite p-6 shadow-xl dark:border-zinc-700 dark:bg-zinc-800"
               >
-                <div className="w-full text-left text-2xl font-semibold">
+                <div className="w-full text-left text-2xl font-semibold tracking-tighter">
                   {key}
                 </div>
                 <div className="flex w-full flex-col items-start text-lg">
