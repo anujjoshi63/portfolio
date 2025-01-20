@@ -17,10 +17,10 @@ const Projects = () => {
       <section key="projects" className="w-full py-12">
         <div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6 lg:gap-10">
           <div className="bg-gradient-to-b from-slate-800 via-slate-800 to-slate-900 bg-clip-text py-2 text-4xl font-normal tracking-tight text-transparent sm:text-3xl md:text-4xl md:font-semibold lg:text-5xl">
-            projects
+            featured projects
           </div>
 
-          <div className="flex w-full flex-wrap justify-center gap-8 lg:justify-start">
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
             <ProjectCard
               title="Dope Control"
               description="Dopamine management for peak productivity 🧠"
