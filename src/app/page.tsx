@@ -19,10 +19,10 @@ export default function Home() {
             <Intro>
               <Name />
             </Intro>
+            <Skills />
             <Highlights />
           </div>
         </section>
-        <Skills />
         <Projects />
 
         <WorkExperience />
