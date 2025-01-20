@@ -71,33 +71,33 @@ const WorkExperience = forwardRef((_, ref: Ref<HTMLDivElement>) => {
         </span>,
       ],
     },
-    {
-      title: "AutoShopInsights - Freelance Project",
-      url: "https://autoshopinsights.com/",
-      oneLineDescription:
-        "Simplifying financial management and decision-making for auto repair businesses",
-      bullets: [
-        <span>
-          Engineered a <b>high performance</b> web app using{" "}
-          <b title="t3 stack by theo">
-            Next.js, TypeScript, Tailwind,{" "}
-            <span className="font-normal">and</span> tRPC
-          </b>
-          , simplifying financial processes and providing valuable insights to
-          shop owners.
-        </span>,
-        <span>
-          Implemented <b>secure payment</b> processing with <b>Stripe</b>,
-          designed an intuitive UI, and <b>optimized performance</b> by
-          leveraging <b>Planetscale</b> for the database and <b>Vercel</b> for
-          hosting and CI/CD.
-        </span>,
-        <span>
-          Automated complex financial tasks, <b>reducing manual work by 80%</b>{" "}
-          and empowering shop owners to make <b>data-driven decisions</b>.
-        </span>,
-      ],
-    },
+    // {
+    //   title: "AutoShopInsights - Freelance Project",
+    //   url: "https://autoshopinsights.com/",
+    //   oneLineDescription:
+    //     "Simplifying financial management and decision-making for auto repair businesses",
+    //   bullets: [
+    //     <span>
+    //       Engineered a <b>high performance</b> web app using{" "}
+    //       <b title="t3 stack by theo">
+    //         Next.js, TypeScript, Tailwind,{" "}
+    //         <span className="font-normal">and</span> tRPC
+    //       </b>
+    //       , simplifying financial processes and providing valuable insights to
+    //       shop owners.
+    //     </span>,
+    //     <span>
+    //       Implemented <b>secure payment</b> processing with <b>Stripe</b>,
+    //       designed an intuitive UI, and <b>optimized performance</b> by
+    //       leveraging <b>Planetscale</b> for the database and <b>Vercel</b> for
+    //       hosting and CI/CD.
+    //     </span>,
+    //     <span>
+    //       Automated complex financial tasks, <b>reducing manual work by 80%</b>{" "}
+    //       and empowering shop owners to make <b>data-driven decisions</b>.
+    //     </span>,
+    //   ],
+    // },
     {
       title: "KyloApps - Software Development Internship",
       oneLineDescription:
