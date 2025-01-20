@@ -17,12 +17,12 @@ const Footer = () => {
       </div>
       <div className="container grid w-full items-center justify-center gap-4 text-center md:px-6 lg:gap-10">
         <div className="mt-10 space-y-2">
-          <div className="text-4xl font-medium tracking-tighter md:text-5xl md:font-semibold lg:text-5xl">
+          <div className="bg-gradient-to-b from-slate-800 via-slate-800 to-slate-900 bg-clip-text py-2 text-4xl font-medium tracking-tighter text-transparent md:text-5xl md:font-bold lg:text-5xl">
             <span>let&apos;s get in touch</span>
           </div>
         </div>
         <div
-          className="flex w-full flex-1 flex-col justify-evenly rounded-lg py-2 transition-all duration-500 ease-in-out md:flex-row"
+          className="flex w-full flex-1 flex-col justify-evenly rounded-lg py-2 text-base transition-all duration-500 ease-in-out md:flex-row"
           id="footer_section"
         >
           <Link href={"https://www.linkedin.com/in/thejoshi/"} target="_blank">
@@ -52,7 +52,7 @@ const Footer = () => {
             <div className="mx-2 flex flex-1 items-center gap-1 align-middle transition-all duration-300 hover:drop-shadow-[0_1px_4px_hsl(240,0%,55%)] dark:text-[hsl(240,0%,85%)]">
               <CodeIcon
                 width={16}
-                className="text-themeBlack opacity-75 hover:opacity-95 dark:text-white"
+                className="text-amber-700 opacity-75 hover:opacity-95 dark:text-white"
               />
               LeetCode
               <ArrowUpRight width={16} color="gray" className="-ml-[5px]" />
