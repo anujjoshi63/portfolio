@@ -14,7 +14,7 @@ export default function Home() {
     <div>
       <div className="min-h-screen bg-themeWhite text-themeBlack dark:bg-themeBlack dark:text-themeWhite">
         <Header />
-        <section key="introduction" className="w-full py-12 md:py-24 lg:py-32">
+        <section key="introduction" className="w-full py-16 md:py-28 lg:py-36">
           <div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6 lg:gap-6">
             <Intro>
               <Name />
