@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import HighlightCard from "../elements/HighlightCard";
@@ -53,7 +53,7 @@ const Highlights = () => {
         delay: 1,
       }}
     >
-      <div className="mt-20 py-8 text-4xl font-normal tracking-tight sm:text-3xl md:text-4xl md:font-semibold lg:text-5xl bg-gradient-to-b from-slate-800 via-slate-800 to-slate-900 bg-clip-text text-transparent ">
+      <div className="mt-20 bg-gradient-to-b from-slate-800 via-slate-800 to-slate-900 bg-clip-text py-8 text-4xl font-normal tracking-tight text-transparent sm:text-3xl md:text-4xl md:font-semibold lg:text-5xl ">
         milestones
       </div>
       <div className="flex w-full flex-col flex-wrap gap-8 md:flex-row">

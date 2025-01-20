@@ -1,4 +1,3 @@
-import Name from "@/components/IntroSection/Name";
 import {
   Footer,
   Header,

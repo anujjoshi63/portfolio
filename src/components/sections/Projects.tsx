@@ -16,7 +16,7 @@ const Projects = () => {
     >
       <section key="projects" className="w-full py-12">
         <div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6 lg:gap-10">
-          <div className="bg-gradient-to-b from-slate-800 via-slate-800 to-slate-900 bg-clip-text text-4xl font-normal tracking-tight text-transparent sm:text-3xl md:text-4xl md:font-semibold lg:text-5xl py-2">
+          <div className="bg-gradient-to-b from-slate-800 via-slate-800 to-slate-900 bg-clip-text py-2 text-4xl font-normal tracking-tight text-transparent sm:text-3xl md:text-4xl md:font-semibold lg:text-5xl">
             projects
           </div>
 
