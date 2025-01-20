@@ -2,9 +2,9 @@
 import { motion } from "framer-motion";
 import { FileIcon, GithubIcon, LinkedinIcon } from "lucide-react";
 import Link from "next/link";
-const Intro = ({ children }: { children: JSX.Element }) => {
+const Intro = () => {
   return (
-    <div className="mt-8 space-y-6 md:mt-0" id="intro_section">
+    <div className="mt-8 w-full space-y-6 md:mt-0" id="intro_section">
       <motion.div
         initial={{ opacity: 0, y: 10 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -14,8 +14,28 @@ const Intro = ({ children }: { children: JSX.Element }) => {
           stiffness: 40,
         }}
         viewport={{ once: true }}
+        className="flex w-full flex-wrap items-center justify-center gap-6 text-left text-2xl"
       >
-        {children}
+        {/* clip text gradient */}
+        <h1 className="bg-gradient-to-b from-slate-600 via-slate-700 to-slate-900 bg-clip-text py-2 text-4xl font-black tracking-tight text-transparent sm:text-5xl">
+          Anuj Joshi
+        </h1>
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{
+            type: "spring",
+            damping: 10,
+            stiffness: 20,
+            delay: 1,
+          }}
+          viewport={{ once: true }}
+          className="hidden flex-1 text-left text-lg text-gray-600 md:block"
+        >
+          <span className="text-2xl font-medium tracking-tight text-gray-600">
+            — 2x SDE Intern at AI startups
+          </span>
+        </motion.div>
       </motion.div>
       <motion.div
         initial={{ opacity: 0, y: 10 }}
@@ -27,26 +47,10 @@ const Intro = ({ children }: { children: JSX.Element }) => {
           delay: 0.1,
         }}
         viewport={{ once: true }}
+        className="flex w-full flex-col justify-center space-y-4 "
       >
-        {/* <div className="flex max-w-2xl flex-wrap items-center justify-center gap-2 text-2xl font-extralight">
-          <span className="w-fit rounded-lg bg-[hsl(260,18%,16%)] px-2 text-center  font-extralight">
-            MS CS student, ASU
-          </span>
-          <span className="w-fit rounded-lg bg-[hsl(260,18%,16%)] px-2   ">
-            Seeking
-            <span className="font-medium"> Summer '24 Internships</span>
-          </span>
-          <span className="w-fit rounded-lg  px-2  text-center">
-            Skills? React, Next, TypeScript, Python & more 🚀
-          </span>
-          <span className="mt-2 w-fit rounded-lg  px-2  text-center  text-2xl  font-extralight">
-            Checkout portfolio for more →
-          </span>
-        </div> */}
-        <p className="w-full text-left text-xl/normal font-thin text-themeBlack dark:text-themeWhite">
-          <span className="font-medium tracking-tighter">
-            Full-stack engineer
-          </span>{" "}
+        <p className="w-full text-left text-2xl text-themeBlack dark:text-themeWhite">
+          <span className="tracking-tight">Full-stack engineer</span>{" "}
           <motion.span
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -74,28 +78,16 @@ const Intro = ({ children }: { children: JSX.Element }) => {
           >
             web applications and
           </motion.span>
-          <span className="font-medium tracking-tighter">
-            {" "}
-            scalable solutions
-          </span>
-          <motion.span
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{
-              type: "spring",
-              damping: 10,
-              stiffness: 20,
-              delay: 1,
-            }}
-            viewport={{ once: true }}
-            className="hidden italic md:block"
-          >
-            {" –"} Current SDE Intern at AI startup
-          </motion.span>
+          <span className="tracking-tight"> scalable solutions</span>
         </p>
+        <div className="inline-block">
+          <div className="w-fit rounded-full bg-emerald-500 px-4 py-2 text-base font-semibold text-white">
+            Open to SDE roles starting May 2025
+          </div>
+        </div>
       </motion.div>
       <motion.div
-        className="mt-4 flex w-full items-center justify-center gap-8 bg-themeWhite py-8 font-light text-themeBlack dark:bg-themeBlack dark:text-themeWhite"
+        className="mt-4 flex w-full items-center justify-center gap-8 bg-themeWhite py-8 text-base font-light text-themeBlack dark:bg-themeBlack dark:text-themeWhite"
         initial={{ opacity: 0, y: 10 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{
