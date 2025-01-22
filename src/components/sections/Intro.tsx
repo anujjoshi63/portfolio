@@ -1,7 +1,9 @@
-"use client";
-import { motion } from "framer-motion";
-import { FileIcon, GithubIcon, LinkedinIcon } from "lucide-react";
-import Link from "next/link";
+"use client"
+
+import Link from "next/link"
+import { motion } from "framer-motion"
+import { FileIcon, GithubIcon, LinkedinIcon } from "lucide-react"
+
 const Intro = () => {
   return (
     <div className="mt-8 w-full space-y-6 md:mt-0" id="intro_section">
@@ -17,7 +19,7 @@ const Intro = () => {
         className="flex w-full flex-wrap items-center justify-center gap-6 text-left text-2xl"
       >
         {/* clip text gradient */}
-        <h1 className="bg-gradient-to-b from-slate-600 via-slate-700 to-slate-900 bg-clip-text py-2 text-4xl font-black tracking-tight text-transparent sm:text-5xl">
+        <h1 className="bg-gradient-to-b from-slate-600 via-slate-700 to-slate-800 bg-clip-text py-2 text-6xl font-black tracking-tight text-transparent sm:text-5xl">
           Anuj Joshi
         </h1>
         <motion.div
@@ -49,7 +51,7 @@ const Intro = () => {
         viewport={{ once: true }}
         className="flex w-full flex-col justify-center space-y-4 "
       >
-        <p className="w-full text-left text-2xl text-themeBlack dark:text-themeWhite">
+        <p className="text-balance w-full text-2xl text-themeBlack dark:text-themeWhite md:text-left">
           <span className="tracking-tight">Full-stack engineer</span>{" "}
           <motion.span
             initial={{ opacity: 0 }}
@@ -76,11 +78,11 @@ const Intro = () => {
             }}
             viewport={{ once: true }}
           >
-            web applications and
+            web apps and
           </motion.span>
           <span className="tracking-tight"> scalable solutions</span>
         </p>
-        <div className="inline-block">
+        <div className="flex items-center justify-center md:inline-block">
           <div className="w-fit rounded-full bg-emerald-500 px-4 py-2 text-base font-semibold text-white">
             Open to SDE roles starting May 2025
           </div>
@@ -133,7 +135,7 @@ const Intro = () => {
         </Link>
       </motion.div>
     </div>
-  );
-};
+  )
+}
 
-export default Intro;
+export default Intro
