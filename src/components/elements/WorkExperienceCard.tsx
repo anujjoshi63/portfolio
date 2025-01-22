@@ -28,7 +28,7 @@ const WorkExperienceCard = ({
   return (
     <motion.div
       ref={ref}
-      className="flex-1 space-y-3 transition-all"
+      className="flex-1 space-y-3"
       initial={mobile ? {} : { opacity: 0, y: 20, filter: "blur(20px)" }}
       animate={inView ? { opacity: 1, y: 0, filter: "blur(0px)" } : {}}
       transition={{
