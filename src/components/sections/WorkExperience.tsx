@@ -1,21 +1,24 @@
-"use client";
-import { motion } from "framer-motion";
-import { forwardRef } from "react";
-import type { Ref } from "react";
-import WorkExperienceCard from "../elements/WorkExperienceCard";
+"use client"
+
+import { forwardRef } from "react"
+import type { Ref } from "react"
+import { motion } from "framer-motion"
+
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/components/ui/accordion";
+} from "@/components/ui/accordion"
+
+import WorkExperienceCard from "../elements/WorkExperienceCard"
 
 const WorkExperience = forwardRef((_, ref: Ref<HTMLDivElement>) => {
   const workExperiences: {
-    title: string;
-    url?: string;
-    oneLineDescription: string;
-    bullets: JSX.Element[] | string[];
+    title: string
+    url?: string
+    oneLineDescription: string
+    bullets: JSX.Element[] | string[]
   }[] = [
     {
       title: "HireBuddy, Inc. - Software Engineer Intern",
@@ -152,12 +155,11 @@ const WorkExperience = forwardRef((_, ref: Ref<HTMLDivElement>) => {
         </span>,
       ],
     },
-  ];
+  ]
 
   return (
     <motion.div
       id="work_section"
-      className="space-y-3"
       initial={{ opacity: 0, y: 100, filter: "blur(4px)" }}
       whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
       transition={{
@@ -167,14 +169,12 @@ const WorkExperience = forwardRef((_, ref: Ref<HTMLDivElement>) => {
       viewport={{ once: true }}
     >
       <section key="experience" className="w-full py-12">
-        <div className="container grid items-center justify-center gap-4 px-4 md:px-6 lg:gap-10">
-          <div className="space-y-2">
-            <div className="bg-gradient-to-b from-slate-800 via-slate-800 to-slate-900 bg-clip-text py-2 text-center text-4xl font-normal tracking-tight text-transparent sm:text-3xl md:text-4xl md:font-semibold lg:text-5xl">
-              experience
-            </div>
+        <div className="container grid items-center justify-center gap-4 px-4 md:px-6 lg:gap-10 ">
+          <div className="bg-gradient-to-b from-slate-800 via-slate-800 to-slate-900 bg-clip-text text-center text-4xl font-normal tracking-tight text-transparent sm:text-3xl md:text-4xl md:font-semibold lg:text-5xl">
+            experience
           </div>
 
-          <div className="container mx-auto mt-4 hidden flex-col flex-wrap gap-8 px-5 md:mt-0 md:flex">
+          <div className="container mx-auto mt-4 hidden flex-col flex-wrap gap-8 px-5 md:mt-0 md:flex ">
             {workExperiences.map((experience, index) => (
               <WorkExperienceCard
                 url={experience.url}
@@ -213,7 +213,7 @@ const WorkExperience = forwardRef((_, ref: Ref<HTMLDivElement>) => {
         </div>
       </section>
     </motion.div>
-  );
-});
-WorkExperience.displayName = "WorkExperience";
-export default WorkExperience;
+  )
+})
+WorkExperience.displayName = "WorkExperience"
+export default WorkExperience

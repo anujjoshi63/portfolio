@@ -57,8 +57,8 @@ const Skills = forwardRef((_, ref: Ref<HTMLDivElement>) => {
       viewport={{ once: true }}
     >
       <section key="skills" className="w-full py-12">
-        <div className="flex w-full flex-col items-center justify-center gap-4 px-4 text-center md:px-6 lg:gap-10">
-          <div className="bg-gradient-to-b from-slate-800 via-slate-800 to-slate-900 bg-clip-text py-2 text-4xl font-normal  tracking-tight text-transparent sm:text-3xl md:text-4xl md:font-semibold lg:text-5xl">
+        <div className="flex w-full flex-col items-center justify-center gap-4 px-4 text-center md:px-6 lg:gap-10 ">
+          <div className="bg-gradient-to-b from-slate-800 via-slate-800 to-slate-900 bg-clip-text py-2 text-4xl font-normal tracking-tight text-transparent sm:text-3xl md:text-4xl md:font-semibold lg:text-5xl">
             key skills
           </div>
 
