@@ -21,7 +21,7 @@ const WorkExperience = forwardRef((_, ref: Ref<HTMLDivElement>) => {
     bullets: JSX.Element[] | string[]
   }[] = [
     {
-      title: "HireBuddy, Inc. - Software Engineer Intern",
+      title: "HireBuddy - Software Engineer Intern",
       url: "https://hirebuddy.ai/",
       oneLineDescription:
         "AI based Resume improving and assessing platform for job seekers and recruiters",
@@ -102,7 +102,7 @@ const WorkExperience = forwardRef((_, ref: Ref<HTMLDivElement>) => {
     //   ],
     // },
     {
-      title: "KyloApps - Software Development Internship",
+      title: "KyloApps - Software Development Intern",
       oneLineDescription:
         "Transforming user experiences through effective collaboration and technical fluency",
       bullets: [
@@ -121,7 +121,7 @@ const WorkExperience = forwardRef((_, ref: Ref<HTMLDivElement>) => {
       ],
     },
     {
-      title: "MIS Software - Freelance Project",
+      title: "MIS Software - Freelance Full-stack Developer",
       oneLineDescription:
         "Revolutionalized a chemical enterprise's operations through automation",
       bullets: [
@@ -193,7 +193,7 @@ const WorkExperience = forwardRef((_, ref: Ref<HTMLDivElement>) => {
                 key={`${experience.title}-${index + 1}`}
               >
                 <AccordionItem value={`item-${index}`} className="w-full">
-                  <AccordionTrigger className="w-full flex-1 text-left">
+                  <AccordionTrigger className="w-full flex-1 text-left text-base px-1">
                     {experience.title}
                   </AccordionTrigger>
                   <AccordionContent>
