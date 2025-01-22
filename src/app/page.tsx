@@ -15,11 +15,11 @@ export default function Home() {
         <section key="introduction" className="w-full py-16 md:py-28 lg:py-36">
           <div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6 lg:gap-6">
             <Intro />
-            <Skills />
-            <Projects />
           </div>
         </section>
 
+        <Skills />
+        <Projects />
         <WorkExperience />
         <Footer />
       </div>
