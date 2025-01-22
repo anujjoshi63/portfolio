@@ -1,6 +1,8 @@
-"use client";
-import { motion } from "framer-motion";
-import ProjectCard from "../elements/ProjectCard";
+"use client"
+
+import { motion } from "framer-motion"
+
+import ProjectCard from "../elements/ProjectCard"
 
 const Projects = () => {
   return (
@@ -32,20 +34,26 @@ const Projects = () => {
               link="https://teensy.tech"
             />
             <ProjectCard
+              title="AutoShopInsights"
+              description="One-stop solution for car shop finances. 🚀"
+              link="https://autoshopinsights.com/"
+            />
+            <ProjectCard
               title="Zeno Stack"
               description="Cross-platform Typesafe React Boilerplate 💯"
               link="https://github.com/zeno-oss/zeno"
             />
             <ProjectCard
-              title="AutoShopInsights"
-              description="One-stop solution for car shop finances. 🚀"
-              link="https://autoshopinsights.com/"
+              github
+              title="More"
+              description="Majority of my projects are open-sourced on GitHub!"
+              link="https://github.com/anujjoshi63"
             />
           </div>
         </div>
       </section>
     </motion.div>
-  );
-};
+  )
+}
 
-export default Projects;
+export default Projects
