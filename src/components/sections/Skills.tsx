@@ -1,14 +1,16 @@
-"use client";
-import { motion } from "framer-motion";
-import { Code2, Database, Layout, Server } from "lucide-react";
-import type { Ref } from "react";
-import { forwardRef } from "react";
-import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
+"use client"
+
+import type { Ref } from "react"
+import { forwardRef } from "react"
+import { motion } from "framer-motion"
+import { Code2, Database, Layout, Server } from "lucide-react"
+
+import { Card, CardContent, CardHeader, CardTitle } from "../ui/card"
 
 interface SkillCategory {
-  title: string;
-  icon: React.ReactNode;
-  skills: string[];
+  title: string
+  icon: React.ReactNode
+  skills: string[]
 }
 
 const Skills = forwardRef((_, ref: Ref<HTMLDivElement>) => {
@@ -40,7 +42,7 @@ const Skills = forwardRef((_, ref: Ref<HTMLDivElement>) => {
       icon: <Server className="h-5 w-5" strokeWidth={1.5} />,
       skills: ["AWS", "Docker", "CI/CD", "Git & GitHub", "Linux"],
     },
-  ];
+  ]
 
   return (
     <motion.div
@@ -60,14 +62,14 @@ const Skills = forwardRef((_, ref: Ref<HTMLDivElement>) => {
             key skills
           </div>
 
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid w-[82svw] grid-cols-1 gap-6 sm:grid-cols-2 md:w-fit lg:grid-cols-4">
             {skillCategories.map((category) => (
               <Card
                 key={category.title}
-                className="group border border-zinc-400 transition-shadow duration-300 hover:shadow-lg"
+                className=" group border border-zinc-400 transition-shadow duration-300 hover:shadow-lg"
               >
-                <CardHeader className="space-y-1">
-                  <div className="mb-2 flex items-center gap-2">
+                <CardHeader className="flex flex-col justify-between gap-2">
+                  <div className="flex items-center gap-2">
                     <span className="text-primary">{category.icon}</span>
                     <CardTitle className="whitespace-nowrap text-left text-xl">
                       {category.title}
@@ -75,7 +77,7 @@ const Skills = forwardRef((_, ref: Ref<HTMLDivElement>) => {
                   </div>
                 </CardHeader>
                 <CardContent>
-                  <ul className="space-y-2">
+                  <ul className="flex flex-col gap-2 text-left text-base text-gray-700">
                     {category.skills.map((skill) => (
                       <li
                         key={skill}
@@ -92,8 +94,8 @@ const Skills = forwardRef((_, ref: Ref<HTMLDivElement>) => {
         </div>
       </section>
     </motion.div>
-  );
-});
-Skills.displayName = "Skills";
+  )
+})
+Skills.displayName = "Skills"
 
-export default Skills;
+export default Skills
