@@ -28,7 +28,7 @@ const WorkExperienceCard = ({
   return (
     <motion.div
       ref={ref}
-      className="flex-1 space-y-3"
+      className="flex-1 space-y-3 transition-all"
       initial={mobile ? {} : { opacity: 0, y: 20, filter: "blur(20px)" }}
       animate={inView ? { opacity: 1, y: 0, filter: "blur(0px)" } : {}}
       transition={{
@@ -39,10 +39,10 @@ const WorkExperienceCard = ({
     >
       <div
         className={clsx(
-          "relative mx-auto flex rounded-lg border border-zinc-400 p-4 shadow-md dark:border-zinc-700 dark:bg-zinc-800",
+          "relative mx-auto flex rounded-lg border border-zinc-400 p-4 shadow dark:border-zinc-700 dark:bg-zinc-800",
           {
             "w-full": !mobile,
-            "bg-zinc-300": mobile,
+            "bg-zinc-200": mobile,
           }
         )}
       >
@@ -62,7 +62,7 @@ const WorkExperienceCard = ({
                 href={url || ""}
                 target="_blank"
                 title="Link to the project (opens in new tab)"
-                className="flex items-center gap-2 ml-auto hover:text-slate-900 text-2xl opacity-80 hover:opacity-100 transition-all"
+                className="flex items-center gap-2 md:ml-auto hover:text-slate-900 text-2xl opacity-80 hover:opacity-100 transition-all"
               >
                 <span>Link</span>
                 <LinkIcon
