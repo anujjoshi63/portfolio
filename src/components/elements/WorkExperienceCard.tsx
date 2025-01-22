@@ -1,16 +1,17 @@
-import clsx from "clsx";
-import { motion } from "framer-motion";
-import { ArrowUpRight, MoveRight } from "lucide-react";
-import Link from "next/link";
-import { useId } from "react";
-import { useInView } from "react-intersection-observer";
+import { useId } from "react"
+import Link from "next/link"
+import clsx from "clsx"
+import { motion } from "framer-motion"
+import { ArrowUpRight, MoveRight } from "lucide-react"
+import { useInView } from "react-intersection-observer"
+
 type WorkExperienceCardProps = {
-  title: string;
-  oneLineDescription: string;
-  bullets: string[] | JSX.Element[];
-  url?: string;
-  mobile?: boolean;
-};
+  title: string
+  oneLineDescription: string
+  bullets: string[] | JSX.Element[]
+  url?: string
+  mobile?: boolean
+}
 
 const WorkExperienceCard = ({
   title,
@@ -19,10 +20,10 @@ const WorkExperienceCard = ({
   url,
   mobile,
 }: WorkExperienceCardProps) => {
-  const id = useId();
+  const id = useId()
   const [ref, inView] = useInView({
     triggerOnce: true, // This will ensure the animation only plays once
-  });
+  })
 
   return (
     <motion.div
@@ -42,7 +43,7 @@ const WorkExperienceCard = ({
           {
             "w-full": !mobile,
             "bg-zinc-300": mobile,
-          },
+          }
         )}
       >
         <div className="flex flex-col">
@@ -52,7 +53,7 @@ const WorkExperienceCard = ({
               {
                 "text-3xl": !mobile,
                 "text-base": mobile,
-              },
+              }
             )}
           >
             <span className={clsx("", { hidden: mobile })}>{title} </span>
@@ -94,13 +95,13 @@ const WorkExperienceCard = ({
                   <MoveRight width={14} className="mt-[4px] min-w-[14px]" />
                   {bullet}
                 </div>
-              );
+              )
             })}
           </div>
         </div>
       </div>
     </motion.div>
-  );
-};
+  )
+}
 
-export default WorkExperienceCard;
+export default WorkExperienceCard
