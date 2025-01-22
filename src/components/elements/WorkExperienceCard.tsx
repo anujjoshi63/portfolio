@@ -2,7 +2,7 @@ import { useId } from "react"
 import Link from "next/link"
 import clsx from "clsx"
 import { motion } from "framer-motion"
-import { ArrowUpRight, MoveRight } from "lucide-react"
+import { LinkIcon, MoveRight } from "lucide-react"
 import { useInView } from "react-intersection-observer"
 
 type WorkExperienceCardProps = {
@@ -49,7 +49,7 @@ const WorkExperienceCard = ({
         <div className="flex flex-col">
           <div
             className={clsx(
-              "flex items-center gap-2 font-medium tracking-tight dark:text-[hsl(240,11%,86%)]",
+              "flex items-center gap-2 font-medium tracking-tight dark:text-[hsl(240,11%,86%)] text-slate-900",
               {
                 "text-3xl": !mobile,
                 "text-base": mobile,
@@ -61,29 +61,30 @@ const WorkExperienceCard = ({
               <Link
                 href={url || ""}
                 target="_blank"
-                className="flex items-center gap-2"
+                title="Link to the project (opens in new tab)"
+                className="flex items-center gap-2 ml-auto hover:text-slate-900 text-2xl opacity-80 hover:opacity-100 transition-all"
               >
                 <span>Link</span>
-                <ArrowUpRight
+                <LinkIcon
                   size={clsx({
                     20: !mobile,
                     16: mobile,
                   })}
-                  color="gray"
+                  color="currentColor"
                   className="cursor-pointer"
                 />
               </Link>
             )}
           </div>
           <p
-            className={clsx("", {
+            className={clsx("text-slate-700", {
               "text-lg leading-relaxed": !mobile,
               "mt-2 text-base leading-snug": mobile,
             })}
           >
             {oneLineDescription}
           </p>
-          <div className="flex flex-col">
+          <div className="flex flex-col text-slate-800">
             {bullets.map((bullet, index) => {
               return (
                 <div
