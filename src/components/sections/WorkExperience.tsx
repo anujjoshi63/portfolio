@@ -1,6 +1,6 @@
 "use client"
 
-import { forwardRef } from "react"
+import { forwardRef, type JSX } from "react"
 import type { Ref } from "react"
 import { motion } from "framer-motion"
 
