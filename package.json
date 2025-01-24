@@ -29,7 +29,6 @@
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
-    "@biomejs/biome": "1.7.3",
     "@types/node": "^20.9.2",
     "@types/react": "19.0.8",
     "@types/react-dom": "19.0.3",
