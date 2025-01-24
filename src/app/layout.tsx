@@ -1,21 +1,22 @@
-import type { Metadata } from "next";
-import dynamic from "next/dynamic";
-import localFont from "next/font/local";
-import "./globals.css";
+import type { Metadata } from "next"
+import dynamic from "next/dynamic"
+import localFont from "next/font/local"
+
+import "./globals.css"
 
 const DynamicAnalytics = dynamic(
-  () => import("@vercel/analytics/react").then((mod) => mod.Analytics),
-  { ssr: false },
-);
+  () => import("@vercel/analytics/react").then((mod) => mod.Analytics)
+  // { ssr: false },
+)
 const DynamicSpeedInsights = dynamic(
-  () => import("@vercel/speed-insights/next").then((mod) => mod.SpeedInsights),
-  { ssr: false },
-);
+  () => import("@vercel/speed-insights/next").then((mod) => mod.SpeedInsights)
+  // { ssr: false },
+)
 
 const satoshi = localFont({
   src: "./fonts/Satoshi-Variable.ttf",
   display: "swap",
-});
+})
 export const metadata: Metadata = {
   icons: "/favicon.ico",
   metadataBase: new URL("https://anujjoshi.me/"),
@@ -66,12 +67,12 @@ export const metadata: Metadata = {
     card: "summary",
     images: "https://anujjoshi.me/og-image.png",
   },
-};
+}
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode;
+  children: React.ReactNode
 }) {
   return (
     <html lang="en">
@@ -104,5 +105,5 @@ export default function RootLayout({
         <DynamicSpeedInsights />
       </body>
     </html>
-  );
+  )
 }
