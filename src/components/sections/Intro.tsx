@@ -4,6 +4,8 @@ import Link from "next/link"
 import { motion } from "framer-motion"
 import { FileIcon, GithubIcon, LinkedinIcon } from "lucide-react"
 
+import { Badge } from "@/components/ui/badge"
+
 const Intro = () => {
   return (
     <div className="mt-8 w-full space-y-6 md:mt-0" id="intro_section">
@@ -16,10 +18,27 @@ const Intro = () => {
           stiffness: 40,
         }}
         viewport={{ once: true }}
-        className="flex w-full flex-wrap items-center justify-center gap-6 text-left text-2xl"
+        className="flex flex-col w-full flex-wrap items-center justify-center text-left text-2xl"
       >
-        {/* clip text gradient */}
-        <h1 className="bg-gradient-to-b from-slate-600 via-slate-700 to-slate-800 bg-clip-text py-2 text-6xl font-black tracking-tighter text-transparent sm:text-5xl">
+        <Badge
+          variant="outline"
+          className="text-base rounded-none smooth-corners-sm font-medium mb-4 bg-gradient-to-r from-slate-200/75 via-slate-200/75 to-slate-300/50"
+        >
+          🚀 Available for SDE Roles - May 2025
+        </Badge>
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, y: 10 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{
+          type: "spring",
+          damping: 10,
+          stiffness: 40,
+        }}
+        viewport={{ once: true }}
+        className="flex flex-col w-full flex-wrap items-center justify-center text-left text-2xl"
+      >
+        <h1 className="bg-gradient-to-b from-slate-600 via-slate-700 to-slate-800 bg-clip-text py-2 text-6xl font-black tracking-tighter px-1 text-transparent sm:text-5xl">
           Anuj Joshi
         </h1>
         <motion.div
@@ -32,10 +51,10 @@ const Intro = () => {
             delay: 1,
           }}
           viewport={{ once: true }}
-          className="hidden flex-1 text-left text-lg text-gray-600 md:block"
+          className="hidden flex-1 text-left text-lg md:block"
         >
-          <span className="text-2xl font-medium tracking-tight text-gray-600">
-            — 2x SDE Intern at AI startups
+          <span className="text-xl font-medium tracking-tight text-slate-500">
+            2x SDE Intern at AI startups
           </span>
         </motion.div>
       </motion.div>
@@ -51,8 +70,8 @@ const Intro = () => {
         viewport={{ once: true }}
         className="flex w-full flex-col justify-center gap-4"
       >
-        <p className="text-balance w-full text-2xl text-themeBlack dark:text-themeWhite md:text-left">
-          <span className="tracking-tight">Full-stack engineer</span>{" "}
+        <p className="text-balance w-full text-2xl text-slate-800 dark:text-themeWhite md:text-left">
+          <span className="tracking-tight">Full-stack developer</span>{" "}
           <motion.span
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -64,9 +83,9 @@ const Intro = () => {
             }}
             viewport={{ once: true }}
           >
-            specializing in
-          </motion.span>
-          <span className="italic"> AI-driven</span>{" "}
+            specialized in
+          </motion.span>{" "}
+          <span className="italic">React & Next.js</span>{" "}
           <motion.span
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -78,15 +97,10 @@ const Intro = () => {
             }}
             viewport={{ once: true }}
           >
-            web apps and
-          </motion.span>
-          <span className="tracking-tight"> scalable solutions</span>
+            | Building
+          </motion.span>{" "}
+          <span className="tracking-tight">modern web solutions</span>
         </p>
-        <div className="flex items-center justify-center md:inline-block">
-          <div className="w-fit rounded-full bg-emerald-500 px-4 py-2 text-base font-semibold text-white">
-            Open to SDE roles starting May 2025
-          </div>
-        </div>
       </motion.div>
       <motion.div
         className="mt-4 flex w-full items-center justify-center gap-8 bg-themeWhite py-8 pb-0 text-base font-light text-themeBlack dark:bg-themeBlack dark:text-themeWhite"

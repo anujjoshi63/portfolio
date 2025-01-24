@@ -27,7 +27,7 @@ const ProjectCard = ({
       )}
     >
       <CardHeader className="w-full pb-2">
-        <CardTitle className="flex items-center gap-2 text-2xl font-semibold tracking-tighter">
+        <CardTitle className="flex items-center gap-2 text-2xl font-semibold tracking-tighter text-slate-700">
           {title} {github && <GithubIcon className="h-5 w-5" />}
         </CardTitle>
       </CardHeader>
