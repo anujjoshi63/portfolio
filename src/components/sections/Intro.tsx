@@ -19,7 +19,7 @@ const Intro = () => {
         className="flex w-full flex-wrap items-center justify-center gap-6 text-left text-2xl"
       >
         {/* clip text gradient */}
-        <h1 className="bg-gradient-to-b from-slate-600 via-slate-700 to-slate-800 bg-clip-text py-2 text-6xl font-black tracking-tight text-transparent sm:text-5xl">
+        <h1 className="bg-gradient-to-b from-slate-600 via-slate-700 to-slate-800 bg-clip-text py-2 text-6xl font-black tracking-tighter text-transparent sm:text-5xl">
           Anuj Joshi
         </h1>
         <motion.div
@@ -49,7 +49,7 @@ const Intro = () => {
           delay: 0.1,
         }}
         viewport={{ once: true }}
-        className="flex w-full flex-col justify-center space-y-4 "
+        className="flex w-full flex-col justify-center gap-4"
       >
         <p className="text-balance w-full text-2xl text-themeBlack dark:text-themeWhite md:text-left">
           <span className="tracking-tight">Full-stack engineer</span>{" "}
@@ -89,7 +89,7 @@ const Intro = () => {
         </div>
       </motion.div>
       <motion.div
-        className="mt-4 flex w-full items-center justify-center gap-8 bg-themeWhite py-8 text-base font-light text-themeBlack dark:bg-themeBlack dark:text-themeWhite"
+        className="mt-4 flex w-full items-center justify-center gap-8 bg-themeWhite py-8 pb-0 text-base font-light text-themeBlack dark:bg-themeBlack dark:text-themeWhite"
         initial={{ opacity: 0, y: 10 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{
