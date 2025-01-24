@@ -1,10 +1,10 @@
-import Image from "next/image";
-import Link from "next/link";
+import Image from "next/image"
+import Link from "next/link"
 
 export default function NotFound() {
   return (
-    <div className="flex h-screen w-full flex-col items-center justify-center gap-4">
-      <div className="border-b border-b-zinc-800 py-1 text-2xl font-bold">
+    <div className="flex h-screen w-full flex-col items-center justify-center gap-8">
+      <div className="border-b border-b-slate-800 py-1 text-2xl font-bold">
         404
       </div>
       <Image
@@ -16,10 +16,10 @@ export default function NotFound() {
       />
       <Link
         href="/"
-        className="rounded-md border border-zinc-700 bg-zinc-800 px-2 py-1 text-lg text-zinc-200 shadow-xl"
+        className="smooth-corners-sm  text-slate-800 px-4 py-2 text-lg bg-slate-300 shadow-xl"
       >
         back to portfolio {";)"}
       </Link>
     </div>
-  );
+  )
 }
