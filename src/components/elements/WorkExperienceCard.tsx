@@ -49,7 +49,7 @@ const WorkExperienceCard = ({
         <div className="flex flex-col">
           <div
             className={clsx(
-              "flex items-center gap-2 font-medium tracking-tight dark:text-[hsl(240,11%,86%)] text-slate-900",
+              "flex items-center gap-2 font-medium tracking-tight dark:text-[hsl(240,11%,86%)] text-slate-800",
               {
                 "text-3xl": !mobile,
                 "text-base": mobile,
@@ -77,7 +77,7 @@ const WorkExperienceCard = ({
             )}
           </div>
           <p
-            className={clsx("text-slate-700", {
+            className={clsx("text-slate-700 font-light", {
               "text-lg leading-relaxed": !mobile,
               "mt-2 text-base leading-snug": mobile,
             })}
