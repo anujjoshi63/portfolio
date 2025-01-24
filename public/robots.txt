@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://anujjoshi.me
+
+# Sitemaps
+Sitemap: https://anujjoshi.me/sitemap.xml
