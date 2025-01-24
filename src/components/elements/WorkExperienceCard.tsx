@@ -1,4 +1,4 @@
-import { useId } from "react"
+import { useId, type JSX } from "react"
 import Link from "next/link"
 import clsx from "clsx"
 import { motion } from "framer-motion"
