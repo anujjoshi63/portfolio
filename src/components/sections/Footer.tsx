@@ -17,7 +17,7 @@ const Footer = () => {
           </div>
         </div>
         <div
-          className="flex w-full flex-1 flex-col justify-evenly rounded-lg py-2 text-base transition-all duration-500 ease-in-out md:flex-row gap-6"
+          className="flex w-full flex-1 flex-col justify-evenly smooth-corners-lg p-4 text-base transition-all duration-500 ease-in-out md:flex-row gap-6"
           id="footer_section"
         >
           <Link href={"https://www.linkedin.com/in/thejoshi/"} target="_blank">
