@@ -39,7 +39,7 @@ const WorkExperienceCard = ({
     >
       <div
         className={clsx(
-          "relative mx-auto flex rounded-lg border border-zinc-400 p-4 shadow dark:border-zinc-700 dark:bg-zinc-800",
+          "relative mx-auto flex rounded-lg border border-zinc-400 p-4 shadow dark:border-zinc-700 dark:bg-zinc-800 hover:shadow-md transition-all",
           {
             "w-full": !mobile,
             "bg-zinc-200": mobile,
