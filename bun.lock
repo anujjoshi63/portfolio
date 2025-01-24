@@ -32,6 +32,7 @@
         "eslint-config-next": "15.1.6",
         "postcss": "^8.4.31",
         "prettier-plugin-tailwindcss": "^0.5.7",
+        "tailwind-corner-smoothing": "^1.2.0",
         "tailwindcss": "^3.4.17",
         "typescript": "^5.7.2",
       },
@@ -837,6 +838,8 @@
     "supports-color": ["supports-color@7.2.0", "", { "dependencies": { "has-flag": "^4.0.0" } }, "sha512-qpCAvRl9stuOHveKsn7HncJRvv501qIacKzQlO/+Lwxc9+0q2wLyv4Dfvt80/DPn2pqOBsJdDiogXGR9+OvwRw=="],
 
     "supports-preserve-symlinks-flag": ["supports-preserve-symlinks-flag@1.0.0", "", {}, "sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w=="],
+
+    "tailwind-corner-smoothing": ["tailwind-corner-smoothing@1.2.0", "", {}, "sha512-lKeE58pOeIhrNbOjl6nxNSM8OMm7iTkuT01hpaipoZtVxzeN7K/Tsu4MrKdKtX/aTAwgOjaDcJghKUG1N4HcuQ=="],
 
     "tailwind-merge": ["tailwind-merge@2.6.0", "", {}, "sha512-P+Vu1qXfzediirmHOC3xKGAYeZtPcV9g76X+xg2FD4tYgR71ewMA35Y3sCz3zhiN/dwefRpJX0yBcgwi1fXNQA=="],
 
