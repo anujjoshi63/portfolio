@@ -18,7 +18,7 @@ const Skills = forwardRef((_, ref: Ref<HTMLDivElement>) => {
     {
       title: "Languages",
       icon: <Code2 className="h-5 w-5" strokeWidth={1.5} />,
-      skills: ["TypeScript", "JavaScript", "Python", "SQL", "Java"],
+      skills: ["TypeScript", "Python", "Golang", "JavaScript", "SQL", "Java"],
     },
     {
       title: "Front-End",
