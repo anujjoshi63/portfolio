@@ -21,7 +21,7 @@ const Skills = forwardRef((_, ref: Ref<HTMLDivElement>) => {
       skills: ["TypeScript", "Python", "Golang", "JavaScript", "SQL", "Java"],
     },
     {
-      title: "Front-End",
+      title: "Frontend",
       icon: <Layout className="h-5 w-5" strokeWidth={1.5} />,
       skills: [
         "React",
@@ -33,12 +33,12 @@ const Skills = forwardRef((_, ref: Ref<HTMLDivElement>) => {
       ],
     },
     {
-      title: "Back-End",
+      title: "Backend",
       icon: <Database className="h-5 w-5" strokeWidth={1.5} />,
       skills: ["Node.js", "Express.js", "PostgreSQL", "Redis", "LangChain"],
     },
     {
-      title: "DevOps & Tools",
+      title: "DevOps",
       icon: <Server className="h-5 w-5" strokeWidth={1.5} />,
       skills: ["AWS", "Docker", "CI/CD", "Git & GitHub", "Linux"],
     },
