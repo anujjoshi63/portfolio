@@ -9,7 +9,7 @@ import {
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-themeWhite text-themeBlack dark:bg-themeBlack dark:text-themeWhite">
+    <div className="relative min-h-screen bg-themeWhite text-themeBlack dark:bg-themeBlack dark:text-themeWhite bg-grain">
       <Header />
       <section
         key="introduction"
