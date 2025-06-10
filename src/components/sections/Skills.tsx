@@ -3,7 +3,7 @@
 import type { Ref } from "react"
 import { forwardRef } from "react"
 import { motion } from "framer-motion"
-import { Code2, Database, Layout, Server } from "lucide-react"
+import { Brain, Code2, Layout, Server } from "lucide-react"
 
 import { Card, CardContent, CardHeader, CardTitle } from "../ui/card"
 
@@ -18,29 +18,42 @@ const Skills = forwardRef((_, ref: Ref<HTMLDivElement>) => {
     {
       title: "Languages",
       icon: <Code2 className="h-5 w-5" strokeWidth={1.5} />,
-      skills: ["TypeScript", "Python", "Golang", "JavaScript", "SQL", "Java"],
+      skills: ["Python", "TypeScript", "Java", "SQL", "Go", "JavaScript"],
     },
     {
-      title: "Frontend",
-      icon: <Layout className="h-5 w-5" strokeWidth={1.5} />,
+      title: "AI & ML",
+      icon: <Brain className="h-5 w-5" strokeWidth={1.5} />,
       skills: [
-        "React",
-        "Next.js",
-        "React Native",
-        "TailwindCSS",
-        "Material-UI",
-        "Redux",
+        "LangChain",
+        "LLM APIs",
+        "Prompt Engineering",
+        "Text-to-SQL",
+        "Hugging Face",
       ],
     },
     {
-      title: "Backend",
-      icon: <Database className="h-5 w-5" strokeWidth={1.5} />,
-      skills: ["Node.js", "Express.js", "PostgreSQL", "Redis", "LangChain"],
+      title: "Full-stack",
+      icon: <Layout className="h-5 w-5" strokeWidth={1.5} />,
+      skills: [
+        "React/Next.js",
+        "Node.js",
+        "Express.js",
+        "PostgreSQL",
+        "Redis",
+        "React Native (Expo)",
+      ],
     },
+
     {
       title: "DevOps",
       icon: <Server className="h-5 w-5" strokeWidth={1.5} />,
-      skills: ["AWS", "Docker", "CI/CD", "Git & GitHub", "Linux"],
+      skills: [
+        "AWS",
+        "Docker",
+        "CI/CD (Github Actions)",
+        "Linux",
+        "Git & GitHub",
+      ],
     },
   ]
 
