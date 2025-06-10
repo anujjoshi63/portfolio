@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://anujjoshi.me/"),
   title: "Anuj Joshi | Portfolio",
   description:
-    "Anuj Joshi, Full-stack dev crafting AI-powered web solutions | Open to Software Engineering roles (May '25) 🚀 | ASU CS Master's student | Previously built tech @ HireBuddy & BodaInsights | Stack: React, Next.js, TypeScript, AWS ",
+    "Anuj Joshi, Full-stack dev crafting AI-powered web solutions | Open to Software Engineering roles (June '25) 🚀 | ASU CS Master's student | Previously built tech @ HireBuddy & BodaInsights | Stack: React, Next.js, TypeScript, AWS ",
   creator: "Anuj Joshi",
   publisher: "Anuj",
   alternates: {
@@ -79,7 +79,7 @@ export const metadata: Metadata = {
     images: [
       {
         url: "https://anujjoshi.me/og-image.png",
-        alt: "Anuj is 1. student at asu, 2. skilled in react, js, ts, python, 3. looking for software engineering or applied ai roles for may 2025",
+        alt: "Anuj is 1. student at asu, 2. skilled in react, js, ts, python, 3. looking for software engineering or applied ai roles for june 2025",
       },
     ],
     locale: "en_US",

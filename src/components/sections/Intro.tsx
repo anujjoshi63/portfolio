@@ -6,6 +6,8 @@ import { FileIcon, GithubIcon, LinkedinIcon } from "lucide-react"
 
 import { Badge } from "@/components/ui/badge"
 
+const ROLE_AVAILABILITY_DATE = "June 2025"
+
 const Intro = () => {
   return (
     <div className="mt-8 w-full space-y-6 md:mt-0" id="intro_section">
@@ -24,7 +26,7 @@ const Intro = () => {
           variant="outline"
           className="text-base rounded-none smooth-corners-sm font-medium mb-4 bg-gradient-to-r from-slate-200/75 via-slate-200/75 to-slate-300/50"
         >
-          🚀 Available for SDE Roles - May 2025
+          🚀 Available for SDE Roles - {ROLE_AVAILABILITY_DATE}
         </Badge>
       </motion.div>
       <motion.div
@@ -71,7 +73,7 @@ const Intro = () => {
         className="flex w-full flex-col justify-center gap-4"
       >
         <p className="text-balance w-full text-2xl text-slate-800 dark:text-themeWhite md:text-left">
-          <span className="tracking-tight">Full-stack developer</span>{" "}
+          <span className="tracking-tight">Full-stack SDE</span>{" "}
           <motion.span
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -85,7 +87,7 @@ const Intro = () => {
           >
             specialized in
           </motion.span>{" "}
-          <span className="italic">React & Next.js</span>{" "}
+          <span className="tracking-tight px-px">AI & Cloud</span>{" "}
           <motion.span
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -99,7 +101,7 @@ const Intro = () => {
           >
             | Building
           </motion.span>{" "}
-          <span className="tracking-tight">modern web solutions</span>
+          <span className="tracking-tight">scalable solutions</span>
         </p>
       </motion.div>
       <motion.div
