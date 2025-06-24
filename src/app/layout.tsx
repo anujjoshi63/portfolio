@@ -20,9 +20,9 @@ const satoshi = localFont({
 export const metadata: Metadata = {
   icons: "/favicon.ico",
   metadataBase: new URL("https://anujjoshi.me/"),
-  title: "Anuj Joshi | Portfolio",
+  title: "Anuj Joshi - Full Stack Developer | React Next.js AI Engineer",
   description:
-    "Anuj Joshi, Full-stack dev crafting AI-powered web solutions | Open to Software Engineering roles (June '25) 🚀 | ASU CS Master's student | Previously built tech @ HireBuddy & BodaInsights | Stack: React, Next.js, TypeScript, AWS ",
+    "Full-stack developer specializing in AI & cloud solutions. ASU CS Master's graduate (May '25). 2x startup intern. React, Next.js, AWS expert.",
   creator: "Anuj Joshi",
   publisher: "Anuj",
   alternates: {
@@ -119,6 +119,7 @@ export default function RootLayout({
                 name: "Arizona State University",
                 department: "Computer Science",
               },
+              graduationYear: "2025",
               knowsAbout: [
                 "Full Stack Development",
                 "JavaScript",
@@ -141,8 +142,6 @@ export default function RootLayout({
               },
               address: {
                 "@type": "PostalAddress",
-                addressLocality: "Phoenix",
-                addressRegion: "AZ",
                 addressCountry: "US",
               },
             }),
