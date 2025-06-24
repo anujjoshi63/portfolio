@@ -46,7 +46,7 @@ const Header = () => {
     onClick: () => void
   }) => (
     <button
-      className="lowercase blur-none transition-all duration-300 hover:-translate-y-[2px] hover:drop-shadow-[0_1px_2px_hsl(240,0%,30%)] dark:hover:text-[hsl(240,0%,95%)]"
+      className="lowercase blur-none transition-all duration-200 ease-out hover:opacity-70 active:scale-95 active:opacity-60 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 rounded-md px-2 py-1"
       onClick={onClick}
       type="button"
     >
@@ -60,21 +60,19 @@ const Header = () => {
       id="header_section"
     >
       <motion.div
-        initial={{ top: "-3rem", opacity: 0, filter: "blur(20px)", scale: 0.3 }}
+        initial={{ y: -50, opacity: 0, scale: 0.9 }}
         animate={{
-          top: "1.5rem",
+          y: 0,
           opacity: 1,
-          filter: "blur(0px)",
           scale: 1,
         }}
         transition={{
           type: "spring",
-          damping: 10,
-          stiffness: 30,
-          delay: 1,
+          damping: 20,
+          stiffness: 100,
+          delay: 0.5,
         }}
-        className="fixed z-50 flex w-fit items-center justify-center gap-6 rounded-full border   border-[hsla(0,0%,30%,0.5)] bg-gradient-to-tr from-[hsla(260,20%,70%,0.3)] to-[hsla(250,20%,60%,0.3)] px-4 py-2 bg-blend-difference backdrop-blur-md dark:from-[hsla(260,40%,20%,0.3)] dark:to-[hsla(250,40%,10%,0.3)]
-md:top-6"
+        className="fixed top-6 z-50 flex w-fit items-center justify-center gap-6 rounded-full border border-[hsla(0,0%,30%,0.5)] bg-gradient-to-tr from-[hsla(260,20%,70%,0.3)] to-[hsla(250,20%,60%,0.3)] px-4 py-2 bg-blend-difference backdrop-blur-md dark:from-[hsla(260,40%,20%,0.3)] dark:to-[hsla(250,40%,10%,0.3)]"
       >
         <Button onClick={() => scrollToRef(SECTIONS_ID_MAP.INTRO)}>
           about

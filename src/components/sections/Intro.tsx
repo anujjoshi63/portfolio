@@ -40,7 +40,7 @@ const Intro = () => {
         viewport={{ once: true }}
         className="flex flex-col w-full flex-wrap items-center justify-center text-left text-2xl"
       >
-        <h1 className="bg-gradient-to-b from-slate-600 via-slate-700 to-slate-800 bg-clip-text py-2 text-6xl font-black tracking-tighter px-1 text-transparent sm:text-5xl">
+        <h1 className="bg-gradient-to-b from-slate-600 via-slate-700 to-slate-800 bg-clip-text py-2 text-4xl font-bold tracking-tight px-1 text-transparent sm:text-5xl md:text-6xl">
           Anuj Joshi
         </h1>
         <motion.div
@@ -55,7 +55,7 @@ const Intro = () => {
           viewport={{ once: true }}
           className="hidden flex-1 text-left text-lg md:block"
         >
-          <span className="text-xl font-medium tracking-tight text-slate-500">
+          <span className="text-lg font-regular tracking-normal text-slate-500">
             2x SDE Intern at AI startups
           </span>
         </motion.div>
@@ -72,7 +72,7 @@ const Intro = () => {
         viewport={{ once: true }}
         className="flex w-full flex-col justify-center gap-4"
       >
-        <p className="text-balance w-full text-2xl text-slate-800 dark:text-themeWhite md:text-left">
+        <p className="text-balance w-full text-xl leading-relaxed text-slate-800 dark:text-themeWhite md:text-left md:text-2xl">
           <span className="tracking-tight">Full-stack SDE</span>{" "}
           <motion.span
             initial={{ opacity: 0 }}
