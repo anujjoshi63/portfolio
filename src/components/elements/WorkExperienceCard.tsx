@@ -1,9 +1,7 @@
 import { useId, type JSX } from "react"
 import Link from "next/link"
 import clsx from "clsx"
-import { motion } from "framer-motion"
 import { LinkIcon, MoveRight } from "lucide-react"
-import { useInView } from "react-intersection-observer"
 
 type WorkExperienceCardProps = {
   title: string
@@ -21,25 +19,12 @@ const WorkExperienceCard = ({
   mobile,
 }: WorkExperienceCardProps) => {
   const id = useId()
-  const [ref, inView] = useInView({
-    triggerOnce: true, // This will ensure the animation only plays once
-  })
 
   return (
-    <motion.div
-      ref={ref}
-      className="flex-1 space-y-3"
-      initial={mobile ? {} : { opacity: 0, y: 20, filter: "blur(20px)" }}
-      animate={inView ? { opacity: 1, y: 0, filter: "blur(0px)" } : {}}
-      transition={{
-        type: "spring",
-        damping: 10,
-        stiffness: 30,
-      }}
-    >
+    <div className="flex-1 space-y-3">
       <div
         className={clsx(
-          "relative mx-auto flex rounded-2xl border border-zinc-400 p-6 shadow dark:border-zinc-700 dark:bg-zinc-800 hover:shadow-md transition-all",
+          "relative mx-auto flex rounded-2xl border border-zinc-400 p-6 shadow dark:border-zinc-700 dark:bg-zinc-800 hover:shadow-lg transition-all duration-300 ease-out hover:scale-[1.02] will-change-transform",
           {
             "w-full": !mobile,
             "bg-zinc-200": mobile,
@@ -101,7 +86,7 @@ const WorkExperienceCard = ({
           </div>
         </div>
       </div>
-    </motion.div>
+    </div>
   )
 }
 

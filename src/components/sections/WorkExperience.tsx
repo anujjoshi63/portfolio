@@ -184,13 +184,16 @@ const WorkExperience = forwardRef((_, ref: Ref<HTMLDivElement>) => {
   return (
     <motion.div
       id="work_section"
-      initial={{ opacity: 0, y: 100, filter: "blur(4px)" }}
-      whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
       transition={{
-        type: "tween",
-        duration: 1,
+        type: "spring",
+        damping: 20,
+        stiffness: 100,
+        duration: 0.6,
       }}
-      viewport={{ once: true }}
+      viewport={{ once: true, margin: "-100px" }}
+      style={{ willChange: "transform, opacity" }}
     >
       <section key="experience" className="w-full py-12">
         <div className="container grid items-center justify-center gap-4 px-4 md:px-6 lg:gap-10 ">
@@ -200,13 +203,25 @@ const WorkExperience = forwardRef((_, ref: Ref<HTMLDivElement>) => {
 
           <div className="container mx-auto mt-4 hidden flex-col flex-wrap gap-8 px-5 md:mt-0 md:flex ">
             {workExperiences.map((experience, index) => (
-              <WorkExperienceCard
-                url={experience.url}
+              <motion.div
                 key={`${index + 1}`}
-                title={experience.title}
-                oneLineDescription={experience.oneLineDescription}
-                bullets={experience.bullets}
-              />
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{
+                  type: "spring",
+                  damping: 25,
+                  stiffness: 120,
+                  delay: index * 0.1,
+                }}
+                viewport={{ once: true, margin: "-50px" }}
+              >
+                <WorkExperienceCard
+                  url={experience.url}
+                  title={experience.title}
+                  oneLineDescription={experience.oneLineDescription}
+                  bullets={experience.bullets}
+                />
+              </motion.div>
             ))}
           </div>
           <div className="container mx-auto mt-4 flex flex-col flex-wrap gap-8 px-5 md:mt-0 md:hidden">
