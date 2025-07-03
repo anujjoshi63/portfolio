@@ -6,9 +6,11 @@ import { FileIcon, GithubIcon, LinkedinIcon } from "lucide-react"
 
 import { Badge } from "@/components/ui/badge"
 
-const ROLE_AVAILABILITY_DATE = "June 2025"
-
 const Intro = () => {
+  const currentDate = new Date()
+  const month = currentDate.toLocaleString("default", { month: "long" })
+  const year = currentDate.getFullYear()
+
   return (
     <div className="mt-8 w-full space-y-6 md:mt-0" id="intro_section">
       <motion.div
@@ -26,7 +28,7 @@ const Intro = () => {
           variant="outline"
           className="text-base rounded-none smooth-corners-sm font-medium mb-4 bg-gradient-to-r from-slate-200/75 via-slate-200/75 to-slate-300/50"
         >
-          🚀 Available for SDE Roles - {ROLE_AVAILABILITY_DATE}
+          🚀 Available for SDE Roles - {month} {year}
         </Badge>
       </motion.div>
       <motion.div
