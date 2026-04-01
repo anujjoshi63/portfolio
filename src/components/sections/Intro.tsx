@@ -4,33 +4,9 @@ import Link from "next/link"
 import { motion } from "framer-motion"
 import { FileIcon, GithubIcon, LinkedinIcon } from "lucide-react"
 
-import { Badge } from "@/components/ui/badge"
-
 const Intro = () => {
-  const currentDate = new Date()
-  const month = currentDate.toLocaleString("default", { month: "long" })
-  const year = currentDate.getFullYear()
-
   return (
     <div className="mt-8 w-full space-y-6 md:mt-0" id="intro_section">
-      <motion.div
-        initial={{ opacity: 0, y: 10 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{
-          type: "spring",
-          damping: 10,
-          stiffness: 40,
-        }}
-        viewport={{ once: true }}
-        className="flex flex-col w-full flex-wrap items-center justify-center text-left text-2xl"
-      >
-        <Badge
-          variant="outline"
-          className="text-base rounded-none smooth-corners-sm font-medium mb-4 bg-gradient-to-r from-slate-200/75 via-slate-200/75 to-slate-300/50"
-        >
-          🚀 Available for SDE Roles - {month} {year}
-        </Badge>
-      </motion.div>
       <motion.div
         initial={{ opacity: 0, y: 10 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -58,7 +34,7 @@ const Intro = () => {
           className="hidden flex-1 text-left text-lg md:block"
         >
           <span className="text-lg font-regular tracking-normal text-slate-500">
-            2x SDE Intern at AI startups
+            SDE1 @ Amazon · Customer Service Security
           </span>
         </motion.div>
       </motion.div>
@@ -87,9 +63,9 @@ const Intro = () => {
             }}
             viewport={{ once: true }}
           >
-            specialized in
+            building
           </motion.span>{" "}
-          <span className="tracking-tight px-px">AI & Cloud</span>{" "}
+          <span className="tracking-tight px-px">security systems</span>{" "}
           <motion.span
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -101,9 +77,9 @@ const Intro = () => {
             }}
             viewport={{ once: true }}
           >
-            | Building
+            at
           </motion.span>{" "}
-          <span className="tracking-tight">scalable solutions</span>
+          <span className="tracking-tight">Amazon scale</span>
         </p>
       </motion.div>
       <motion.div
@@ -126,7 +102,6 @@ const Intro = () => {
           <div className="flex items-center justify-center gap-1 opacity-75 transition-all duration-300 hover:opacity-95 hover:drop-shadow-[0_1px_4px_hsl(240,0%,55%)] dark:hover:text-[hsl(240,0%,95%)]">
             <LinkedinIcon width={16} className="text-black dark:text-white" />
             <span className="leading-3">LinkedIn</span>
-            {/* <ArrowUpRight width={16} color="gray" className="-ml-2" /> */}
           </div>
         </Link>
         <Link
@@ -137,7 +112,6 @@ const Intro = () => {
           <div className="flex items-center justify-center gap-1 opacity-75 transition-all duration-300 hover:opacity-95 hover:drop-shadow-[0_1px_4px_hsl(240,0%,55%)] dark:hover:text-[hsl(240,0%,95%)]">
             <GithubIcon width={16} className="text-black dark:text-white" />
             <span className="leading-3">GitHub</span>
-            {/* <ArrowUpRight width={16} color="gray" /> */}
           </div>
         </Link>
         <Link
@@ -148,7 +122,6 @@ const Intro = () => {
           <div className="flex items-center justify-center gap-1 opacity-75 transition-all duration-300 hover:opacity-95 hover:drop-shadow-[0_1px_4px_hsl(240,0%,55%)] dark:hover:text-[hsl(240,0%,95%)]">
             <FileIcon width={16} className="text-black dark:text-white" />
             <span className="leading-3">Resume</span>
-            {/* <ArrowUpRight width={16} color="gray" /> */}
           </div>
         </Link>
       </motion.div>

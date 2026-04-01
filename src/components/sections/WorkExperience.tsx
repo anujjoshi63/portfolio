@@ -20,6 +20,20 @@ const workExperiences: {
   bullets: JSX.Element[] | string[]
 }[] = [
   {
+    title: "Amazon - Software Development Engineer I",
+    url: "https://amazon.com/",
+    oneLineDescription:
+      "Customer Service Security (CS Sec) · Sep 2025 – Present",
+    bullets: [
+      <span className="font-normal">
+        Working on <b className="font-semibold">security systems</b> for
+        Amazon&apos;s global{" "}
+        <b className="font-semibold">Customer Service infrastructure</b>,
+        protecting customer data and access controls at scale.
+      </span>,
+    ],
+  },
+  {
     title: "HireBuddy - Software Engineer Intern",
     url: "https://hirebuddy.ai/",
     oneLineDescription:
